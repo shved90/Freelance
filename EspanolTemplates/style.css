@@ -1,0 +1,84 @@
+html
+{
+    font-family: Arial;
+}
+
+body
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 1024px;
+}
+
+header
+{
+    background-color: #fff;
+    height: 30px;
+    padding: 10px 0;
+}
+
+header img:first-child
+{
+    float: left;
+    margin-left: 50px;
+    width: 120px;
+}
+
+header img:last-child
+{
+    float: right;
+    margin-right: 50px;
+    width: 120px;
+}
+
+#banner
+{
+    background: #adbcc3 url(images/template1_banner.png) no-repeat 560px 140px;
+    background-size: 450px;
+    height: 300px;
+    padding: 100px 0 0 50px;
+    border-bottom: 25px solid #6d7273;
+}
+
+#banner p
+{
+    width: 420px;
+}
+
+#banner a
+{
+    background-color: #fff;
+    color: #e93c4f;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#banner img
+{
+    width: 500px;
+    float: right;
+}
+
+#box_container .box_third:nth-child(2) img
+{
+    background-color: #dcdcd4;
+}
+
+.box_third
+{
+    display: inline-block;
+    margin: 0 -7px 0 0;
+    padding: 20px;
+}
+
+.box_third img
+{
+    width: 303px;
+    height: 303px;
+    background-color: #2d4255;
+}
