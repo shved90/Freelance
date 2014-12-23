@@ -63,7 +63,7 @@ header img:last-child
 
 #banner
 {
-    background: #adbcc3 url(images/banner.png) no-repeat 560px 110px;
+    background: #f0ece3 url(images/banner.png) no-repeat 560px 110px;
     background-size: 450px;
     height: 300px;
     padding: 70px 0 0 50px;
@@ -71,7 +71,7 @@ header img:last-child
 }
 
 #banner h1{
-    color: #2d4255;
+    color: #663d4f;
     font-size: 41px;
     font-family: noto_bold;
 }
@@ -79,13 +79,13 @@ header img:last-child
 #banner p
 {
     width: 470px;
-    color: #2d4255;
+    color: #663d4f;
 }
 
 #banner a
 {
-    background-color: #fff;
-    color: #e93c4f;
+    background-color: #c6403d;
+    color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -96,8 +96,8 @@ header img:last-child
 }
 
 #banner a:hover{
-    color: #fff;
-    background-color: #e93c4f;
+    color: #c6403d;
+    background-color: #fff;
 }
 
 #banner img
@@ -125,7 +125,7 @@ header img:last-child
 
 #box_container .box_one span
 {
-    background-color: #e93c4f;
+    background-color: #eab25a;
     padding: 20px 40px 0;
 }
 
@@ -137,7 +137,7 @@ header img:last-child
 
 #box_container .box_two span
 {
-    background-color: #dcdcd4;
+    background-color: #fa514a;
     padding: 92px 40px;
 }
 
@@ -148,7 +148,7 @@ header img:last-child
 
 #box_container .box_three span
 {
-    background-color: #2d4255;
+    background-color: #3670a0;
     padding: 31px;
 }
 
@@ -161,16 +161,17 @@ header img:last-child
 {
     width: 320px;
     padding: 0 10px;
-    color: #7f8a96;
 }
 
 #box_container > div h2{
     font-size: 28px;
     font-family: noto_bold;
+    color: #000;
 }
 
 #box_container > div p{
     font-size: 13px;
+    color: #7f8a96;
 }
 
 footer{
