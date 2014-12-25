@@ -72,19 +72,19 @@ header img:last-child
 }
 
 #banner h1{
-    color: #02a4ef;
+    color: #2c3e50;
     font-size: 41px;
     font-family: noto_bold;
 }
 
 #banner p
 {
-    color: #02a4ef;
+    color: #2c3e50;
 }
 
 #banner a
 {
-    background-color: #f25022;
+    background-color: #28ae60;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
@@ -96,7 +96,7 @@ header img:last-child
 }
 
 #banner a:hover{
-    color: #f25022;
+    color: #28ae60;
     background-color: #fff;
 }
 
@@ -123,7 +123,7 @@ header img:last-child
 }
 
 #box_container .box_one{
-    background-color: #77a7fb;
+    background-color: #23a085;
 }
 
 #box_container .box_one span
@@ -135,8 +135,8 @@ header img:last-child
 
 #box_container .box_one span img
 {
-    height: 290px;
-    margin-bottom: -5px;
+    height:290px;
+    margin-bottom:-5px;
 }
 
 #box_container .box_one div{
@@ -148,7 +148,7 @@ header img:last-child
 }
 
 #box_container .box_two{
-    background-color: #34b67a;
+    background-color: #8e44ad;
 }
 
 #box_container .box_two span
@@ -173,7 +173,7 @@ header img:last-child
 }
 
 #box_container .box_three{
-    background-color: #fbca43;
+    background-color: #2c3e50;
 }
 
 #box_container .box_three span
