@@ -19,7 +19,6 @@
     <script>
 	    var ltu = "from";
 	    $(function(){
-
 	        $("#fromBOX").fastLiveFilter("#list_to_filter", {
 			    callback: function(total) {}
 			});
@@ -34,21 +33,16 @@
 
 	    });
 	
-	    function airportNAV(locationToUpdate){
-	        $("#selectorPOP").hide;
-			$("#fromBOX").val("");
-			$(this).change();
-			$("#selectorPOP").insertAfter(".fromBOX");
-			$("#selectorPOP").show(100);
-			ltu = locationToUpdate;
-			$("#selectorPOP").numShow(0);
+        function airportNAV(locationToUpdate){
+            $("#selectorPOP").hide();
+            $("#fromBOX").val("").trigger('change');
+            $("#selectorPOP").insertAfter(".fromBOX").show(100);
+            ltu = locationToUpdate;
         };
         function airportNAV2(locationToUpdate) {
-            $("#selectorPOP").hide;
-            $("#toBOX").val("");
-            $(this).change();
-            $("#selectorPOP").insertAfter(".toBOX");
-            $("#selectorPOP").show(100);
+            $("#selectorPOP").hide();
+            $("#toBOX").val("").trigger('change');
+            $("#selectorPOP").insertAfter(".toBOX").show(100);
             ltu = locationToUpdate;
         };
     </script>
