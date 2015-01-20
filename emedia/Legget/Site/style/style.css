@@ -115,33 +115,20 @@ header{
 	padding: 10px 60px 10px 20px;
 	position: relative;
 	z-index: 1;
-	background: #d61339;
-	background: -moz-linear-gradient(top,  #d61339 1%, #d7143c 28%, #d7143c 28%, #db174d 93%, #d61339 97%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d61339), color-stop(28%,#d7143c), color-stop(28%,#d7143c), color-stop(93%,#db174d), color-stop(97%,#d61339));
-	background: -webkit-linear-gradient(top,  #d61339 1%,#d7143c 28%,#d7143c 28%,#db174d 93%,#d61339 97%);
-	background: -o-linear-gradient(top,  #d61339 1%,#d7143c 28%,#d7143c 28%,#db174d 93%,#d61339 97%);
-	background: -ms-linear-gradient(top,  #d61339 1%,#d7143c 28%,#d7143c 28%,#db174d 93%,#d61339 97%);
-	background: linear-gradient(to bottom,  #d61339 1%,#d7143c 28%,#d7143c 28%,#db174d 93%,#d61339 97%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d61339', endColorstr='#d61339',GradientType=0 );
+    background-color: #6aa1d6
 }
 
 #download a:hover, .download a:active{
 	color: #fff;
-	background: #d61339;
-	background: -moz-linear-gradient(top,  #d61339 3%, #db174d 7%, #d7143c 72%, #d7143c 72%, #d61339 99%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#d61339), color-stop(7%,#db174d), color-stop(72%,#d7143c), color-stop(72%,#d7143c), color-stop(99%,#d61339));
-	background: -webkit-linear-gradient(top,  #d61339 3%,#db174d 7%,#d7143c 72%,#d7143c 72%,#d61339 99%);
-	background: -o-linear-gradient(top,  #d61339 3%,#db174d 7%,#d7143c 72%,#d7143c 72%,#d61339 99%);
-	background: -ms-linear-gradient(top,  #d61339 3%,#db174d 7%,#d7143c 72%,#d7143c 72%,#d61339 99%);
-	background: linear-gradient(to bottom,  #d61339 3%,#db174d 7%,#d7143c 72%,#d7143c 72%,#d61339 99%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d61339', endColorstr='#d61339',GradientType=0 );
+	text-decoration: underline;
+    background-color: #6aa1d6
 }
 
 #download a:after{
 	content: "";
 	display: block;
 	position: absolute;
-	background: #f8f8f8 url("../layout/arrow-down-left.png") no-repeat 13px  17px;
+	background: #f8f8f8 url("../layout/download-arrow.png") no-repeat 13px  17px;
 	background-size: 15px 9px;
 	width: 42px;
 	height: 42px;
@@ -311,6 +298,58 @@ form fieldset p{
 .block ul.list-diagnostic li{
 	padding: 15px 0;
 	font-size: 18px;
+	line-height: 30px;
+}
+
+.diagnostic-arrows div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.diagnostic-arrows div > img
+{
+    padding-top: 70px;
+    max-width: 300px;
+}
+
+.diagnostic-arrows div h3
+{
+    font-weight: bold;
+}
+
+.diagnostic-arrows div p
+{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.diagnostic-arrows div:first-child
+{
+    width: 22%;
+    margin-right: 2%;
+}
+
+.diagnostic-arrows div:last-child
+{
+    max-width: 74%;
+}
+
+blockquote.blue.diagnostic
+{
+    font-style: normal;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+blockquote.blue.diagnostic ul
+{
+    padding: 20px 0 0 30px;
+}
+
+li.blue
+{
+    color: #6aa1d6;
 }
 
 .search-block{
@@ -401,7 +440,7 @@ blockquote.blue{
 }
 
 blockquote.small{
-	margin: 40px 0;
+	margin: 40px 0 40px -50px;
 	font-size: 18px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
@@ -628,6 +667,10 @@ footer .main .socials a img{
 	.navbar {
 		font-size: 11px;
 	}
+	#download
+	{
+	    text-align: center;
+	}
 	.blog-title
 	{
 	    font-size: 60px;
@@ -662,6 +705,10 @@ footer .main .socials a img{
     .container .col-sm-4 hr
 	{
 	    width: 100%;
+    }
+    .diagnostic-arrows
+    {
+        margin-bottom: 40px;
     }
 	.mobile-menu{
 		display: block;
@@ -741,6 +788,14 @@ footer .main .socials a img{
 	{
 	    font-size: 45px;
 	}
+	.diagnostic-arrows div:first-child
+    {
+        display: none;
+    }
+    .diagnostic-arrows div:last-child
+    {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px){
