@@ -150,7 +150,7 @@ header{
 }
 
 .container .col-sm-4{
-	width: 29.2222222%;
+	width: 29.2222222%; /* LOOK INTO THIS AGAIN */
 }
 
 .container .col-sm-4 hr{
@@ -352,6 +352,57 @@ li.blue
     color: #6aa1d6;
 }
 
+#block-mortgage h2{
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	margin: 30px 0 80px;
+}
+
+#block-mortgage > p{
+	font-size: 22px;
+	line-height: 30px;
+	margin: 0;
+}
+
+.inner-block{
+	width: 45%;
+	padding: 30px 20px;
+	margin: 0 5% 5% 0;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 870px;
+}
+
+#block-mortgage .inner-block:nth-child(3), #block-mortgage .inner-block:nth-child(5){
+	margin-right: 0;
+}
+
+#block-mortgage .inner-block:nth-child(4), #block-mortgage .inner-block:nth-child(5){
+	min-height: 670px;
+}
+
+.inner-block h3{
+	padding-bottom: 20px;
+}
+
+.inner-block h3 span{
+	display: block;
+	font-size: 60px;
+}
+
+#block-mortgage .inner-block p{
+	color: #fff;
+	line-height: 30px;
+}
+
+.smallprint{
+	text-align: center;
+	font-style: italic;
+	font-size: 15px;
+}
+
 .search-block{
 	margin-top: 50px;
 }
@@ -517,15 +568,15 @@ h2{
 	background-color: #6aa1d6;
 }
 
-.block.orange{
+.orange{
 	background-color: #F48619;
 }
 
-.block.grey{
+.grey{
 	background-color: #8c8c87;
 }
 
-.block.turquoise{
+.turquoise{
 	background-color: #66cccc;
 }
 
@@ -536,6 +587,11 @@ h2{
 .block.lightgrey{
 	background-color: #f0f0ef;
 }
+
+.lightblue{
+	background-color: #66ccff;
+}
+
 
 .block.lightgrey h2, .block.lightgrey p{
 	color: #656666;
@@ -616,6 +672,13 @@ footer .main .socials a img{
 	{
 	    width: 110%;
     }
+    #block-mortgage .inner-block:nth-child(2), #block-mortgage .inner-block:nth-child(3){
+		min-height: 1020px;
+	}
+
+	#block-mortgage .inner-block:nth-child(4), #block-mortgage .inner-block:nth-child(5){
+		min-height: 790px;
+	}
 }
 
 @media screen and (max-width: 1130px){
@@ -647,6 +710,14 @@ footer .main .socials a img{
 	.blog-title span
 	{
 	    font-size: 51px;
+	}
+	.inner-block{
+		display: block;
+		width: 100%;
+		min-height: 700px;
+	}
+	#block-mortgage .inner-block{
+		min-height: 300px !important; /* overwrites :nth-child selector */
 	}
 }
 
