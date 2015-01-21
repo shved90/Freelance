@@ -70,6 +70,35 @@ header{
 	border: none;
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
 .navbar-brand > img{
 	margin-top: -4px;
 }
@@ -284,21 +313,32 @@ form fieldset p{
 	font-style: italic;
 }
 
-.block ul.list-diagnostic{
+.block ul.list-diagnostic, .block ul.list-taxes{
 	color: #505151;
 	list-style: disc;
 	font-style: normal;
 	padding: 0 30px;
 }
 
-.block ul.list-diagnostic strong{
+.block ul.list-diagnostic strong, .block ul.list-taxes strong{
 	color: #6aa1d6;
 }
 
-.block ul.list-diagnostic li{
+.block ul.list-diagnostic li, .block ul.list-taxes li{
 	padding: 15px 0;
 	font-size: 18px;
 	line-height: 30px;
+}
+
+.block ul.list-taxes li
+{
+    padding: 10px 0 0 0;
+    font-size: 22px;
+}
+
+.block ul.list-taxes li p
+{
+    line-height: 30px;
 }
 
 .diagnostic-arrows div
@@ -352,15 +392,15 @@ li.blue
     color: #6aa1d6;
 }
 
-#block-mortgage h2{
+h2.large{
 	text-decoration: underline;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 40px;
+	font-size: 45px;
 	margin: 30px 0 80px;
 }
 
-#block-mortgage > p{
+#block-mortgage > p, #block-bankaccount > p{
 	font-size: 22px;
 	line-height: 30px;
 	margin: 0;
@@ -375,12 +415,22 @@ li.blue
 	min-height: 870px;
 }
 
-#block-mortgage .inner-block:nth-child(3), #block-mortgage .inner-block:nth-child(5){
+#block-mortgage .inner-block:nth-child(3), #block-mortgage .inner-block:nth-child(5),
+#block-bankaccount .inner-block:nth-child(3), #block-bankaccount .inner-block:nth-child(5)
+{
 	margin-right: 0;
 }
 
 #block-mortgage .inner-block:nth-child(4), #block-mortgage .inner-block:nth-child(5){
 	min-height: 670px;
+}
+
+#block-bankaccount .inner-block:nth-child(2), #block-bankaccount .inner-block:nth-child(3){
+	min-height: 1050px;
+}
+
+#block-bankaccount .inner-block:nth-child(4), #block-bankaccount .inner-block:nth-child(5){
+	min-height: 700px;
 }
 
 .inner-block h3{
@@ -392,7 +442,7 @@ li.blue
 	font-size: 60px;
 }
 
-#block-mortgage .inner-block p{
+#block-mortgage .inner-block p, #block-bankaccount .inner-block p{
 	color: #fff;
 	line-height: 30px;
 }
@@ -486,6 +536,11 @@ blockquote{
 	padding: 0 0 0 40px;
 }
 
+blockquote.small
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
 blockquote.blue{
 	border-left: 8px solid #6aa1d6;
 }
@@ -564,7 +619,7 @@ h2{
 	line-height: 30px;
 }
 
-.block.blue{
+.block.blue, .inner-block.blue{
 	background-color: #6aa1d6;
 }
 
@@ -679,6 +734,14 @@ footer .main .socials a img{
 	#block-mortgage .inner-block:nth-child(4), #block-mortgage .inner-block:nth-child(5){
 		min-height: 790px;
 	}
+	
+	#block-bankaccount .inner-block:nth-child(2), #block-bankaccount .inner-block:nth-child(3){
+		min-height: 1250px;
+	}
+
+	#block-bankaccount .inner-block:nth-child(4), #block-bankaccount .inner-block:nth-child(5){
+		min-height: 800px;
+	}
 }
 
 @media screen and (max-width: 1130px){
@@ -716,7 +779,7 @@ footer .main .socials a img{
 		width: 100%;
 		min-height: 700px;
 	}
-	#block-mortgage .inner-block{
+	#block-mortgage .inner-block, #block-bankaccount .inner-block{
 		min-height: 300px !important; /* overwrites :nth-child selector */
 	}
 }

@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Mortgages in France</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link href="layout/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+
 	<link rel="stylesheet" href="style/bootstrap.min.css">
 	<link rel="stylesheet" href="style/style.css">
 
@@ -43,7 +47,14 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">reduced<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
+								<li class="menu-item dropdown dropdown-submenu" role="menu">
+                                    <a href="#">Another action<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Something else here</a></li>
+								        <li><a href="#">Separated link</a></li>
+								        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
 								<li><a href="#">Something else here</a></li>
 								<li><a href="#">Separated link</a></li>
 								<li><a href="#">One more separated link</a></li>
@@ -114,7 +125,7 @@
 					<p>French banks do not provide formal mortgage offers until after a Compromis de Vente has been signed, however it is possible to get a free 'in principle' offer prior to commencing your property search.  It is worth keeping in mind that overseas applicants are able to borrow a maximum of 85% of the FAI purchase price of a property in France (i.e. the price including estate agency fees, but excluding notaire fees.) If you are looking to finance part of your purchase with a mortgage, having this organised from the outset not only gives you peace of mind, but also means that when you find the property you want to buy, you can negotiate and proceed without any obstacles.</p>
 
 					<div id="block-mortgage" class="blog-post block lightgrey">
-						<h2>French Mortgage Options</h2>
+						<h2 class="large">French Mortgage Options</h2>
 						<div class="inner-block grey">
 							<h3><span>01</span>French high street banks</h3>
 							<p>There are two main types of French bank, national banks and mutual banks.  Across the spectrum of these banks there are a wide range of potential mortgage packages available.</p>
@@ -209,12 +220,14 @@
 						</fieldset>
 					</form>
 					<hr />
-					<img src="layout/magazine.jpg" class="mobile-img" />
+					<a href="http://view.pagetiger.com/Leggett-issue1-2/Leggett-issue1-2" target="_blank"><img src="layout/magazine.jpg" class="mobile-img" /></a>
                     <hr />
 					<div class="top-tip mobile-image">
 						<img src="layout/top-tip.png" />
 						<h4>Be aware that France does not use 'credit scores' when putting together mortgage applications. You may be required to send documents via email or through the post. The earlier you can start your mortgage application process the better, as it can take some time.</h4>
 					</div>
+					<hr />
+                    <a href="layout/Buyers Guide_Leggett_final.pdf" target="_blank" class="mobile-img"><img src="layout/buyers-guide.jpg" /></a>
 					<hr />
 					<img src="layout/farm.jpg" class="mobile-img" />
 					<div class="search-block">
@@ -256,26 +269,5 @@
             });
         });
     </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            if ($(window).width() > 877) {
-                $(window).scroll(function (e) {
-                    $el = $('.menu');
-                    if ($(this).scrollTop() > 3500 && $el.css('position') != 'fixed') {
-                        $('.menu').css({ 'position': 'fixed', 'top': '0px', 'display': 'none' });
-                        $('.menu').fadeIn('slow');
-                    }
-                    if ($(this).scrollTop() < 3500 && $el.css('position') == 'fixed') {
-                        $('.menu').css({ 'position': 'static', 'top': '0px' });
-                    }
-                });
-            } else if (screen.width < 877) {
-                console.log('1232');
-                $('.menu').css({ 'position': 'static', 'top': '0px' });
-            } else {}
-        });
-    </script> 
-
 
 </html>
