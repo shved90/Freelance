@@ -714,6 +714,9 @@ footer .main .socials a img{
     background-color: #000;
 }
 
+.mortgages-table thead {font-weight: 600; font-size: 13px;}
+.mortgages-table tbody {font-size: 13px;}
+
 @media screen and (max-width: 1200px){
 	.blog-title
 	{
