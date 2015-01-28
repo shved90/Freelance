@@ -1,3 +1,69 @@
-body{
-	background-color: red;
+header{
+	background-color: #3e698a;
+	text-align: right;
+	color: #fff;
+	padding: 10px 0;
+}
+
+header a, header a:hover{
+	color: #fff;
+}
+
+.image-bg-fluid-height {
+	background: url('http://lorempixel.com/g/1920/1500/') no-repeat center center scroll;
+	height: 800px;
+}
+
+nav{
+	padding: 20px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.navbar-brand{
+	margin-top: -15px;
+}
+
+#carousel{
+	height: 500px;
+}
+
+#carousel .carousel-caption{
+	width: 50%;
+	position: static;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.carousel-indicators{
+	border-top: 1px solid #fff;
+	width: 100%;
+	left: 50%;
+	margin-left: -50%;
+}
+
+.carousel-indicators li, .carousel-indicators li.active{
+	text-indent: 0;
+	list-style-type: none;
+	background: transparent;
+	border: none;
+	color: #ff9c00;
+	padding: 20px 10% 0;
+	height: inherit;
+}
+
+.carousel-indicators li.active{
+	color: #fff;
+	position: relative;
+}
+
+.carousel-indicators li.active:before{
+    position:absolute;
+    content:"";
+    width:0px;
+    height:0px;
+    border-top: 15px solid white;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    top:25%;
 }
