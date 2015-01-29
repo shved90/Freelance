@@ -3,6 +3,7 @@ header{
 	text-align: right;
 	color: #fff;
 	padding: 10px 0;
+	border: none;
 }
 
 header a, header a:hover{
@@ -10,13 +11,51 @@ header a, header a:hover{
 }
 
 .image-bg-fluid-height {
-	background: url('http://lorempixel.com/g/1920/1500/') no-repeat center center scroll;
+	background: url('../images/slide1.jpg') no-repeat top left scroll;
+	background-size: 100% 100%;
 	height: 800px;
 }
 
-nav{
+nav.navbar-inverse{
 	padding: 20px 0;
+	background-color: transparent;
+	border: none;
 	border-bottom: 1px solid #fff;
+	border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    padding: 15px 0;
+    margin: 0 30px;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li:hover a
+{
+    padding: 15px 0 13px;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-form.navbar-left
+{
+    padding: 0;
+    width: 36%;
+}
+
+.navbar-form.navbar-left .form-group:nth-child(2)
+{
+    width: 49%;
+}
+
+.navbar-form input[type=password]
+{
+    width: 62%;
+}
+
+.navbar-form .btn-default
+{
+    width: 30%;
 }
 
 .navbar-brand{
@@ -25,6 +64,7 @@ nav{
 
 #carousel{
 	height: 500px;
+	padding-top: 60px;
 }
 
 #carousel .carousel-caption{
@@ -32,6 +72,36 @@ nav{
 	position: static;
 	display: inline-block;
 	vertical-align: top;
+}
+
+#carousel .carousel-caption ul
+{
+    text-align: left;
+    list-style: none;
+    padding:0;
+    margin: 0 0 0 20px;
+}
+
+#carousel .carousel-caption ul li
+{
+    color: #fff;
+}
+
+#carousel .carousel-caption ul li:before
+{
+    content: "\002022 ";
+    font-size: 30px;
+    line-height: 0;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: #ff9c00;
+}
+
+.carousel-caption .btn.orange
+{
+    background-color: #ff9c00;
+    border: none;
+    color: #fff;
 }
 
 .carousel-indicators{
@@ -61,9 +131,27 @@ nav{
     content:"";
     width:0px;
     height:0px;
-    border-top: 15px solid white;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid transparent;
-    top:25%;
+    border-top: 10px solid white;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 7px solid transparent;
+    top:-1px;
+}
+
+
+
+
+
+@media all and (width: 767px)
+{
+    .navbar-form input[type=password]
+    {
+        width: 70%;
+        display: inline-block;
+    }
+
+    .navbar-form .btn-default
+    {
+        width: 29%;
+    }
 }
