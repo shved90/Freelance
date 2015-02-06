@@ -19,7 +19,7 @@ header{
 }
 
 .wrapper{
-	padding: 0 15px;
+	padding: 0;
 	margin-top: 50px;
 }
 
@@ -190,14 +190,10 @@ header{
 }
 
 .menu{
-	padding: 60px 10px 40px 53px;
-	margin-bottom: 50px;
+	padding: 60px 10px 10px 53px;
+	margin-bottom: -10px;
 	width: 287px;
 	background: #fff url(../layout/shadow.png) no-repeat left top;
-}
-
-.mobile-menu{
-	display: none;
 }
 
 .menu h1{
@@ -213,6 +209,7 @@ header{
 	background-color: #b5b4b4;
 	color: #fff;
 	width: 225px;
+	min-height: 410px;
 	padding: 40px 0 10px;
 }
 
@@ -229,15 +226,15 @@ header{
 
 .menu-list ul li
 {
-    position: relative;
 	padding: 3px 0;
 	font-size: 15px;
 	list-style-type: none;
 }
 
-.menu-list ul li:before
+.menu-list ul > li:before
 {
-    content:"-";
+    content:"\25B6";
+    color: #c4dcf4;
     position:relative;
     left:-5px;
 }
@@ -246,14 +243,21 @@ header{
 	color: #fff;
 }
 
-.menu-list ul:nth-child(2){
-	padding-left: 50px;
+.menu-list > ul{
+	padding-left: 30px;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 
-.menu-list ul:nth-child(3){
-	padding-left: 35px;
-	font-weight: 700;
+.menu-list ul li > ul{
+	padding-left: 15px;
+	font-weight: 400;
+}
+
+.menu-list ul li > ul li:before, .menu-list ul li.menu-nodrodown:before{
+	content:"-";
+	color: #fff;
+	font-weight: normal;
 }
 
 form{
@@ -469,7 +473,7 @@ h2.large{
 	color: #95a5a6;
 }
 
-.container .col-sm-8 > p{
+.container .col-sm-8 > p, .col-sm-8 > ul{
 	font-size: 18px;
 	line-height: 35px;
 	color: #000;
@@ -627,6 +631,11 @@ h2{
 	background-color: #F48619;
 }
 
+.light-orange
+{
+    color: #f5a600;
+}
+
 .grey{
 	background-color: #8c8c87;
 }
@@ -660,7 +669,7 @@ h2{
 
 footer{
 	margin-top: 70px;
-	padding: 80px 0;
+	padding: 80px 0 10px;
 	background-color: #6aa1d6;
 }
 
@@ -688,6 +697,27 @@ footer .main .socials a{
 footer .main .socials a img{
 	width: 36px;
 	height: 36px;
+}
+
+footer .main > p
+{
+    color: #fff;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.for-sellers .breadcrumb li.active{
+	color: #f5a600;
+}
+
+.for-sellers .blog-title span{
+	color: #f5a600;
+}
+
+.for-sellers blockquote
+{
+    border-left: 8px solid #f5a600;
+    color: #505151;
 }
 
 #scrollUp {
@@ -847,25 +877,6 @@ footer .main .socials a img{
     {
         margin-bottom: 40px;
     }
-	.mobile-menu{
-		display: block;
-		margin-top: -40px;
-	}
-	.mobile-menu ul{
-		display: inline-block;
-		min-width: 300px;
-		vertical-align: top;
-	}
-	.mobile-menu .menu-list{
-		width: 95%;
-		padding-top: 10px;
-	}
-	.mobile-menu .menu-list > a{
-		display: block;
-	}
-	.mobile-hide{
-		display: none;
-	}
 	.container .col-sm-4 .menu, .container .col-sm-4 form, .container .col-sm-4 > img{
 		float: none;
 		display: block;
@@ -912,18 +923,13 @@ footer .main .socials a img{
 		display: block;
 		margin: 30px auto 0;
 	}
-	.mobile-menu ul{
-		display: inline-block;
-		min-width: inherit;
-		vertical-align: top;
-	}
 
 }
 
 @media screen and (max-width: 611px){
     .blog-title span
 	{
-	    font-size: 45px;
+	    font-size: 45px !important;
 	}
 	.diagnostic-arrows div:first-child
     {
@@ -954,15 +960,11 @@ footer .main .socials a img{
 	}
 	.blog-title span
 	{
-	    font-size: 40px;
+	    font-size: 40px !important;
 	}
 }
 
 @media screen and (max-width: 430px){
-	.mobile-menu{
-		display: block;
-		margin-top: 0;
-	}
 	.breadcrumb{
 		font-size: 14px;
 	}
@@ -978,7 +980,7 @@ footer .main .socials a img{
 	}
 	.blog-title span
 	{
-	    font-size: 34px;
+	    font-size: 34px !important;
 	}
 	.wrapper{
 		padding: 0;
