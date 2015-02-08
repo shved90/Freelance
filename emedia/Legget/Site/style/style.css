@@ -510,7 +510,7 @@ h2.large{
 }
 
 .blog-title span{
-	font-size: 77px;
+	font-size: 75px;
 	display: block;
 	color: #6aa1d6;
 }
@@ -521,7 +521,7 @@ h2.large{
 	line-height: 30px;
 }
 
-.blog-post.blue a, .blog-post.orange a, .blog-post.grey a, .blog-post.turquoise a
+.blog-post.blue a, .blog-post.orange a, .blog-post.grey a, .blog-post.turquoise a, .blog-post.lightorange a
 {
     color: #fff;
     font-weight: bold;
@@ -603,13 +603,18 @@ h2{
 }
 
 .block ul{
-	list-style: circle;
+	/*list-style: circle;*/
 	padding: 0 0 10px 20px;
 	font-style: italic;
 }
 
 .block ul li{
 	padding: 3px 0;
+}
+
+.block ul span{
+	display: inline-block;
+	margin: 5px 0 0 -15px;
 }
 
 .block hr{
@@ -631,9 +636,15 @@ h2{
 	background-color: #F48619;
 }
 
-.light-orange
+.lightorange
 {
-    color: #f5a600;
+    background-color: #f5a600;
+}
+
+.lightorange-bold{
+	color: #f5a600;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .grey{
@@ -657,7 +668,7 @@ h2{
 }
 
 
-.block.lightgrey h2, .block.lightgrey p{
+.block.lightgrey h2, .block.lightgrey p, .block.lightgrey ul, .block.lightgrey span{
 	color: #656666;
 }
 
@@ -702,7 +713,7 @@ footer .main .socials a img{
 footer .main > p
 {
     color: #fff;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 12px;
 }
 
