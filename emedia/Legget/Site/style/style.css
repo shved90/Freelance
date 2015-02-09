@@ -8,6 +8,11 @@ html, body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+p
+{
+    margin: 0 0 20px;
+}
+
 .main{
 	max-width: 1170px;
 	margin: 0 auto;
@@ -540,6 +545,11 @@ blockquote{
 	padding: 0 0 0 40px;
 }
 
+blockquote ul li
+{
+    padding-bottom: 15px;
+}
+
 blockquote.small
 {
     font-family: 'Open Sans', sans-serif;
@@ -583,7 +593,7 @@ h2{
 
 .block{
 	padding: 25px 15px;
-	margin-bottom: 60px;
+	margin: 50px 0;
 }
 
 .block h2, .block h3, .block span, .block p, .block ul{
@@ -644,7 +654,7 @@ h2{
 .lightorange-bold{
 	color: #f5a600;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .grey{
