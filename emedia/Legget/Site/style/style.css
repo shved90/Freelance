@@ -194,6 +194,12 @@ header{
 	width:94%;
 }
 
+.container .col-sm-8 hr{
+    border-bottom: none;
+    border-top: 1px solid #bfbfbf;
+    margin: 30px 0;
+}
+
 .menu{
 	padding: 60px 10px 10px 53px;
 	margin-bottom: -10px;
@@ -456,6 +462,11 @@ h2.large{
 	line-height: 30px;
 }
 
+#capital-tax ul li > ul li
+{
+    padding: 8px 0;
+}
+
 .smallprint{
 	text-align: center;
 	font-style: italic;
@@ -624,7 +635,7 @@ h2{
 
 .block ul span{
 	display: inline-block;
-	margin: 5px 0 0 -15px;
+	margin: 8px 0 8px -15px;
 }
 
 .block hr{
@@ -738,7 +749,19 @@ footer .main > p
 .for-sellers blockquote
 {
     border-left: 8px solid #f5a600;
-    color: #505151;
+}
+
+.for-france .breadcrumb li.active{
+	color: #CC0000;
+}
+
+.for-france .blog-title span{
+	color: #CC0000;
+}
+
+.for-france blockquote
+{
+    border-left: 8px solid #CC0000;
 }
 
 #scrollUp {
