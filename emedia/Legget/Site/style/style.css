@@ -149,13 +149,13 @@ header{
 	padding: 10px 60px 10px 20px;
 	position: relative;
 	z-index: 1;
-    background-color: #6aa1d6
+    background-color: #6aa1d6;
 }
 
 #download a:hover, .download a:active{
 	color: #fff;
 	text-decoration: underline;
-    background-color: #6aa1d6
+    background-color: #6aa1d6;
 }
 
 #download a:after{
@@ -740,6 +740,23 @@ footer .main > p
 
 .for-sellers .breadcrumb li.active{
 	color: #f5a600;
+}
+
+.for-sellers #download a
+{
+    background-color: #f5a600;
+}
+
+.for-sellers #download a:hover, .for-sellers #download a:active{
+	color: #fff;
+	text-decoration: underline;
+    background-color: #f5a600;
+}
+
+.for-sellers #download a:after
+{
+    background: #f8f8f8 url("../layout/download-arrow-orange.png") no-repeat 13px  17px;
+    background-size: 15px 9px;
 }
 
 .for-sellers .blog-title span{
