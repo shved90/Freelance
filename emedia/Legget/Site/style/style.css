@@ -328,6 +328,52 @@ form fieldset p{
 	font-style: italic;
 }
 
+.landing-regions
+{
+    padding: 0;
+}
+
+.landing-regions .col-md-6
+{
+    padding: 0;
+}
+
+.quarterpanel
+{
+    margin-right: 40px;
+    max-width: 262px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.landing-regions .col-md-6:last-child .quarterpanel:first-child
+{
+    margin-left: 15px;
+}
+
+.landing-regions .quarterpanel:last-child
+{
+    margin-right: 0;
+}
+
+.quarterpanel p
+{
+    line-height: 25px;
+    min-height: 140px;
+}
+
+.quarterpanel h4
+{
+    font-weight: 900;
+    margin: 30px 0 20px;
+}
+
+.quarterpanel .btn.white
+{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
 .block ul.list-diagnostic, .block ul.list-taxes{
 	color: #505151;
 	list-style: disc;
@@ -514,10 +560,63 @@ h2.large{
 	background-color: #86accf;
 }
 
+.btn.white
+{
+	background-color: #fff;
+	width: 100%;
+	font-size: 20px;
+	line-height: 20px;
+	border: 1px solid #86accf;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #86accf;
+	padding: 15px 30px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.btn.white:hover{
+	color: #fff;
+	background-color: #86accf;
+}
+
 .col-sm-8{
 	padding-right: 50px;
 	margin-right: 30px;
 	border-right: 1px solid #bfbfbf;
+}
+
+.central-title span
+{
+    text-transform: uppercase;
+    font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	display: inline-block;
+	background-color: #fff;
+	position: relative;
+	padding: 0 30px;
+}
+
+.central-title
+{
+    display: block;
+    padding: 0;
+    background: none;
+    position: relative;
+    text-align: center;
+    margin: 50px 0 40px;
+}
+
+.central-title:before
+{
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid #55585a;
+    top: 23px;
+    left: 0;
 }
 
 .blog-title{
@@ -836,6 +935,32 @@ footer .main > p
 	#block-bankaccount .inner-block:nth-child(4), #block-bankaccount .inner-block:nth-child(5){
 		min-height: 800px;
 	}
+	
+    .landing-regions .quarterpanel{
+        max-width: 230px;
+        margin-right: 10px;
+    }
+    .landing-regions .quarterpanel img{
+        width: 230px;
+    }
+    .landing-regions .col-md-6:last-child .quarterpanel:first-child{
+        margin-left: 0;
+    }
+    .landing-regions .quarterpanel:last-child{
+        margin-right: 0;
+    }
+    .quarterpanel p{
+        min-height: 170px;
+    }
+    .quarterpanel h4{
+        font-weight: 900;
+        margin: 30px 0 20px;
+    }
+    .quarterpanel .btn.white
+    {
+        text-align: center;
+        padding: 15px 10px;
+        width: 100%;
 }
 
 @media screen and (max-width: 1130px){
@@ -876,6 +1001,28 @@ footer .main > p
 	#block-mortgage .inner-block, #block-bankaccount .inner-block{
 		min-height: 300px !important; /* overwrites :nth-child selector */
 	}
+	.landing-regions .col-md-6{
+	    text-align: center;
+	    float: none;
+	    width: 100%;
+	}
+    .landing-regions .quarterpanel{
+        max-width: 280px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .landing-regions .quarterpanel img{
+        width: 280px;
+    }
+    .landing-regions .col-md-6:last-child .quarterpanel:first-child{
+        margin-left: 0;
+    }
+    .landing-regions .quarterpanel:last-child{
+        margin-right: 0;
+    }
+    .quarterpanel p{
+        min-height: 130px;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -1000,6 +1147,22 @@ footer .main > p
     {
         max-width: 100%;
     }
+    .landing-regions .col-md-6{
+	    text-align: center;
+	    float: none;
+	    width: 100%;
+	}
+    .landing-regions .quarterpanel{
+        max-width: 280px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .landing-regions .quarterpanel img{
+        width: 280px;
+    }
+    .quarterpanel h4{
+        margin: 30px 0 20px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -1023,6 +1186,9 @@ footer .main > p
 	{
 	    font-size: 40px !important;
 	}
+	.landing-regions .quarterpanel{
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 430px){
