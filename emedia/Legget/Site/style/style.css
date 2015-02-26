@@ -183,6 +183,40 @@ header{
 	z-index: 2;
 }
 
+.list-dots
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-dots li:before
+{
+    content: ".";
+    color: orange;
+    font-size: 100px;
+    line-height: 0;
+    margin: -20px 5px 0 0;
+    display: inline-block;
+}
+
+.list-dots li
+{
+    height: 25px;
+}
+
+.list-dots li a
+{
+    color: #505151;
+    text-decoration: none;
+}
+
+.list-dots li a:hover
+{
+    color: orange;
+    text-decoration: underline;
+}
+    
+
 .container .col-sm-4{
 	width: 29.2222222%; /* LOOK INTO THIS AGAIN */
 }
@@ -587,22 +621,11 @@ h2.large{
 	border-right: 1px solid #bfbfbf;
 }
 
-.central-title span
-{
-    text-transform: uppercase;
-    font-size: 40px;
-	font-weight: 700;
-	text-align: center;
-	display: inline-block;
-	background-color: #fff;
-	position: relative;
-	padding: 0 30px;
-}
-
 .central-title
 {
     display: block;
     padding: 0;
+    line-height: 45px;
     background: none;
     position: relative;
     text-align: center;
@@ -617,6 +640,18 @@ h2.large{
     border-top: 1px solid #55585a;
     top: 23px;
     left: 0;
+}
+
+.central-title span
+{
+    text-transform: uppercase;
+    font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	display: inline-block;
+	background-color: #fff;
+	position: relative;
+	padding: 0 30px;
 }
 
 .blog-title{
