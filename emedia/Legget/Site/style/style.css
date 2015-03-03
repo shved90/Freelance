@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 html, body{
 	background-color: #fff;
@@ -187,6 +188,7 @@ header{
 {
     list-style-type: none;
     padding: 0;
+    margin: 30px 0;
 }
 
 .list-dots li:before
@@ -207,6 +209,7 @@ header{
 .list-dots li a
 {
     color: #505151;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -215,7 +218,41 @@ header{
     color: orange;
     text-decoration: underline;
 }
-    
+
+.list-line
+{
+    padding: 0;
+    margin: 0;
+}
+
+.list-line li
+{
+    display: inline-block;
+    line-height: 10px;
+    border-right: 2px solid #505151;
+}
+
+.list-line li:first-child a
+{
+    padding-left: 0;
+}
+
+.list-line li:last-child
+{
+    border: none;
+}
+
+.list-line li:last-child a
+{
+    padding-right: 0;
+}
+
+.list-line li a
+{
+    font-size: 25px;
+    padding: 0 15px;
+    font-weight: 700;
+}
 
 .container .col-sm-4{
 	width: 29.2222222%; /* LOOK INTO THIS AGAIN */
@@ -625,7 +662,7 @@ h2.large{
 {
     display: block;
     padding: 0;
-    line-height: 45px;
+    line-height: 45px !important;
     background: none;
     position: relative;
     text-align: center;
@@ -913,6 +950,17 @@ footer .main > p
 .for-france blockquote
 {
     border-left: 8px solid #CC0000;
+}
+
+.france-discover h1
+{
+    font-family: Georgia;
+}
+
+.france-discover p
+{
+    font-size: 16px;
+    line-height: 30px;
 }
 
 #scrollUp {
