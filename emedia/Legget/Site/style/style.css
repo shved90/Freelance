@@ -1001,6 +1001,10 @@ footer .main > p
 .mortgages-table thead {font-weight: 600; font-size: 13px;}
 .mortgages-table tbody {font-size: 13px;}
 
+.desktop-hide{
+	display: none;
+}
+
 @media screen and (max-width: 1200px){
 	.blog-title
 	{
@@ -1117,12 +1121,18 @@ footer .main > p
     .quarterpanel p{
         min-height: 130px;
     }
+    .desktop-hide{
+    	display: block;
+    }
 }
 
 @media screen and (max-width: 992px){
     .container .col-sm-4 hr
 	{
 	    width: 154%;
+    }
+    .mobile-hide{
+    	display: none;
     }
 }
 
@@ -1256,6 +1266,14 @@ footer .main > p
     }
     .quarterpanel h4{
         margin: 30px 0 20px;
+    }
+    .list-line li{
+    	display: block;
+    	line-height: 25px;
+    	border: none;
+    }
+    .list-line li a{
+    	padding: 0;
     }
 }
 

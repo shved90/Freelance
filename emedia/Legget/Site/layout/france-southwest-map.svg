@@ -9,6 +9,7 @@
     a:hover text
     {
         text-decoration: underline;
+        fill: #fff;
     }
     #Midi_Pyrennes a:hover path
     {
