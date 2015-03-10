@@ -207,6 +207,10 @@ header{
     color: #3083c5;
 }
 
+.list-dots.red li:before{
+	color: #c91429;
+}
+
 .list-dots li
 {
     height: 25px;
@@ -228,6 +232,11 @@ header{
 .list-dots.blue li a:hover
 {
     color: #3083c5;
+}
+
+.list-dots.red li a:hover
+{
+    color: #c91429;
 }
 
 .list-line
@@ -679,7 +688,7 @@ h2.large{
     background: none;
     position: relative;
     text-align: center;
-    margin: 50px 0 40px;
+    margin: 50px 0 20px;
 }
 
 .central-title:before
@@ -968,12 +977,26 @@ footer .main > p
 .france-discover h1
 {
     font-family: Georgia;
+    text-align: center;
+    font-size: 60px;
 }
 
 .france-discover p
 {
     font-size: 16px;
     line-height: 30px;
+}
+
+.france-discover {
+	padding: 0;
+}
+
+.france-discover .col-md-6:first-child{
+	padding-left: 0;
+}
+
+.france-discover .col-md-6:last-child{
+	padding-right: 0;
 }
 
 #scrollUp {
@@ -1114,9 +1137,17 @@ footer .main > p
 	{
 	    width: 154%;
     }
-    .mobile-hide{
+    .france-discover .mobile-hide{
     	display: none;
     }
+    .france-discover .col-md-6:first-child{
+		padding-left: 15px;
+	}
+
+	.france-discover .col-md-6:last-child{
+		padding-right: 15px;
+	}
+
 }
 
 @media screen and (max-width: 928px){
@@ -1220,7 +1251,7 @@ footer .main > p
 	    font-size: 55px;
 	}
 	.mobile-hide{
-		display: block;
+		display: block; /* not sure what this is displaying */
 	}
 	header{
 		margin: 20px 0;
