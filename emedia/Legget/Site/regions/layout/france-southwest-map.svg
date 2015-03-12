@@ -14,20 +14,18 @@
     #Midi_Pyrennes a:hover path
     {
       fill: rgb(29, 124, 202);
-      stroke: orange;
-      stroke-width: 3px;
     }
     #Aquataine a:hover path
     {
       fill: rgb(72, 172, 244);
-      stroke: orange;
-      stroke-width: 3px;
     }
     #Poitou_Charentes a:hover path
     {
       fill: rgb(81, 145, 245);
+    }
+    a:hover path{
       stroke: orange;
-      stroke-width: 3px;
+      stroke-width: 2px;
     }
   </style>
 

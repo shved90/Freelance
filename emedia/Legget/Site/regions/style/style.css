@@ -248,8 +248,19 @@ header{
 .list-line li
 {
     display: inline-block;
-    line-height: 10px;
-    border-right: 2px solid #505151;
+    margin-right: 15px;
+    position: relative;
+}
+
+.list-line li:after
+{
+    content: "";
+    height: 20px;
+    width: 2px;
+    background-color: #505151;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
 
 .list-line li:first-child a
@@ -257,9 +268,9 @@ header{
     padding-left: 0;
 }
 
-.list-line li:last-child
+.list-line li:last-child:after
 {
-    border: none;
+    display: none;
 }
 
 .list-line li:last-child a
@@ -270,7 +281,7 @@ header{
 .list-line li a
 {
     font-size: 25px;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     font-weight: 700;
 }
 
@@ -902,15 +913,18 @@ footer .main{
 	text-align: center;
 }
 
-footer .main a{
+footer .main span{
 	display: block;
 	color: #fff;
 	font-size: 24px;
 }
 
-footer .main a[href^=tel]{
+footer .main a[href^=tel], footer .main a[href^=tel]:hover
+{
+    color: #fff;
 	font-size: 40px;
 	font-weight: 900;
+	text-decoration: none;
 }
 
 footer .main .socials a{
@@ -978,7 +992,7 @@ footer .main > p
 {
     font-family: Georgia;
     text-align: center;
-    font-size: 60px;
+    font-size: 46px;
 }
 
 .france-discover p
@@ -1281,8 +1295,10 @@ footer .main > p
     }
     .list-line li{
     	display: block;
-    	line-height: 25px;
-    	border: none;
+    }
+    .list-line li:after
+    {
+        display: none;
     }
     .list-line li a{
     	padding: 0;
