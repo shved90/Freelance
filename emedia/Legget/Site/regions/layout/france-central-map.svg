@@ -12,22 +12,12 @@
         text-decoration: underline;
         fill: #fff;
     }
-    #auvergne:hover path
-    {
-      fill: rgb(247, 114, 8);
-    }
-    #burgundy:hover path
-    {
-      fill: rgb(249, 187, 120);
-    }
-    #limousin:hover path
-    {
-      fill: rgb(255, 90, 10);
-    }
-    #centre:hover path
-    {
-      fill: rgb(252, 144, 27);
-    }
+    
+    #auvergne:hover path{fill: rgb(247, 114, 8);}
+    #burgundy:hover path{fill: rgb(249, 187, 120);}
+    #limousin:hover path{fill: rgb(255, 90, 10);}
+    #centre:hover path {fill: rgb(252, 144, 27);}
+    
     a:hover path{
       stroke: #89B2EF;
       stroke-width: 0.4px;

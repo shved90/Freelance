@@ -121,6 +121,11 @@ header{
 	margin-top: 20px;
 }
 
+.landing-regions .breadcrumb, .france-discover .breadcrumb
+{
+    margin-top: 45px;
+}
+
 .breadcrumb li a img{
 	display: block;
 }
@@ -211,6 +216,10 @@ header{
 	color: #c91429;
 }
 
+.list-dots.pink li:before{
+	color: #D6398D;
+}
+
 .list-dots li
 {
     height: 25px;
@@ -237,6 +246,10 @@ header{
 .list-dots.red li a:hover
 {
     color: #c91429;
+}
+
+.list-dots.pink li a:hover{
+	color: #D6398D;
 }
 
 .list-line
@@ -462,7 +475,7 @@ form fieldset p{
 .landing-box p
 {
     line-height: 25px;
-    min-height: 175px;
+    height: 175px;
 }
 
 .landing-box h4
@@ -1005,6 +1018,13 @@ footer .main > p
 	padding: 0;
 }
 
+.france-discover object
+{
+    width: 80%;
+    display: block;
+    margin: 0 auto 50px;
+}
+
 .france-discover .col-md-6:first-child{
 	padding-left: 0;
 }
@@ -1117,6 +1137,10 @@ footer .main > p
 	.navbar {
 		font-size: 16px;
 	}
+	.landing-regions .breadcrumb, .france-discover .breadcrumb
+    {
+        margin-top: 20px;
+    }
 	.container .col-sm-8 {
 		padding-right: 0;
 		margin-right: 0;
