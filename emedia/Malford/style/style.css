@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300);
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Raleway;
+}
+
+header.container{
+	padding: 30px 0 40px;
+}
+
+header .col-sm-3{
+	padding-top: 25px;
+}
+
+header .col-sm-6{
+	text-align: center;
+}
+
+header form input, .basket{
+	background: #fff url(../layout/icon-search.png) no-repeat 10px 5px;
+	padding: 12px 10px 12px 50px;
+	border: 1px solid #c6c6c6;
+	text-transform: uppercase;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+header form input:focus{
+	outline: 1px solid #787878;
+}
+
+header a{
+	color: #787878;
+	font-weight: 500;
+}
+
+header .col-sm-3:last-child{
+	text-align: right;
+}
+
+.basket{
+	background: #fff url(../layout/icon-basket.png) no-repeat 20px 5px;
+	padding: 12px 10px 12px 70px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	display: block;
+}
+
+.basket:hover{
+	border: 1px solid #787878;
+}
+
+.basket p{
+	margin: 0;
+}
+
+.basket p span{
+	font-weight: 700;
+}
+
+.navbar, footer{
+	background-color: #313131;
+	padding: 0;
+}
+
+a, a:hover{
+	text-transform: uppercase;
+	color: #787878;
+}
+
+.navbar-default .navbar-nav li{
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #fff;
+	padding: 14px 0 14px 14px;
+	display: inline-block;
+}
+
+.navbar-default .navbar-nav li a:after{
+	content: "|";
+	padding-left: 14px;
+}
+
+.navbar-default .navbar-nav li:first-child a{
+	padding-left: 0;
+}
+
+.navbar-default .navbar-nav li:last-child a:after{
+	content: "";
+}
+
+.navbar-default .navbar-nav li a:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.container{
+	padding: 0;
+}
+
+.banner img{
+	width: 730px;
+}
+
+.product-promo img, .new-promo img{
+	width: 360px;
+}
