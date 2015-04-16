@@ -403,9 +403,20 @@ a, a:hover{
 	z-index: 10;
 }
 
+.col-md-12{
+	padding: 0;
+}
+
 .product-carousel{
 	text-align: center;
 	color: #000;
+	border: 1px solid #787878;
+	padding-top: 15px;
+	margin: 0 0 30px 0;
+}
+
+.product-carousel img{
+	width: 90%;
 }
 
 .product-carousel p{
@@ -435,7 +446,7 @@ a, a:hover{
 	font-size: 25px;
 	font-weight: 700;
 	width: 210px;
-	margin: 10px auto 0;
+	margin: 10px auto -20px;
 }
 
 .product-carousel a:hover{
@@ -536,7 +547,14 @@ footer form input[type=submit]:hover{
 	.introduction h1{
 		margin-top: 0;
 	}
-	.mobile-hide{display:none;}
+	.clearance h2{
+		font-size: 30px;
+	}
+	.clearance:before {
+		left: 2%;
+		width: 96%;
+	}
+.mobile-hide{display:none;}
 	.mobile-show{display:block;}
 	footer .container > div{margin-bottom: 20px;}
 	footer{text-align: center;}
@@ -565,7 +583,9 @@ footer form input[type=submit]:hover{
 	}
 	.banner-promo h2{font-size:20px; width: auto;}
 	.banner-promo p {font-size: 15px; line-height: 24px;}
-
+	.product-carousel img{
+		width: 70%;
+	}
 	.delivery-box{background: none; padding: 10px;}
 }
 
@@ -573,4 +593,9 @@ footer form input[type=submit]:hover{
 	.promotional{height: 520px;}
 	.product-promo{margin-bottom:60px;}
 	.product-promo a{top: 60%;}
+	.product-carousel img{width: 90%;}
+	.clearance:before {
+		left: 3%;
+		width: 94%;
+	}
 }
