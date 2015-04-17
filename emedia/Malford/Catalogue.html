@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Malford Catalogue</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link href="layout/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+
+	<link rel="stylesheet" href="style/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 1000,
+                values: [0, 1000],
+                slide: function (event, ui) {
+                    $("#amount").val("£" + ui.values[0] + " - £" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+      " - $" + $("#slider-range").slider("values", 1));
+        });
+  </script>
+
+</head>
+
+<body>
+	<header class="container">
+		<div class="col-sm-6 mobile-show">
+			<img class="logo" src="layout/logo.jpg" />
+		</div>
+		<div class="col-sm-3">
+			<form>
+				<input type="search" value="search store" />
+			</form>
+			<a href="">Blog</a>/<a href="">Contact us</a>
+		</div>
+		<div class="col-sm-6 mobile-hide">
+			<img class="logo" src="layout/logo.jpg" />
+		</div>
+		<div class="col-sm-3">
+			<a href="" class="basket">
+				<p>Your bag: <span>£100.000</span></p>
+			</a>
+			<a href="">Sign in</a>/<a href="">Register</a>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-default container-fluid">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="main-nav">
+				<ul class="nav navbar-nav">
+					<li><a href="">What's new</a></li>
+					<li><a href="">Ties</a></li>
+					<li><a href="">Pocket squares</a></li>
+					<li><a href="">Suits</a></li>
+					<li><a href="">Jackets</a></li>
+					<li><a href="">Outerwear</a></li>
+					<li><a href="">Trousers & jeans</a></li>
+					<li><a href="">Knitwear</a></li>
+					<li><a href="">Shoes</a></li>
+					<li><a href="">Accessories</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		
+	<div class="container">
+
+        <div class="col-md-3">
+        
+            <p>
+                <label for="amount">Price range:</label>
+                <input type="text" id="amount" readonly style="border:0; font-weight:bold;">
+            </p>
+            <div id="slider-range"></div>
+
+            <div class="promotional">
+			    <p>Get an additional</p>
+			    <p class="large">30%<span>off</span></p>
+			    <p>when you spend<br />over £100</p>
+			    <hr />
+			    <p>Use the code<strong>sale30</strong>at the checkout</p>
+			    <a href="">shop now</a>
+		    </div>
+
+            <div class="delivery-box">
+				<h4>WORLDWIDE DELIVERY</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+			</div>
+ 
+        </div>
+
+		<div class="col-md-9">
+            <div class="row">
+			    <div class="banner">
+				    <img src="layout/banner-wallet.jpg" />
+				    <div class="banner-promo">
+					    <h2>Ettinger Wallet</h2>
+					    <p>Luxury traditional wallets
+					    Handmade in bridle leather
+					    <strong>Discount of up to 70%</strong></p>
+				    </div>
+			    </div>
+            </div>
+
+            <div class="row">
+            <div class="col-md-3 product-carousel" data-price="316.40">
+				<img src="layout/wallet.jpg" />
+				<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+				<p class="price">£60.00<span>RRP £155.00</span></p>
+				<a href="">shop now</a>
+			</div>
+			<div class="col-md-3" data-price="716.40">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+                        <div class="col-md-3" data-price="316.40">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+			<div class="col-md-3" data-price="716.40">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+                        <div class="col-md-3" data-price="316.40">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+			<div class="col-md-3" data-price="716.40">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="product-carousel">
+					<img src="layout/wallet.jpg" />
+					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
+					<p class="price">£60.00<span>RRP £155.00</span></p>
+					<a href="">shop now</a>
+				</div>
+			</div>
+            </div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="clearance">
+				<h2>-Visit our clearance section-</h2>
+				<p>Massive discounts on designer wear</p>
+				<a href="">Shop now</a>
+			</div>
+			</div>
+		</div>
+
+	</div> <!-- Container END -->
+
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="col-sm-2">
+				<h3>Information</h3>
+				<a href="">Contact</a>
+				<a href="">About us</a>
+				<a href="">Delivery</a>
+				<a href="">Refunds / Exchanges</a>
+				<a href="">Privacy Policy</a>
+				<a href="">Terms and Conditions</a>
+			</div>
+			<div class="col-sm-2">
+				<h3>Account</h3>
+				<a href="">Your Account</a>
+				<a href="">Personal information</a>
+				<a href="">Addresses</a>
+				<a href="">Discount</a>
+				<a href="">Order history</a>
+			</div>
+			<div class="col-sm-2">
+				<h3>Shop</h3>
+				<a href="">New Products</a>
+				<a href="">Manufacturers</a>
+				<a href="">Clearance</a>
+				<a href="">Featured Products</a>
+				<a href="">Special Offers</a>
+			</div>
+			<div class="col-sm-4 col-lg-offset-2 col-md-offset-2">
+				<h3>SIGN UP FOR LATEST NEWS</h3>
+				<form>
+					<input type="text">
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+		</div> <!-- col 12 END -->
+	</div> <!-- container END -->
+</body>
+
+</html>
