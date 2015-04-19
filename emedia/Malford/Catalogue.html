@@ -5,8 +5,8 @@
 	<title>Malford Catalogue</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="layout/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+    <link href="layout/faviconn.png" type="image/x-icon" rel="icon" />
+    <link href="layout/favicon.png" type="image/x-icon" rel="shortcut icon" /> 
 
 	<link rel="stylesheet" href="style/bootstrap.min.css">
 	<link rel="stylesheet" href="style/style.css">
@@ -27,8 +27,8 @@
                     $("#amount").val("£" + ui.values[0] + " - £" + ui.values[1]);
                 }
             });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-      " - $" + $("#slider-range").slider("values", 1));
+            $("#amount").val("£" + $("#slider-range").slider("values", 0) +
+      " - £" + $("#slider-range").slider("values", 1));
         });
   </script>
 
@@ -56,7 +56,7 @@
 		</div>
 	</header>
 
-	<nav class="navbar navbar-default container-fluid">
+	<nav class="navbar navbar-default container-fluid main-nav">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
@@ -65,6 +65,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<a class="navbar-brand" href="#">Navigation</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="main-nav">
@@ -83,18 +84,83 @@
 			</div>
 		</div>
 	</nav>
-		
+
 	<div class="container">
 
-        <div class="col-md-3">
-        
-            <p>
-                <label for="amount">Price range:</label>
-                <input type="text" id="amount" readonly style="border:0; font-weight:bold;">
-            </p>
-            <div id="slider-range"></div>
+        <div class="col-md-3 left-nav">
 
-            <div class="promotional">
+    		<nav class="navbar navbar-default container-fluid secondary-nav">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#secondary-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h2 class="navbar-brand">Catalogue</h2>
+					</div>
+
+					<div class="collapse navbar-collapse" id="secondary-nav">
+						<form action="">
+							<fieldset class="dropdown">
+								<legend class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories</legend>
+								<fieldset class="dropdown-menu" role="menu">
+									<div><input type="checkbox" name="Gant" value="Gant" id="Gant"><label for="Gant">Gant (1)</label></div>
+									<div><input type="checkbox" name="Gieves & Hawkes" value="Gieves & Hawkes" id="Gieves & Hawkes"><label for="Gieves & Hawkes">Gieves & Hawkes (3)</label></div>
+									<div><input type="checkbox" name="Paul Smith" value="Paul Smith" id="Paul Smith"><label for="Paul Smith">Paul Smith (1)</label></div>
+									<div><input type="checkbox" name="Ralph Lauren" value="Ralph Lauren" id="Ralph Lauren"><label for="Ralph Lauren">Ralph Lauren (1)</label></div>
+									<div><input type="checkbox" name="Ede & Ravenscroft" value="Ede & Ravenscroft" id="Ede & Ravenscroft"><label for="Ede & Ravenscroft">Ede & Ravenscroft (1)</label></div>
+									<div><input type="checkbox" name="Burberry" value="Burberry" id="Burberry"><label for="Burberry">Burberry (1)</label></div>
+									<div><input type="checkbox" name="Rake" value="Rake" id="Rake"><label for="Rake">Rake (1)</label></div>
+									<div><input type="checkbox" name="Brioni" value="Brioni" id="Brioni"><label for="Brioni">Brioni (1)</label></div>
+								</fieldset>
+							</fieldset>
+							<fieldset class="dropdown">
+								<legend class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Availability</legend>
+								<fieldset class="dropdown-menu" role="menu">
+								<div><input type="checkbox" name="Not Available" value="Not Available" id="Not Available"><label for="Not Available">Not Available (2)</label></div>
+								<div><input type="checkbox" name="In Stock" value="In Stock" id="In Stock"><label for="In Stock">In Stock (21)</label></div>
+								</fieldset>
+							</fieldset>
+							<fieldset class="dropdown">
+								<legend class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manufacturer</legend>
+								<fieldset class="dropdown-menu" role="menu">
+									<div><input type="checkbox" name="M-Gant" value="M-Gant" id="M-Gant"><label for="M-Gant">Gant (1)</label></div>
+									<div><input type="checkbox" name="Gieves & Hawkes" value="Gieves & Hawkes" id="Gieves & Hawkes"><label for="Gieves & Hawkes">Gieves & Hawkes (3)</label></div>
+									<div><input type="checkbox" name="Paul Smith" value="Paul Smith" id="Paul Smith"><label for="Paul Smith">Paul Smith (1)</label></div>
+									<div><input type="checkbox" name="Ralph Lauren" value="Ralph Lauren" id="Ralph Lauren"><label for="Ralph Lauren">Ralph Lauren (1)</label></div>
+									<div><input type="checkbox" name="Ede & Ravenscroft" value="Ede & Ravenscroft" id="Ede & Ravenscroft"><label for="Ede & Ravenscroft">Ede & Ravenscroft (1)</label></div>
+									<div><input type="checkbox" name="Burberry" value="Burberry" id="Burberry"><label for="Burberry">Burberry (1)</label></div>
+									<div><input type="checkbox" name="Rake" value="Rake" id="Rake"><label for="Rake">Rake (1)</label></div>
+									<div><input type="checkbox" name="Brioni" value="Brioni" id="Brioni"><label for="Brioni">Brioni (1)</label></div>
+								</fieldset>
+							</fieldset>
+							<fieldset class="dropdown">
+								<legend class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Price</legend>
+								<fieldset class="dropdown-menu" role="menu">
+									<label for="amount">Range:</label>
+	                				<input type="text" id="amount" readonly style="border:0; font-weight:bold;">
+	                				<div id="slider-range"></div>
+								</fieldset>
+							</fieldset>
+							<fieldset class="dropdown">
+								<legend class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Size</legend>
+								<fieldset class="dropdown-menu" role="menu">
+									<div><input type="checkbox" name="38R" value="38R" id="38R"><label for="38R">38R (1)</label></div>
+									<div><input type="checkbox" name="40R" value="40R" id="40R"><label for="40R">40R (1)</label></div>
+									<div><input type="checkbox" name="42R" value="42R" id="42R"><label for="42R">42R (1)</label></div>
+									<div><input type="checkbox" name="44R" value="44R" id="44R"><label for="44R">44R (1)</label></div>
+									<div><input type="checkbox" name="46R" value="46R" id="46R"><label for="46R">46R (1)</label></div>
+									<div><input type="checkbox" name="Extra Large" value="Extra Large" id="Extra Large"><label for="Extra Large">Extra Large (1)</label></div>
+									<div><input type="checkbox" name="Medium" value="Medium" id="Medium"><label for="Medium">Medium (1)</label></div>
+									<div><input type="checkbox" name="Large" value="Large" id="Large"><label for="Large">Large (1)</label></div>
+								</fieldset>
+							</fieldset>
+						</form>
+				</div>
+			</nav>
+
+            <div class="promotional small">
 			    <p>Get an additional</p>
 			    <p class="large">30%<span>off</span></p>
 			    <p>when you spend<br />over £100</p>
@@ -105,6 +171,7 @@
 
             <div class="delivery-box">
 				<h4>WORLDWIDE DELIVERY</h4>
+				<img src="layout/icon-delivery.png" width="140"/>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
 			</div>
  
@@ -113,98 +180,104 @@
 		<div class="col-md-9">
             <div class="row">
 			    <div class="banner">
-				    <img src="layout/banner-wallet.jpg" />
+				    <img src="layout/banner-small.jpg" />
 				    <div class="banner-promo">
-					    <h2>Ettinger Wallet</h2>
-					    <p>Luxury traditional wallets
-					    Handmade in bridle leather
-					    <strong>Discount of up to 70%</strong></p>
+					    <h2>Wallets</h2>
 				    </div>
 			    </div>
             </div>
 
-            <div class="row">
-            <div class="col-md-3 product-carousel" data-price="316.40">
-				<img src="layout/wallet.jpg" />
-				<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
-				<p class="price">£60.00<span>RRP £155.00</span></p>
-				<a href="">shop now</a>
-			</div>
-			<div class="col-md-3" data-price="716.40">
-				<div class="product-carousel">
+			<div class="row">
+				<div class="col-md-12">
+					<form class="sorting-form">
+						<label for="Sort by">Sort by</label>
+						<select id="Sort by" name="sort by">
+							<option value="date_add:desc" selected="selected">--</option>
+							<option value="price:asc">Price: Lowest first</option>
+							<option value="price:desc">Price: Highest first</option>
+							<option value="name:asc">Product Name: A to Z</option>
+							<option value="name:desc">Product Name: Z to A</option>
+							<option value="quantity:desc">In stock</option>
+							<option value="reference:desc">Reference: Highest first</option>
+							<option value="date_add:desc">Date: Date added</option>
+						</select>
+						<label for="show">Show</label>
+						<select id="show" name="show">
+							<option value="12">12</option>
+							<option value="36">36</option>
+							<option value="60">60</option>
+							<option value="all">all</option>
+						</select>
+					</form>
+					<div class="viewchanger">
+						<p>View:</p>
+						<div class="grid active">Grid</div>
+						<div class="list">List</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="product-carousel">
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-                        <div class="col-md-3" data-price="316.40">
-				<div class="product-carousel">
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-			<div class="col-md-3" data-price="716.40">
-				<div class="product-carousel">
+
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="product-carousel">
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-                        <div class="col-md-3" data-price="316.40">
-				<div class="product-carousel">
+				<div class="col-md-4 product-catalogue">
 					<img src="layout/wallet.jpg" />
 					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
 					<p class="price">£60.00<span>RRP £155.00</span></p>
 					<a href="">shop now</a>
 				</div>
-			</div>
-			<div class="col-md-3" data-price="716.40">
-				<div class="product-carousel">
-					<img src="layout/wallet.jpg" />
-					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
-					<p class="price">£60.00<span>RRP £155.00</span></p>
-					<a href="">shop now</a>
+
+				<div class="col-md-12">
+					<div class="catalogue-nav">
+						<p>Showing 1 - 12 of 34 items</p>
+						<div>
+							<p>< Previous</p>
+							<button>1</button>
+							<button>2</button>
+							<button>3</button>
+							<p>Next ></p>
+						</div>
+						<button>Show All</button>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="product-carousel">
-					<img src="layout/wallet.jpg" />
-					<p>Richard James £155 English Handmade Black / Pink Punch Hole Billfold Wallet</p>
-					<p class="price">£60.00<span>RRP £155.00</span></p>
-					<a href="">shop now</a>
-				</div>
-			</div>
             </div>
 		</div>
 
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-sm-12">
 				<div class="clearance">
-				<h2>-Visit our clearance section-</h2>
-				<p>Massive discounts on designer wear</p>
-				<a href="">Shop now</a>
-			</div>
+					<h2>-Visit our clearance section-</h2>
+					<p>Massive discounts on designer wear</p>
+					<a href="">Shop now</a>
+				</div>
 			</div>
 		</div>
 
