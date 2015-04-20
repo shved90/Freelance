@@ -224,6 +224,27 @@ a, a:hover{
 	font-weight: 600;
 }
 
+.catalogue-nav
+{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.catalogue-nav p:first-child
+{
+    float: left;
+}
+
+.catalogue-nav p, .catalogue-nav div
+{
+    display: inline-block;
+}
+
+.catalogue-nav div
+{
+    margin-right: 40px;
+}
+
 .row{
 	padding-bottom: 25px;
 }
@@ -636,6 +657,15 @@ a, a:hover{
 
 .product-catalogue{
 	border: none;
+}
+
+.product-catalogue p
+{
+    width: auto;
+}
+
+.product-catalogue{
+	margin: 0 0 50px 0;
 }
 
 footer{
