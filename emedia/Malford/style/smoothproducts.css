@@ -25,7 +25,6 @@ html, body {
 	font-size: 0;
 	position: relative;
 	margin: 0 25px 15px 0;
-	float: left;
 	/**************
 	  Set max-width to your thumbnail width
 	***************/
@@ -38,6 +37,7 @@ html, body {
 .sp-thumbs {
 	text-align: center;
 }
+
 .sp-thumbs img {
 	min-height: 75px;
 	min-width: 75px;
@@ -59,6 +59,11 @@ html, body {
 	-ms-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
+}
+
+.sp-thumbs a
+{
+    margin-top: 10px !important;
 }
 
 .sp-thumbs a.sp-current{
@@ -83,6 +88,7 @@ html, body {
 	overflow: hidden;
 	top: 0;
 	left: 0;
+	margin-bottom: 10px;
 }
 .sp-large a img {
 	max-width: 100%;

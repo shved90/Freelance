@@ -185,7 +185,8 @@ a, a:hover{
 
 .socials{
 	display: inline-block;
-	margin: 0;
+	margin: 15px 0 0 0;
+	float:right;
 }
 
 .socials .twitter, .socials .facebook, .socials .google, .socials .pinterest{
@@ -276,6 +277,20 @@ a, a:hover{
 	text-transform: none;
 	margin: 0 5px;
 	display: inline-block;
+}
+
+.panel-default>.panel-heading
+{
+    background-color: #fff;
+    padding: 0;
+}
+
+.panel-default>.panel-heading a
+{
+    display: block;
+    padding: 15px;
+    font-weight: 900;
+    color: #000;
 }
 
 .row{
@@ -669,6 +684,12 @@ a, a:hover{
 	display: block;
 }
 
+.price.small
+{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
 .product-carousel a, .product-catalogue a{
 	display: block;
 	padding: 5px 10px;
@@ -699,6 +720,67 @@ a, a:hover{
 
 .product-catalogue{
 	margin: 0 0 50px 0;
+}
+
+.product-form label
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.product-title
+{
+    text-align: center;
+    font-weight: 900;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 34px;
+}
+
+.small-title
+{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.product-form div
+{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    color: #dbdbdb;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+}
+
+.product-form div:first-child
+{
+    line-height: 20px;
+}
+
+.product-form input[type=text]
+{
+    width: 70px;
+}
+
+.product-form input[type=submit]
+{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    padding: 7px 25px;
+    margin: 40px 0;
 }
 
 footer{
@@ -795,6 +877,31 @@ footer form input[type=submit]:hover{
 	.catalogue.container .col-md-9 .col-md-4{
 		display: inline-block;
 		width: 48%;
+	}
+	.price
+	{
+	    display: inline-block;
+	}
+	.price.small
+	{
+	    float: right;
+	}
+	.col-md-7
+	{
+	    text-align: center;
+	}
+	.socials.mobile-hide
+	{
+	    display: none;
+	}
+	.socials.mobile-show
+	{
+	    display: block;
+	}
+	.product-form input[type=submit]
+	{
+	    float: right;
+        margin: -25px 0 0 0;
 	}
 }
 
@@ -943,6 +1050,35 @@ footer form input[type=submit]:hover{
 		display: none;
 	}
 	.delivery-box{background: none; padding: 10px;}
+	
+	.price
+	{
+	    display: block;
+	}
+	.price.small
+	{
+	    float: none;
+	}
+	.col-md-7, .col-md-5
+	{
+	    text-align: center;
+	}
+	.socials.mobile-hide
+	{
+	    display: none;
+	}
+	.socials.mobile-show
+	{
+	    display: block;
+	    margin: -10px 0 20px;
+	    float: none;
+	}
+	.product-form input[type=submit]
+	{
+	    float: none;
+	    display: block;
+        margin: 20px auto;
+	}
 }
 
 @media (max-width: 370px) {
