@@ -1,11 +1,294 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 html, body{
 	margin: 0;
 	padding: 0;
-	font-family: Raleway;
+	font-family: Montserrat;
 }
 
-.slide1 {
+.container-fluid.red{
+	background-color: #a51143;
+}
+
+.container-fluid.darkgrey{
+	background-color: #12121e;
+}
+
+header{
+	padding: 5px 0;
+}
+
+header .col-md-4 img{
+	width: 250px;
+}
+
+header .col-md-8{
+	text-align: right;
+}
+
+header .participate a{
+	color: #000;
+	text-transform: uppercase;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 7px 15px;
+}
+
+header .participate span a{
+	padding-left: 0;
+}
+
+header .participate span a:first-child{
+	padding-right: 0;
+	padding-left: 15px;
+}
+
+header .participate .linkedin{
+	background-image: url(../layout/linkedin.png);
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+}
+
+header .col-md-8 div:last-child, header .col-md-8  div:last-child a{
+	color: #a51142;
+}
+
+header .col-md-8  div:last-child a{
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+nav.navbar{
+	text-align: right;
+	margin: 0;
+}
+
+.navbar-nav{
+	float: none;
+	padding: 10px 0 5px;
+	display: inline-block;
+}
+
+.navbar-nav li:first-child a{
+	text-indent: 2999px;
+	overflow: hidden;
+	background: url(../layout/house.png) no-repeat center center;
+	width: 50px;
+}
+
+#main-nav{
+	display: inline-block !important;
+	color: #fff;
+}
+
+.nav > li > a{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.nav > li > a:hover{
+	background-color: #12121e;
+}
+
+.navbar > img{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 8px;
+}
+
+.navbar > input{
+	background: #a51143 url(../layout/icon-search.png) no-repeat right 5px;
+	color: #fff;
+	padding: 12px 50px 12px 10px;
+	border: none;
+	text-transform: uppercase;
+	width: 50px;
+	box-sizing: border-box;
+	font-size: 13px;
+	font-weight: 600;
+	vertical-align: top;
+	margin: 15px 15px 0 0;
+	transition: all 1s ease;
+}
+
+.navbar > input:focus{
+	width: 200px;
+	border-bottom:1px solid #fff;
+	transition: all 1s ease;
+	outline: none;
+}
+
+.newsticker p{
+	padding: 15px 0;
+	color: #fff;
+	margin: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.image-bg-fluid-height {
 	background: url('../layout/banner.jpg') no-repeat top left scroll;
 	background-size: 100% 100%;
-	min-height: 700px;
+	min-height: 730px;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.image-bg-fluid-height .dropdown{
+	width: 300px;
+	background-color: #a51143;
+	margin-top: 20px;
+}
+
+.image-bg-fluid-height .dropdown .dropdown-toggle{
+	border: none;
+	background-color: #a51143;
+	color: #fff;
+	width: 100%;
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+.image-bg-fluid-height .dropdown .dropdown-menu{
+	width: 300px;
+	background-color: #a51143;
+	border-radius: 0;
+	border: none;
+	border-top: 1px solid #fff;
+	margin: 0;
+}
+
+.image-bg-fluid-height .dropdown .dropdown-menu li a{
+	color: #fff;
+	padding: 7px 20px;
+}
+
+.image-bg-fluid-height .dropdown .dropdown-menu li a:hover{
+	text-decoration: underline;
+	background-color: #a51143;
+}
+
+h1{
+	font-size: 60px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.pink-header{
+	color: #e598b1;
+	letter-spacing: 3px;
+	font-size :22px;
+}
+
+.banner-content p{
+	width: 700px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.banner-content span a:first-child{
+	display: block;
+	color: #fff;
+	font-weight: 700;
+	margin: 20px 0 0 0;
+}
+
+.button-red{
+	display: inline-block;
+	box-sizing: border-box;
+	background: url(../layout/buttons.png) no-repeat 0 0;
+	width: 215px;
+	height: 52px;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.button-red:hover{
+	background-position: 0 -52px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.banner-content span .button-red{
+	margin: 20px 20px 0 0;
+}
+
+.sharethis{
+	margin-top: 25px;
+}
+
+.sharethis .pink-header{
+	font-size: 16px;
+}
+
+.sharethis .linkedin, .sharethis .twitter, .sharethis .other{
+	background-image: url(../layout/linkedin-red.png);
+	display: inline-block;
+	width: 49px;
+	height: 47px;
+	margin-right: 10px;
+}
+
+.sharethis .twitter{
+	background-image: url(../layout/twitter-red.png);
+	width: 47px;
+}
+
+.sharethis .other{
+	background-image: url(../layout/other-red.png);
+	width: 49px;
+}
+
+.sharethis div{
+	float: right;
+	margin-top: -100px;
+}
+
+.sharethis div p{
+	text-align: center;
+	font-weight: 18px;
+	letter-spacing: 2px
+}
+
+.banner-footer-nav{
+	margin: 20px 0 0 0;
+}
+
+.banner-footer-nav a{
+	display: inline-block;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.earlybird{
+	position: absolute;
+	top: 0;
+	right: -300px;
+	width: 800px;
+	height: 100%;
+	background: url(../layout/corner.png) no-repeat top left;
+	overflow: hidden;
+	text-align: right;
+}
+
+.earlybird p{
+	font-size: 50px;
+	font-weight: 700;
+	width: 300px;
+	position: absolute;
+	left:150px;
+}
+
+.earlybird p span{
+	display: block;
+	width: 300px;
+	font-weight: 400;
+	font-size: 16px;
 }
