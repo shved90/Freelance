@@ -216,6 +216,19 @@ h1{
 	text-decoration: none;
 }
 
+.button-white
+{
+    display: inline-block;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000;
+	text-align: center;
+	line-height: 48px;
+	text-transform: uppercase;
+	width: 250px;
+}
 .banner-content span .button-red{
 	margin: 20px 20px 0 0;
 }
@@ -291,4 +304,163 @@ h1{
 	width: 300px;
 	font-weight: 400;
 	font-size: 16px;
+}
+
+#overview .col-md-6 img
+{
+    width: 100%;
+}
+
+.panel.panel-default
+{
+    border: none;
+}
+
+.panel-default>.panel-heading
+{
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 0;
+}
+
+.panel-default>.panel-heading a
+{
+    display: block;
+    padding: 15px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.panel-default>.panel-heading a:before
+{
+    content: "-";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    color: #000;
+}
+
+.panel-default>.panel-heading a.collapsed:before
+{
+    content: "+";
+}
+
+#speakers
+{
+    margin-top: 40px;
+}
+
+#speakers h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+#keynote-slider, #sponsors-slider, #exhibitors-slider
+{
+    position: relative;
+}
+
+#keynote-slider .owl-buttons,
+#sponsors-slider .owl-buttons,
+#exhibitors-slider .owl-buttons
+{
+    position: absolute;
+    width: 100%;
+    top: 270px;
+    left: -20px;
+    font-size: 50px;
+    font-family: arial;
+}
+
+#sponsors-slider .owl-buttons,
+#exhibitors-slider .owl-buttons
+{
+    top: -20px;
+}
+
+#sponsors-slider .owl-item,
+#exhibitors-slider .owl-item
+{
+    text-align: center;
+}
+
+#keynote-slider .owl-buttons .owl-prev,
+#sponsors-slider .owl-buttons .owl-prev,
+#exhibitors-slider .owl-buttons .owl-prev
+{
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+
+#keynote-slider .owl-buttons .owl-next,
+#sponsors-slider .owl-buttons .owl-next,
+#exhibitors-slider .owl-buttons .owl-next
+{
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+#speakers .keynote-speaker img
+{
+    width: 100%;
+}
+
+#speakers .keynote-speaker
+{
+    width: 90%;
+}
+
+#speakers .keynote-speaker div
+{
+    background-color: #a51143;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#speakers .keynote-speaker div h3
+{
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+#speakers .keynote-speaker div hr
+{
+    margin: 10px -20px;
+}
+
+#speakers .keynote-speaker div p
+{
+    font-size: 10px;
+}
+
+.lead-sponsor, .sponsors, .exhibitors
+{
+    margin-top: 60px;
+}
+
+.lead-sponsor img
+{
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.lead-sponsor p
+{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#speakers .sponsors h2, #speakers .exhibitors h2
+{
+    margin-bottom: 60px;
 }
