@@ -26,7 +26,7 @@ header .col-md-8{
 	text-align: right;
 }
 
-header .participate a{
+.participate a{
 	color: #000;
 	text-transform: uppercase;
 	line-height: 30px;
@@ -35,16 +35,16 @@ header .participate a{
 	padding: 7px 15px;
 }
 
-header .participate span a{
+.participate span a{
 	padding-left: 0;
 }
 
-header .participate span a:first-child{
+.participate span a:first-child{
 	padding-right: 0;
 	padding-left: 15px;
 }
 
-header .participate .linkedin{
+.participate .linkedin{
 	background-image: url(../layout/linkedin.png);
 	display: inline-block;
 	width: 27px;
@@ -79,7 +79,7 @@ nav.navbar{
 }
 
 #main-nav{
-	display: inline-block !important;
+	float: left;
 	color: #fff;
 }
 
@@ -198,7 +198,7 @@ h1{
 	margin: 20px 0 0 0;
 }
 
-.button-red{
+.button-red, .button-blue{
 	display: inline-block;
 	box-sizing: border-box;
 	background: url(../layout/buttons.png) no-repeat 0 0;
@@ -208,6 +208,12 @@ h1{
 	text-align: center;
 	line-height: 48px;
 	text-transform: uppercase;
+}
+
+.button-blue:hover{
+	background-position: 0 -104px;
+	color: #fff;
+	text-decoration: none;
 }
 
 .button-red:hover{
@@ -228,8 +234,18 @@ h1{
 	line-height: 48px;
 	text-transform: uppercase;
 	width: 250px;
+	margin: 10px 0 0 0;
+	-webkit-box-shadow: 0px 3px 1px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 3px 1px rgba(50, 50, 50, 1);
+	box-shadow:         0px 3px 1px rgba(50, 50, 50, 1);
 }
-.banner-content span .button-red{
+
+.button-white:hover{
+	color: #fff;
+	background-color: #a51143;
+	text-decoration: none;
+}
+span .button-red, span .button-blue{
 	margin: 20px 20px 0 0;
 }
 
@@ -354,11 +370,11 @@ h1{
     margin-top: 40px;
 }
 
-#speakers h2
+h2
 {
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 40px 0;
+    margin: 0 0 60px 0;
 }
 
 #keynote-slider, #sponsors-slider, #exhibitors-slider
@@ -372,7 +388,7 @@ h1{
 {
     position: absolute;
     width: 100%;
-    top: 270px;
+    top: 40%;
     left: -20px;
     font-size: 50px;
     font-family: arial;
@@ -460,7 +476,253 @@ h1{
     margin: 0 auto;
 }
 
-#speakers .sponsors h2, #speakers .exhibitors h2
-{
-    margin-bottom: 60px;
+.buttons{
+	text-align: center;
+	margin: 20px 0;
+}
+
+.container-fluid.grey{
+	background-color: #f3f3f3;
+}
+
+#programme h2{
+	margin-top: 50px;
+}
+
+.tabpanel{
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.nav-tabs{
+	border: none;
+	text-align: center;
+	margin: 0 auto 40px;
+}
+
+.nav-tabs li{
+	float: none;
+	display: inline-block;
+	width: 150px;
+	border: none;
+	border-radius: 3px;
+	color: #a51142;
+	background-color: #f3f3f3;
+	margin: 0 10px;
+}
+
+.nav-tabs li.active{
+	background-color: #a51142;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus, .nav-tabs>li>a:hover {
+	color: #fff;
+	cursor: default;
+	background-color: #a51142;
+	border-radius: 3px;
+	border: 1px solid #a51142;
+}
+
+.nav-tabs>li>a {
+	color: #a51142;
+	padding: 15px 10px;
+	font-weight: 700;
+	border: 1px solid #a51142;
+	border-radius: 3px;
+}
+
+.event h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.event h3 span{
+	color: #a51142;
+}
+
+.event div{
+	clear: both;
+	min-height: 130px;
+}
+
+.event img{
+	float: left;
+	padding: 0 40px 30px 0;
+}
+
+.strip{
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+.strip h2{
+	margin: 30px 0;
+}
+
+.strip .col-md-3{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.strip .col-md-3 h3{
+	font-size: 22px;
+}
+
+.strip .col-md-3 img{
+	width: 100%;
+}
+
+.strip .col-md-4 a{
+	color: #fff;
+}
+
+.strip{
+	color: #000;
+	padding-bottom: 40px;
+}
+
+.strip .col-md-3 a{
+	color: #000;
+}
+
+.strip.red .col-md-3 a, .strip.red .col-md-3 h3, .strip.red h2{
+	color: #fff;
+}
+
+
+#partner img{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+#map h1{
+	font-size: 50px;
+}
+
+#map iframe{
+	width: 100%;
+	height: 400px;
+	margin: 0;
+}
+
+.grey-box{
+	background-color: #161928;
+	height: 105px;
+	padding-top: 10px;
+	margin: -5px auto 0;
+	text-align: center;
+}
+
+#map .sharethis .linkedin, #map .sharethis .twitter, #map .sharethis .other{
+	background-image: url(../layout/linkedin-white.png);
+	display: inline-block;
+	width: 48px;
+	height: 47px;
+	margin-right: 10px;
+}
+
+#map .sharethis .twitter{
+	background-image: url(../layout/twitter-white.png);
+	width: 49px;
+}
+
+#map .sharethis .other{
+	background-image: url(../layout/other-white.png);
+	width: 49px;
+}
+
+.strip .col-md-4{
+	text-align: center;
+}
+
+.strip .col-md-4 div a{
+	display: block;
+	color: #000;
+}
+
+.advert img{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.darkgrey{
+	background-color: #0f101b;
+}
+
+.darkgrey > hr{
+	margin: 10px -15px;
+	border-color: #1b1c27;
+}
+
+.darkgrey > p{
+	padding: 10px 0;
+	margin: 10px auto;
+	text-align: center;
+	color: #808190;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+footer{
+	padding: 40px 0 0 0;
+}
+
+footer .contact-details span, footer .contact-details a{
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0 0 10px 20px;
+}
+
+footer .participate a{
+	color: #a51142;
+	font-weight: 700;
+}
+
+footer .navbar-nav{
+	padding: 0;
+}
+
+footer .navbar-nav a:hover{
+	background: #fff;
+	color: #0f101b;
+}
+
+.follow{
+	float: right;
+	margin-top: -40px;
+}
+
+.follow p{
+	color: #fff;
+	font-size: 18px;
+}
+
+footer .linkedin, footer .twitter{
+	background-image: url(../layout/linkedin-grey.jpg);
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	margin-right: 10px;
+}
+
+footer .twitter{
+	background-image: url(../layout/twitter-grey.jpg);
+	width: 48px;
+}
+
+}
+
+@media all (max-width: 767px;){
+	#main-nav.collapse{
+	display: none !important;
+	}
+	.earlybird{
+		display: none;
+	}
 }
