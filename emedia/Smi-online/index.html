@@ -71,9 +71,28 @@
     </div>
 
     <div class="container-fluid darkgrey">
-        <div class="container newsticker">
-            <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
+        <div class="container">
+            <div class="newsticker">
+                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
+                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
+                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
+                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
+            </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $(".newsticker").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    slideSpeed: 600,
+                    pagination: false,
+                    navigation: false,
+                    stopOnHover: true,
+                    items: 1,
+                    itemsDesktop: [1199, 1],
+                    itemsDesktopSmall: [979, 1]
+                });
+            });
+        </script>
     </div>
 
     <div class="image-bg-fluid-height" id="intro">
@@ -86,9 +105,11 @@
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#overview">Overview</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#speakers">Keynote Speakers</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#programme">programme</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#workshops">Workshops</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#map">map</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#downloads">Downloads</a></li>
                 </ul>
             </div>
             
@@ -97,9 +118,9 @@
                 <h3 class="pink-header">25th March to 26th March 2015, <br />VENUE NAME<br />London, United Kingdom</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                 <span>
-                    <a href="">save this event</a>
+                    <a href="" class="save-event"><span>+</span>save this event</a>
                     <a href="" class="button-red">register</a>
-                    <a href="" class="button-red">donwload brochure</a>
+                    <a href="" class="button-red">download brochure</a>
                     <br />
                     <a href="" class="button-red">sponsor or exhibit</a>
                     <a href="" class="button-red">download centre</a>
@@ -114,18 +135,6 @@
                     <p>lead sponsor</p>
                     <img src="layout/vocality.png" alt="vocality" />
                 </div>
-            </div>
-            <div class="banner-footer-nav">
-                <a href="#overview">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
-                <a href="">Overview</a>
             </div>
         </div>
         <div class="earlybird">

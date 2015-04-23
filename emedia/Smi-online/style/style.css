@@ -78,6 +78,10 @@ nav.navbar{
 	width: 50px;
 }
 
+footer .navbar-nav li:first-child a:hover{
+	background: #fff url(../layout/house-black.png) no-repeat center center;
+}
+
 #main-nav{
 	float: left;
 	color: #fff;
@@ -253,8 +257,21 @@ span .button-red, span .button-blue{
 	margin-top: 25px;
 }
 
-.sharethis .pink-header{
+.save-event{
+	font-size: 12px;
+	background-color: #a51143;
+	color: #fff;
+	display: inline-block;
+	width: 150px;
+	padding: 5px 3px 3px 3px;
+	vertical-align: middle;
+}
+
+.save-event span{
 	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
 }
 
 .sharethis .linkedin, .sharethis .twitter, .sharethis .other{
@@ -284,16 +301,6 @@ span .button-red, span .button-blue{
 	text-align: center;
 	font-weight: 18px;
 	letter-spacing: 2px
-}
-
-.banner-footer-nav{
-	margin: 20px 0 0 0;
-}
-
-.banner-footer-nav a{
-	display: inline-block;
-	margin-right: 20px;
-	color: #fff;
 }
 
 .earlybird{
