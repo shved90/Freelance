@@ -253,10 +253,11 @@ h2{
 
 .team > div
 {
-    padding: 10px;
+    padding: 25px;
     border: 1px solid #eee;
     border-radius: 5px;
     margin: 0 0 30px 40px;
+    vertical-align: top;
 }
 
 .team > div:nth-child(3n+4), .team > div:nth-child(1)
@@ -266,13 +267,46 @@ h2{
 
 .team > div img
 {
-    padding: 5px;
+    padding: 7px;
+    width: 190px;
+    height: 190px;
     display: block;
-    margin: 10px auto 0;
+    margin: 0 auto;
     border: 1px solid #eee;
     -webkit-box-shadow: 4px 4px 7px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    4px 4px 7px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         4px 4px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+.team > div h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	color: #69a1d0;
+	margin: 20px 0 0 0;
+}
+
+.team > div span{
+	color: #69a1d0;
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.team > div p{
+	min-height: 190px;
+}
+
+.team.large > div p{
+	min-height: 350px;
+}
+
+.team > div a{
+	display: block;
+	padding-left: 40px;
+	margin: 30px 0 0 0;
+	color: #505151;
+	line-height: 18px;
+	background: #fff url(../layout/icon-mail-grey.png) no-repeat top left;
 }
 
 .quick-search{
