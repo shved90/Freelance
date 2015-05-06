@@ -246,6 +246,35 @@ h2{
     margin-top: 0;
 }
 
+.team .col-sm-3
+{
+    width: 30%;
+}
+
+.team > div
+{
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 0 0 30px 40px;
+}
+
+.team > div:nth-child(3n+4), .team > div:nth-child(1)
+{
+    margin: 0 0 30px 0;
+}
+
+.team > div img
+{
+    padding: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 7px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
 .quick-search{
 	padding: 20px 10px;
 	border: 1px solid #eee;
