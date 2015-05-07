@@ -152,7 +152,7 @@ h1 span{
 	font-style: italic;
 	font-size: 25px;
 	font-weight: 400;
-	margin: 30px 0;
+	margin: 30px 0 70px;
 }
 
 h2{
@@ -227,25 +227,6 @@ h2{
 	letter-spacing: 1px;
 }
 
-.rightcol > img, .rightcol > a img
-{
-    width: 100%;
-}
-
-.rightcol h3
-{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    color: #69a1d0;
-    margin-top: 40px;
-}
-
-.rightcol h3:first-child
-{
-    margin-top: 0;
-}
-
 .team .row .col-sm-3
 {
     width: 30%;
@@ -309,6 +290,81 @@ h2{
 	color: #505151;
 	line-height: 18px;
 	background: #fff url(../layout/icon-mail-grey.png) no-repeat top left;
+}
+
+.testimonials div{
+	background-color: #eee;
+	padding: 30px 20px;
+	position: relative;
+	margin: 0 0 150px 0;
+}
+
+.testimonials div:before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -30px;
+	left: 40px;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 30px solid #eee;
+}
+
+.testimonials div:after{
+	content: "";
+	display: block;
+	width: 90px;
+	height: 90px;
+	background: transparent url(../layout/quotes.png) no-repeat 0 0 / 90px 90px;
+	position: absolute;
+	bottom: -130px;
+	left: 15px;
+}
+
+.testimonials div:nth-child(even):before{
+	left: inherit;
+	right: 40px;
+}
+
+.testimonials div:nth-child(even):after{
+	left: inherit;
+	right: 15px;
+}
+
+.testimonials div h4{
+	font-weight: 700;
+}
+
+.testimonials div .quote{
+	margin: 25px 0;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.testimonials div .name{
+	margin: 0;
+	font-size: 20px;
+}
+
+.rightcol > img, .rightcol > a img
+{
+    width: 100%;
+}
+
+.rightcol h3
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #69a1d0;
+    margin-top: 40px;
+}
+
+.rightcol h3:first-child
+{
+    margin-top: 0;
 }
 
 .quick-search{
