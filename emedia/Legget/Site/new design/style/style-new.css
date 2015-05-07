@@ -246,26 +246,28 @@ h2{
     margin-top: 0;
 }
 
-.team .col-sm-3
+.team .row .col-sm-3
 {
     width: 30%;
+    margin: 0 0 30px 0;
 }
 
-.team > div
+.team .row .col-sm-3:nth-child(2),
+.team .row .col-sm-3:nth-child(5),
+.team .row .col-sm-3:nth-child(8)
+{
+    margin: 0 30px 30px;
+}
+
+.team .row > div
 {
     padding: 25px;
     border: 1px solid #eee;
     border-radius: 5px;
-    margin: 0 0 30px 40px;
     vertical-align: top;
 }
 
-.team > div:nth-child(3n+4), .team > div:nth-child(1)
-{
-    margin: 0 0 30px 0;
-}
-
-.team > div img
+.team .row > div img
 {
     padding: 7px;
     width: 190px;
@@ -278,7 +280,7 @@ h2{
     box-shadow:         4px 4px 7px 0px rgba(50, 50, 50, 0.75);
 }
 
-.team > div h3{
+.team .row > div h3{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 18px;
@@ -286,21 +288,21 @@ h2{
 	margin: 20px 0 0 0;
 }
 
-.team > div span{
+.team .row > div span{
 	color: #69a1d0;
 	display: block;
 	margin: 0 0 10px 0;
 }
 
-.team > div p{
+.team .row > div p{
 	min-height: 190px;
 }
 
-.team.large > div p{
+.team .row.large > div p{
 	min-height: 350px;
 }
 
-.team > div a{
+.team .row > div a{
 	display: block;
 	padding-left: 40px;
 	margin: 30px 0 0 0;
@@ -372,6 +374,11 @@ h2{
 .signup fieldset{
 	color: #fff;
 	text-align: center;
+}
+
+.signup img
+{
+    width: 100%;
 }
 
 .signup fieldset h1{
@@ -460,58 +467,16 @@ footer .main > p
 }
 
 @media screen and (max-width: 1200px){
-	.blog-title
-	{
-	    font-size: 48px;
-	}
-	.blog-title span
-	{
-	    font-size: 61px;
-	}
-	.container .col-sm-4 hr
-	{
-	    width: 110%;
-    }
-    #block-mortgage .inner-block:nth-child(2), #block-mortgage .inner-block:nth-child(3){
-		min-height: 1020px;
-	}
-
-	#block-mortgage .inner-block:nth-child(4), #block-mortgage .inner-block:nth-child(5){
-		min-height: 790px;
-	}
-	
-	#block-bankaccount .inner-block:nth-child(2), #block-bankaccount .inner-block:nth-child(3){
-		min-height: 1250px;
-	}
-
-	#block-bankaccount .inner-block:nth-child(4), #block-bankaccount .inner-block:nth-child(5){
-		min-height: 800px;
-	}
-	
-	.landing-regions
-	{
-	    text-align: center;
-	}
-	.landing-regions span
-	{
-	    display: block;
-	}
-	.landing-regions .landing-box
-	{
-	    width: 31%;
-	}
-    .landing-box p{
-        min-height: 130px;
-    }
-    .landing-box h4{
-        font-weight: 900;
-        margin: 30px 0 20px;
-    }
-    .landing-box .btn.white
+	.team .row > div img
     {
-        text-align: center;
-        padding: 15px 10px;
-        width: 100%;
+        padding: 7px;
+        width: 160px;
+        height: 160px;
+    }
+    .addrbox img {
+        display: inline-block;
+        padding-right: 20px;
+        vertical-align: top;
     }
 }
 
@@ -532,42 +497,49 @@ footer .main > p
 	.navbar {
 		font-size: 16px;
 	}
-	.container .col-sm-8 {
-		padding-right: 0;
-		margin-right: 0;
-		border-right: none;
-	}
-	.blog-title
+	
+	.team .row
 	{
-	    font-size: 40px;
+	    display: inline;
+	    float: left;
 	}
-	.blog-title span
+	.col-sm-9:after
 	{
-	    font-size: 51px;
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
 	}
-	.inner-block{
-		display: block;
-		width: 100%;
-		min-height: 700px;
-	}
-	#block-mortgage .inner-block, #block-bankaccount .inner-block{
-		min-height: 300px !important; /* overwrites :nth-child selector */
-	}
-    .desktop-hide{
-    	display: block;
+    .team .row .col-sm-3
+    {
+        width: 43%;
+        margin: 0 20px 30px !important;
     }
-    .landing-box p{
-        min-height: 150px;
+    .team .row .col-sm-3 img
+    {
+        width: 250px;
+        height: 250px;
     }
-}
-
-@media screen and (max-width: 992px){
-    .container .col-sm-4 hr
-	{
-	    width: 154%;
+    .team .row .col-sm-3 p
+    {
+        min-height: 130px;
     }
-    .mobile-hide{
-    	display: none;
+    .team .row.large .col-sm-3 p
+    {
+        min-height: 180px !important;
+    }
+    .rightcol, .col-sm-9
+    {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .rightcol
+    {
+        width: 282px;
+        margin: 0 auto;
     }
 }
 
@@ -581,81 +553,33 @@ footer .main > p
 	.navbar {
 		font-size: 11px;
 	}
-	#download
-	{
-	    text-align: center;
-	}
-	.blog-title
-	{
-	    font-size: 60px;
-	}
-	.blog-title span
-	{
-	    font-size: 77px;
-	}
-	#download
-	{
-	    margin-right: 5%;
-	}
-	.container .col-sm-8 {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	.container .col-sm-4 {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	.container .col-sm-4 form{
-		display: block;
-		margin: 0 auto;
-	}
-	.container .col-sm-4 .mobile-img{
-		margin: 0 auto 30px;
-		display: block;
-		width: 280px;
-	}
-    .container .col-sm-4 hr
-	{
-	    width: 100%;
-    }
-    .diagnostic-arrows
-    {
-        margin-bottom: 40px;
-    }
-	.container .col-sm-4 .menu, .container .col-sm-4 form, .container .col-sm-4 > img{
-		float: none;
-		display: block;
-		margin: 0 auto;
-	}
 }
 
 @media screen and (max-width: 767px){
 	.navbar {
 		font-size: 24px;
+		padding: 0 15px;
 	}
-	.blog-title
+	.navbar .container
 	{
-	    font-size: 53px;
+	    margin: auto;
 	}
-	.blog-title span
+	.team .row
 	{
-	    font-size: 66px;
+	    float: none;
 	}
-	.landing-regions > span
-	{
-	    display: inline;
-	}
-	
-	.landing-regions .landing-box
-	{
-	    width: 40%;
-	}
-	.landing-regions .landing-box p
-	{
-	    min-height: 150px;
-	}
+	.team .row .col-sm-3
+    {
+        display: block;
+        width: 260px;
+        padding: 25px 10px;
+        margin: 0 auto 30px !important;
+    }
+    .team .row .col-sm-3 img
+    {
+        width: 220px;
+        height: 220px;
+    }
 	
 }
 
@@ -663,27 +587,16 @@ footer .main > p
 	.navbar {
 		font-size: 24px;
 	}
-	.blog-title
-	{
-	    font-size: 43px;
-	}
-	.blog-title span
-	{
-	    font-size: 55px;
-	}
-	.mobile-hide{
-		display: block;
-	}
-	header{
-		margin: 20px 0;
-	}
-	.wrapper{
-		margin-top: 20px;
-	}
-	.container .col-sm-4 .mobile-img{
-		display: block;
-		margin: 30px auto 0;
-	}
+	.addrbox img {
+        display: none;
+    }
+    .addrbox
+    {
+        display: block;
+        width: 260px;
+        margin: 0 auto;
+        vertical-align: top;
+    }
 
 }
 
