@@ -402,6 +402,28 @@ h2{
     background-color: #91b750;
 }
 
+.button.blue
+{
+    display: block;
+    color: #fff;
+    width: 210px;
+    height: 50px;
+    margin: 40px 0;
+    text-align: center;
+    background-color: #69a1d0;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px rgba(70, 70, 70, 1);
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.button.blue.double
+{
+    line-height: 14px;
+}
+
 .signup{
 	background: #17202a url(../layout/bg-form.png) no-repeat 0 0;
 	padding: 20px 30px 40px;
@@ -636,7 +658,30 @@ footer .main > p
         width: 220px;
         height: 220px;
     }
-	
+    .testimonials div
+    {
+        margin-bottom: 60px;
+    }
+    .testimonials div:before{
+	    content: "";
+	    display: none;
+    }
+
+    .testimonials div:after{
+	    content: "";
+	    display: block;
+	    width: 100%;
+	    height: 0;
+	    background: none;
+	    border-bottom: 2px solid #eee;
+	    left: 0 !important;
+	    right: inherit !important;;
+	    bottom: -30px;
+    }
+	.button.blue
+	{
+	    margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 705px){
