@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/carouselTicker.min.js"></script>
 </head>
 
 <body>
@@ -39,65 +40,62 @@
         </header>
     </div>
 
-    <div class="container-fluid red">
+    <nav class="navbar navbar-default container-fluid red main-nav">
         <div class="container">
-            <div class="col-md-12">
-                <nav class="navbar" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="main-nav">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">defence</a></li>
-                            <li><a href="#">security</a></li>
-                            <li><a href="#">energy</a></li>
-                            <li><a href="#">utilities</a></li>
-                            <li><a href="#">finance</a></li>
-                            <li><a href="#">pharmaceutical</a></li>
-                            <li><a href="#">telecoms</a></li>
-                        </ul>
-                    </div>
-                    <input type="search" value="">
-                    <img src="layout/cpd.png" />
-                </nav>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">defence</a></li>
+                    <li><a href="#">security</a></li>
+                    <li><a href="#">energy</a></li>
+                    <li><a href="#">utilities</a></li>
+                    <li><a href="#">finance</a></li>
+                    <li><a href="#">pharmaceutical</a></li>
+                    <li><a href="#">telecoms</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" value="">
+                <img src="layout/cpd.png" />
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="container-fluid darkgrey">
-        <div class="container">
-            <div class="newsticker">
-                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
-                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
-                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
-                <p>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</p>
-            </div>
+        <div class="container carouselTicker">
+            <ul class="newsticker">
+                <li>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</li>
+                <li>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</li>
+                <li>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</li>
+                <li>LATEST NEWS TICKER:   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  to b</li>
+            </ul>
         </div>
         <script>
-            $(document).ready(function () {
-                $(".newsticker").owlCarousel({
-                    autoPlay: 3000, //Set AutoPlay to 3 seconds
-                    slideSpeed: 600,
-                    pagination: false,
-                    navigation: false,
-                    stopOnHover: true,
-                    items: 1,
-                    itemsDesktop: [1199, 1],
-                    itemsDesktopSmall: [979, 1]
-                });
+            $(".carouselTicker").carouselTicker({
+                speed: 1,
+                delay: 30,
+                reverse: false
             });
         </script>
     </div>
 
     <div class="image-bg-fluid-height" id="intro">
+    <div class="earlybird">
+                <p>
+                    EARLY BIRD OFFER<span>REGISTER BY <br />12/12/2015 <br />AND SAVE </span><strong>£100</strong>
+                </p>
+            </div>
         <div class="container">
-        
+            
             <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                     Navigation
@@ -118,7 +116,6 @@
                 <h3 class="pink-header">25th March to 26th March 2015, <br />VENUE NAME<br />London, United Kingdom</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                 <span>
-                    <a href="" class="save-event"><span>+</span>save this event</a>
                     <a href="" class="button-red">register</a>
                     <a href="" class="button-red">download brochure</a>
                     <br />
@@ -131,16 +128,12 @@
                 <a href="" class="linkedin"></a>
                 <a href="" class="twitter"></a>
                 <a href="" class="other"></a>
+                <a href="" class="save"></a>
                 <div>
                     <p>lead sponsor</p>
                     <img src="layout/vocality.png" alt="vocality" />
                 </div>
             </div>
-        </div>
-        <div class="earlybird">
-            <p>
-                EARLY BIRD OFFER<span>REGISTER BY<br />12/12/2015<br />AND SAVE</span>£100
-            </p>
         </div>
     </div>
 
@@ -316,7 +309,7 @@
                     <div><img src="layout/yahoo.jpg" alt="" /></div>
                 </div>
                 <div class="buttons">
-                    <a href="" class="button-white">more</a>
+                    <a href="" class="button-white">view all sponsors</a>
                     <a href="" class="button-white">sponsor this conference</a>
                 </div>
             </div>
@@ -346,7 +339,7 @@
                     <div><img src="layout/yahoo.jpg" alt="" /></div>
                 </div>
                 <div class="buttons">
-                    <a href="" class="button-white">more</a>
+                    <a href="" class="button-white">view all exhibitors</a>
                     <a href="" class="button-white">exhibit at this conference</a>
                 </div>
             </div>
@@ -370,7 +363,7 @@
         </div>
     </div>
 
-    <div class="container-fluid grey strip" id="programme">
+    <div class="container-fluid grey" id="programme">
         <div class="container">
             <h2>conference programme</h2>
             <div role="tabpanel" class="tabpanel">
@@ -430,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="buttons"><a href="" class="button-white">more</a></div>
+                <div class="buttons"><a href="" class="button-white">+</a></div>
             </div>
         </div>
     </div>
@@ -438,79 +431,160 @@
     <div class="container-fluid red strip" id="workshops">
         <div class="container">
             <h2>ASSOCIATED WORKSHOPS</h2>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
+            <div id="workshop-slider" class="slider">
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $("#workshop-slider").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    slideSpeed: 600,
+                    pagination: false,
+                    navigation: true,
+                    navigationText: ["<", ">"],
+                    stopOnHover: true,
+                    items: 4,
+                    itemsDesktop: [1199, 4],
+                    itemsDesktopSmall: [979, 4]
+                });
+            });
+        </script>
     </div>
 
     <div class="container-fluid strip" id="workshops2">
         <div class="container">
             <h2>ASSOCIATED WORKSHOPS</h2>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
+            <div id="workshop-slider2" class="slider">
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $("#workshop-slider2").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    slideSpeed: 600,
+                    pagination: false,
+                    navigation: true,
+                    navigationText: ["<", ">"],
+                    stopOnHover: true,
+                    items: 4,
+                    itemsDesktop: [1199, 4],
+                    itemsDesktopSmall: [979, 4]
+                });
+            });
+        </script>
     </div>
 
     <div class="container-fluid red strip" id="associates">
         <div class="container">
             <h2>ASSOCIATED sitet visits</h2>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
+            <div id="associates-slider" class="slider">
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $("#associates-slider").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    slideSpeed: 600,
+                    pagination: false,
+                    navigation: true,
+                    navigationText: ["<", ">"],
+                    stopOnHover: true,
+                    items: 4,
+                    itemsDesktop: [1199, 4],
+                    itemsDesktopSmall: [979, 4]
+                });
+            });
+        </script>
     </div>
 
     <div class="container-fluid strip" id="partner">
@@ -518,7 +592,7 @@
             <h2>Key media partner</h2>
             <img src="layout/cisco.jpg" alt="cisco" />
             <div class="buttons">
-                <a href="" class="button-white">show all media partners</a>
+                <a href="" class="button-white">view all media partners</a>
                 <a href="" class="button-white">support the event</a>
             </div>
         </div>
@@ -544,6 +618,7 @@
                     <a href="" class="linkedin"></a>
                     <a href="" class="twitter"></a>
                     <a href="" class="other"></a>
+                    <a href="" class="save"></a>
                 </div>
             </div>
             
@@ -630,27 +705,54 @@
     <div class="container-fluid grey strip" id="related">
         <div class="container">
             <h2>related events</h2>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
-            </div>
-            <div class="col-md-3">
-                <img src="layout/overview.jpg" alt="workshop" />
-                <h3>title of workshop</h3>
-                <a href="">read more</a>
+            <div id="related-slider" class="slider">
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
+                <div>
+                    <img src="layout/overview.jpg" alt="workshop" />
+                    <h3>title of workshop</h3>
+                    <a href="">read more</a>
+                </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $("#related-slider").owlCarousel({
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds
+                    slideSpeed: 600,
+                    pagination: false,
+                    navigation: true,
+                    navigationText: ["<", ">"],
+                    stopOnHover: true,
+                    items: 4,
+                    itemsDesktop: [1199, 4],
+                    itemsDesktopSmall: [979, 4]
+                });
+            });
+        </script>
     </div>
 
     <div class="container advert">
