@@ -14,6 +14,11 @@ html, body{
 	background-color: #12121e;
 }
 
+.container-fluid .container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 header{
 	padding: 5px 0;
 }
@@ -42,6 +47,12 @@ header .col-md-8{
 .participate span a:first-child{
 	padding-right: 0;
 	padding-left: 15px;
+}
+
+.participate span a:first-child:after{
+	content: "/";
+	display: inline-block;
+	color: #000;
 }
 
 .participate .linkedin{
@@ -83,6 +94,8 @@ footer .navbar-nav li:first-child a:hover{
 
 .main-nav .container{
 	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -123,6 +136,7 @@ footer .navbar-nav li:first-child a:hover{
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 8px;
+	width: 50px;
 }
 
 .search input{
@@ -171,9 +185,9 @@ footer .navbar-nav li:first-child a:hover{
 	display: none !important;
 }
 
-.image-bg-fluid-height {
+#intro {
 	background: url('../layout/banner.jpg') no-repeat top left scroll;
-	background-size: 100% 100%;
+	background-size: cover;
 	min-height: 730px;
 	position: relative;
 	overflow: hidden;
@@ -369,6 +383,10 @@ span .button-red, span .button-blue{
 #overview .col-md-6 img
 {
     width: 100%;
+}
+
+#overview .panel-group{
+	margin-top: 30px;
 }
 
 .panel.panel-default
@@ -728,6 +746,21 @@ h2
 	font-size: 10px;
 }
 
+/* FAQ PAGE */
+
+#faq{
+	background: url('../layout/banner-faq.jpg') no-repeat top left scroll;
+	background-size: cover;
+	min-height: 200px;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+
 footer{
 	padding: 40px 0 0 0;
 }
@@ -737,6 +770,16 @@ footer .contact-details span, footer .contact-details a{
 	font-size: 18px;
 	display: inline-block;
 	margin: 0 0 10px 20px;
+}
+
+footer .contact-details img{
+	display: none;
+}
+
+footer .contact-details a:last-child{
+	display: none;
+	text-transform: uppercase;
+	font-size: 13px;
 }
 
 footer .participate a{
@@ -803,6 +846,14 @@ footer .twitter{
 		font-size: 12px;
 		padding: 14px 9px;
 	}
+	#map h1{
+		font-size: 40px;
+	}
+	.grey-box {
+		height: auto;
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
 }
 
 @media all and (max-width: 991px){
@@ -868,6 +919,30 @@ footer .twitter{
 	.lead-sponsor img{
 		width: 60%;
 	}
+	footer .contact-details img{
+		display: inline-block;
+		float: right;
+		margin-top: -10px;
+	}
+	footer .contact-details a, footer .contact-details span{
+		margin: 0 20px 10px 0;
+	}
+	footer .contact-details a:last-child{
+		display: block;
+	}
+	footer .participate a, footer .participate span a{
+		display: none
+	}
+
+	footer .nav{
+		display: none;
+	}
+	footer .follow{
+		display: block;
+		margin: 20px 0 0 0;
+		text-align: left;
+		float: none;
+	}
 }
 
 @media all and (max-width: 675px){
@@ -906,6 +981,9 @@ footer .twitter{
 	header .col-md-8 div:last-child a {
 		margin: 0;
 	}
+	#partner img{
+		width: 252px;
+	}
 	.grey-box{
 		height: auto;
 		padding: 20px 0;
@@ -921,6 +999,12 @@ footer .twitter{
 		display: block;
 		margin: 0 auto;
 	}
+	.button-white{
+		margin-bottom: 10px;
+	}
+	.banner-content > span br{
+		display: none;
+	}
 }
 
 @media all and (max-width: 480px){
@@ -935,5 +1019,14 @@ footer .twitter{
 	}
 	.image-bg-fluid-height .dropdown, .image-bg-fluid-height .dropdown .dropdown-menu{
 		width: 100%;
+	}
+	#keynote-slider .owl-buttons .owl-next, #sponsors-slider .owl-buttons .owl-next, #exhibitors-slider .owl-buttons .owl-next, .slider .owl-buttons .owl-next{
+		right: -35px;
+	}
+	#keynote-slider .owl-buttons .owl-prev, #sponsors-slider .owl-buttons .owl-prev, #exhibitors-slider .owl-buttons .owl-prev, .slider .owl-buttons .owl-prev{
+		left: 0;
+	}
+	footer .contact-details img{
+		display: none;
 	}
 }
