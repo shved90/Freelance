@@ -761,6 +761,35 @@ h2
 	margin-bottom: 50px;
 }
 
+/* WELCOME PAGE */
+
+#welcome{
+	background: url('../layout/banner-welcome.jpg') no-repeat top left scroll;
+	background-size: cover;
+	min-height: 500px;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+
+#sector{
+	background: url('../layout/banner-welcome.jpg') no-repeat top left scroll;
+	background-size: cover;
+	min-height: 500px;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+
+
 footer{
 	padding: 40px 0 0 0;
 }
