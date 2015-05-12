@@ -17,6 +17,8 @@ body > .container-fluid
 p
 {
     margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .main{
@@ -148,9 +150,12 @@ h1 span{
 	font-weight: 700;
 }
 
-.header-italics{
+.header-italics
+{
+    font-family: Georgia;
 	font-style: italic;
 	font-size: 25px;
+	line-height: 40px;
 	font-weight: 400;
 	margin: 30px 0 70px;
 }
@@ -175,12 +180,19 @@ h2{
 
 .addrbox img{
 	display: inline-block;
-	padding-right: 150px;
+	width: 475px;
+	padding-right: 100px;
 	vertical-align: top;
+}
+
+.addrbox p
+{
+    width: 230px;
 }
 
 .addrbox > div{
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .addrbox iframe
@@ -188,6 +200,7 @@ h2{
     width: 200px;
     height: 200px;
     margin-top: 10px;
+    display: block;
 }
 
 .addrbox .contact-info
@@ -199,7 +212,7 @@ h2{
 	display: block;
 	padding-left: 40px;
 	margin: 7px 0;
-	background: #fff url(../layout/icon-phone.png) no-repeat top left;
+	background: #fff url(../layout/icon-phone.png) no-repeat 0px 6px;
 }
 
 .addrbox .contact-info a
@@ -276,11 +289,11 @@ h2{
 }
 
 .team .row > div p{
-	min-height: 190px;
+	min-height: 330px;
 }
 
 .team .row.large > div p{
-	min-height: 350px;
+	min-height: 640px;
 }
 
 .team .row > div a{
@@ -553,9 +566,40 @@ footer .main > p
     }
     .addrbox img {
         display: inline-block;
-        padding-right: 20px;
+        width: 350px;
+        padding-right: 60px;
         vertical-align: top;
     }
+	.team .row > div p
+	{
+	    min-height: 450px;
+	}
+	.team .row.large > div:first-child h3
+	{
+	    font-size: 16px;
+	} 
+	.team .row.large > div:nth-child(5) h3,
+	.team .row.large > div:nth-child(8) h3
+	{
+	    font-size: 13px !important;
+	}
+	.team .row.large > div p
+	{
+	    min-height: 540px !important;
+	}
+	.team .row.large > div:nth-child(4) p,
+	.team .row.large > div:nth-child(5) p,
+	.team .row.large > div:nth-child(6) p
+	{
+	    min-height: 840px !important;
+	}
+	
+	.team .row.large > div:nth-child(7) p,
+	.team .row.large > div:nth-child(8) p,
+	.team .row.large > div:nth-child(9) p
+	{
+	    min-height: 690px !important;
+	}
 }
 
 @media screen and (max-width: 1130px){
@@ -590,6 +634,7 @@ footer .main > p
         clear: both;
         height: 0;
 	}
+    
     .team .row .col-sm-3
     {
         width: 43%;
@@ -600,14 +645,30 @@ footer .main > p
         width: 250px;
         height: 250px;
     }
-    .team .row .col-sm-3 p
+    .team .row > div p
     {
-        min-height: 130px;
+        min-height: 270px;
     }
-    .team .row.large .col-sm-3 p
+    .team .row.large > div p,
+    .team .row.large > div:nth-child(4) p, .team .row.large > div:nth-child(5) p, .team .row.large > div:nth-child(6) p
     {
-        min-height: 180px !important;
+        min-height: 360px !important;
     }
+    .team .row.large > div:first-child h3
+	{
+	    font-size: 18px;
+	} 
+	.team .row.large > div:nth-child(5) h3,
+	.team .row.large > div:nth-child(8) h3
+	{
+	    font-size: 18px !important;
+	}
+	.team .row.large > div:nth-child(7) p,
+	.team .row.large > div:nth-child(8) p,
+	.team .row.large > div:nth-child(9) p
+	{
+	    min-height: 420px !important;
+	}
     .rightcol, .col-sm-9
     {
         display: block;
@@ -633,7 +694,20 @@ footer .main > p
 	}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px)
+{
+    h1
+    {
+        font-size: 35px;
+    }
+    .header-italics
+    {
+        font-size: 20px;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
 	.navbar {
 		font-size: 24px;
 		padding: 0 15px;
@@ -678,9 +752,22 @@ footer .main > p
 	    right: inherit !important;;
 	    bottom: -30px;
     }
-	.button.blue
+	.team .row.large > div p
 	{
-	    margin: 0 auto;
+	    min-height: 0 !important;
+	}
+	.team .row.large > div:nth-child(4) p,
+	.team .row.large > div:nth-child(5) p,
+	.team .row.large > div:nth-child(6) p
+	{
+	    min-height: 0 !important;
+	}
+	.team .row.large .col-sm-3 p,
+	.team .row.large > div:nth-child(7) p,
+	.team .row.large > div:nth-child(8) p,
+	.team .row.large > div:nth-child(9) p
+	{
+	    min-height: 0 !important;
 	}
 }
 
@@ -690,6 +777,9 @@ footer .main > p
 	}
 	.addrbox img {
         display: none;
+    }
+    .addrbox p {
+        width: auto;
     }
     .addrbox
     {
@@ -732,7 +822,8 @@ footer .main > p
 	}
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px)
+{
 	header img {
 		width: 90%;
 		display: block;
