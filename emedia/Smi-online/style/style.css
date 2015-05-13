@@ -243,9 +243,12 @@ h1{
 }
 
 .banner-content p{
-	width: 700px;
 	font-weight: normal;
 	letter-spacing: 1px;
+}
+
+#intro p{
+	width: 700px;
 }
 
 .button-red, .button-blue{
@@ -272,7 +275,7 @@ h1{
 	text-decoration: none;
 }
 
-.button-white
+.button-white, .button-veryred, .button-transparent /* new button */
 {
     display: inline-block;
 	box-sizing: border-box;
@@ -288,6 +291,37 @@ h1{
 	-webkit-box-shadow: 0px 3px 1px rgba(50, 50, 50, 1);
 	-moz-box-shadow:    0px 3px 1px rgba(50, 50, 50, 1);
 	box-shadow:         0px 3px 1px rgba(50, 50, 50, 1);
+}
+
+.button-white.small, .button-veryred.small, .button-transparent.small{
+	width: 170px;
+}
+
+.button-transparent{
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0px 3px 1px rgba(255, 255, 255, 1);
+	-moz-box-shadow:    0px 3px 1px rgba(255, 255, 255, 1);
+	box-shadow:         0px 3px 1px rgba(255, 255, 255, 1);
+}
+
+.button-transparent:hover{
+	color: #fff;
+	background-color: #a51142;
+}
+
+.button-veryred{ /* new button */
+	background-color: #a51142;
+	color: #fff;
+	box-shadow: none;
+	line-height: 50px;
+}
+
+.button-veryred:hover{ /* new button */
+	background-color: #12121e;
+	color: #fff;
+	text-decoration: none;
 }
 
 .button-white:hover{
@@ -354,7 +388,7 @@ span .button-red, span .button-blue{
 	letter-spacing: 2px
 }
 
-.earlybird{
+#intro .earlybird{
 	position: absolute;
 	top: 0;
 	right: -300px;
@@ -365,7 +399,7 @@ span .button-red, span .button-blue{
 	text-align: right;
 }
 
-.earlybird p{
+#intro .earlybird p{
 	font-size: 50px;
 	font-weight: 700;
 	width: 300px;
@@ -373,7 +407,7 @@ span .button-red, span .button-blue{
 	left:150px;
 }
 
-.earlybird p span{
+#intro .earlybird p span{
 	display: block;
 	width: 300px;
 	font-weight: 400;
@@ -776,6 +810,37 @@ h2
 	margin-bottom: 50px;
 }
 
+#welcome .banner-content p{
+	margin: 50px 0 0 0;
+	font-weight: normal;
+	width: 100%;
+}
+
+#video-slider iframe{
+	width: 100%;
+	display: block;
+	height: 300px;
+}
+
+#video-slider .owl-buttons{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	font-size: 50px;
+	font-family: arial;
+	font-weight: normal;
+}
+
+#video-slider .owl-buttons .owl-prev{
+	position: absolute;
+	left: -35px;
+}
+
+#video-slider .owl-buttons .owl-next{
+	position: absolute;
+	right: -35px;
+}
+
 #sector{
 	background: url('../layout/banner-welcome.jpg') no-repeat top left scroll;
 	background-size: cover;
@@ -789,6 +854,57 @@ h2
 	margin-bottom: 50px;
 }
 
+.programme{
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 30px 0;
+}
+
+.programme img{
+	width: 100%;
+}
+
+.programme h2{
+	text-align: left;
+	margin: 0 0 20px 0;
+}
+
+.programme a, #sector a{
+	margin-right: 20px;
+}
+
+.programme a.button-white{
+	width: 230px;
+	margin: 0;
+}
+
+.programme .col-md-6:first-child{
+	padding-left: 0;
+}
+
+.programme .col-md-6:last-child{
+	padding-right: 0;
+}
+
+
+.programme.earlybird .col-md-6:first-child:before {
+	content: "early bird";
+	position: absolute;
+	top: -47px;
+	left: -87px;
+	padding: 85px 70px 0;
+	display: block;
+	line-height: 25px;
+	width: 230px;
+	text-align: center;
+	height: 150px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 25px;
+	text-transform: uppercase;
+	background-color: #a51142;
+	transform: rotate(-45deg);
+}
 
 footer{
 	padding: 40px 0 0 0;
@@ -820,6 +936,10 @@ footer .navbar-nav{
 	padding: 0;
 }
 
+footer .navbar-nav a{
+	color: #fff;
+}
+
 footer .navbar-nav a:hover{
 	background: #fff;
 	color: #0f101b;
@@ -849,7 +969,7 @@ footer .twitter{
 }
 
 @media all and (max-width: 1200px){
-	.earlybird{
+	#intro .earlybird{
 		position: relative;
 		right: inherit;
 		top: inherit;
@@ -861,14 +981,14 @@ footer .twitter{
 		width: 100%;
 		padding: 20px 50px;
 	}
-	.earlybird p{
+	#intro .earlybird p{
 		position: relative;
 		left: inherit;
 		top: inherit;
 		width: auto;
 	}
 
-	.earlybird p br{
+	#intro .earlybird p br{
 		display: none;
 	}
 	.navbar-default .navbar-nav>li>a{
@@ -882,6 +1002,20 @@ footer .twitter{
 		height: auto;
 		padding-top: 0;
 		padding-bottom: 20px;
+	}
+	#welcome .banner-content p {
+		margin: 30px 0;
+	}
+	#video-slider{ /* new */
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+	#sector a{
+		display: block;
+		margin: 20px 0 0 0;
+	}
+	.programme a.button-white{
+		width: 180px;
 	}
 }
 
@@ -903,6 +1037,18 @@ footer .twitter{
 	.navbar-default .navbar-nav>li>a{
 		font-size: 11px;
 		padding: 13px 8px;
+	}
+	#sector a{
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.programme > div{
+		display: inline-block;
+		width: 45%;
+		vertical-align: top;
+	}
+	.programme > div a.button-veryred{
+		margin-bottom: 20px;
 	}
 }
 
@@ -948,6 +1094,16 @@ footer .twitter{
 	.lead-sponsor img{
 		width: 60%;
 	}
+	.programme > div{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: top;
+		padding: 0;
+	}
+	.programme > div img{
+		margin-bottom: 20px;
+	}
 	footer .contact-details img{
 		display: inline-block;
 		float: right;
@@ -975,18 +1131,18 @@ footer .twitter{
 }
 
 @media all and (max-width: 675px){
-	.earlybird{
+	#intro .earlybird{
 		padding: 20px 15px;
 		text-align: center;
 	}
-	.earlybird p{
+	#intro .earlybird p{
 		font-size: 25px;
 	}
-	.earlybird p span{
+	#intro .earlybird p span{
 		font-size: 14px;
 		width: auto;
 	}
-	.earlybird p strong{
+	#intro .earlybird p strong{
 		font-size: 35px;
 	}
 	h1{
@@ -994,6 +1150,10 @@ footer .twitter{
 	}
 	.advert img{
 		width: 100%;
+	}
+	#video-slider{ /* new */
+		width: 90%;
+		margin: 0 auto 30px;
 	}
 }
 
@@ -1033,6 +1193,12 @@ footer .twitter{
 	}
 	.banner-content > span br{
 		display: none;
+	}
+	.programme h2{
+		font-size: 25px;
+	}
+	.programme .pink-header{
+		font-size: 18px;
 	}
 }
 
