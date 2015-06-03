@@ -1,0 +1,127 @@
+/**
+* Stylish Select 0.4.9 - $ plugin to replace a select drop down box with a stylable unordered list
+* http://github.com/scottdarby/Stylish-Select/
+* 
+* Copyright (c) 2009 Scott Darby
+* 
+* Requires: jQuery 1.3 or newer
+* 
+* Dual licensed under the MIT and GPL licenses.
+*/
+
+/**
+* Hide lists on page load
+---------------------------------------------------------*/
+
+.stylish-select .SSContainerDivWrapper {
+	left:-9999px;
+}
+
+/*
+* Red example
+---------------------------------------------------------*/
+.stylish-select .SSContainerDivWrapper {
+	margin:0;
+	padding:0;
+	width:186px;
+	position:absolute;
+	top:22px;
+	left:0;
+	z-index:2;
+}
+
+.stylish-select ul.newList {
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#979da7;
+	background:#fff;
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+
+.stylish-select ul.newList * {
+	margin:0;
+	padding:0;
+}
+
+
+.stylish-select ul.newList a {
+	color: #979da7;
+	text-decoration:none;
+	display:block;
+	padding:4px 8px;
+	cursor:pointer;
+}
+
+.stylish-select .newListSelected {
+	width:186px;
+	color:#979da7;
+	height:28px;
+	padding:0 0 0 6px;
+	float:left;
+	background:url(../images/stylish-select.png) no-repeat right top;
+	border: 1px solid #cdcdcd;
+	cursor: pointer;
+}
+
+.stylish-select ul.newList li a:focus {
+	-moz-outline-style: none;
+}
+
+.stylish-select .selectedTxt {
+	width:179px;
+	overflow:hidden;
+	height: 28px;
+  	line-height: 28px;
+	padding:0;
+	text-align: left;
+	cursor: pointer;
+}
+
+.stylish-select .hiLite {
+	background:#4ba000!important;
+	color:#fff!important;
+}
+
+.stylish-select .newListHover {
+	background:#4ba000!important;
+	color:#FFF!important;
+	cursor:pointer;
+}
+
+.stylish-select .newListDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListItemDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListOptionDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListSelHover,
+.stylish-select .newListSelFocus {
+	background-position:right -28px;
+	cursor:default;
+}
+
+.stylish-select .newListOptionTitle {
+	font-weight:bold;
+}
+
+.stylish-select .newListOptionTitle ul {
+	margin:3px 0 0;
+}
+
+.stylish-select .newListOptionTitle li {
+	font-weight:normal;
+}

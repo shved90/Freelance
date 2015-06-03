@@ -1,0 +1,111 @@
+@font-face{font-family:'domain-rural';src:url('../fonts/domain-rural.eot?-awouru');src:url('../fonts/domain-rural.eot?#iefix-awouru') format("embedded-opentype"),url('../fonts/domain-rural.woff?-awouru') format("woff"),url('../fonts/domain-rural.ttf?-awouru') format("truetype"),url('../fonts/domain-rural.svg?-awouru#domain-rural') format("svg");font-weight:normal;font-style:normal}
+[class^="domain-rural-icon-ic_"]:before,[class*=" domain-rural-icon-ic_"]:before,[class^="domain-rural-icon-ic_"]:after,[class*=" domain-rural-icon-ic_"]:after{font-family:'domain-rural';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+[data-icon]:before,[data-icon]:after{font-family:domain-rural;content:attr(data-icon);speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none}
+[class^="domain-rural-icon-ic_"].place-after:before,[class*=" domain-rural-icon-ic_"].place-after:before{content:""!important;display:none!important}
+.domain-rural-icon-ic_social_twitter:before{content:"\e600"}
+.domain-rural-icon-ic_social_g_plus:before{content:"\e601"}
+.domain-rural-icon-ic_social_facebook:before{content:"\e602"}
+.domain-rural-icon-ic_floorplan:before{content:"\e603"}
+.domain-rural-icon-ic_calendar:before{content:"\e604"}
+.domain-rural-icon-ic_calendar_add:before{content:"\e605"}
+.domain-rural-icon-ic_video:before{content:"\e606"}
+.domain-rural-icon-ic_user:before{content:"\e607"}
+.domain-rural-icon-ic_unlocked:before{content:"\e608"}
+.domain-rural-icon-ic_streetview:before{content:"\e609"}
+.domain-rural-icon-ic_search:before{content:"\e60a"}
+.domain-rural-icon-ic_navigational_down_arrow:before,.footer-wrap .secondary-wrap .nav-left li.menu>a:before,.domain-rural-icon-ic_navigational_down_arrow.place-after:after{content:"\e60b"}
+.domain-rural-icon-ic_moving_guide:before{content:"\e60c"}
+.domain-rural-icon-ic_menu_flat:before{content:"\e60d"}
+.domain-rural-icon-ic_locked:before{content:"\e60e"}
+.domain-rural-icon-ic_inspection_checklist:before{content:"\e60f"}
+.domain-rural-icon-ic_home:before{content:"\e610"}
+.domain-rural-icon-ic_get_directions:before{content:"\e611"}
+.domain-rural-icon-ic_gallery:before{content:"\e612"}
+.domain-rural-icon-ic_email:before{content:"\e613"}
+.domain-rural-icon-ic_domain-rural_m:before{content:"\e614"}
+.domain-rural-icon-ic_add_photo:before{content:"\e615"}
+.domain-rural-icon-ic_nearme:before{content:"\e616"}
+.domain-rural-icon-ic_navigational_up_arrow:before,.domain-rural-icon-ic_navigational_up_arrow.place-after:after{content:"\e617"}
+.domain-rural-icon-ic_navigational_right_arrow:before,.domain-rural-icon-ic_navigational_right_arrow.place-after:after{content:"\e618"}
+.domain-rural-icon-ic_navigational_left_arrow:before,.domain-rural-icon-ic_navigational_left_arrow.place-after:after{content:"\e619"}
+.domain-rural-icon-ic_shortlist:before{content:"\e61a"}
+.domain-rural-icon-ic_shortlist_selected:before{content:"\e61b"}
+.domain-rural-icon-ic_heart:before{content:"\e61c"}
+.domain-rural-icon-ic_heart_selected:before{content:"\e61d"}
+.domain-rural-icon-ic_alert:before{content:"\e61e"}
+.domain-rural-icon-ic_zoomout:before{content:"\e61f"}
+.domain-rural-icon-ic_zoomin:before{content:"\e620"}
+.domain-rural-icon-ic_search-selected:before{content:"\e621"}
+.domain-rural-icon-ic_savedsearch:before{content:"\e622"}
+.domain-rural-icon-ic_user_menu:before{content:"\e623"}
+.domain-rural-icon-ic_auction:before{content:"\e624"}
+.domain-rural-icon-ic_sort:before{content:"\e625"}
+.domain-rural-icon-ic_calculator:before{content:"\e626"}
+.domain-rural-icon-ic_settings:before{content:"\e627"}
+.domain-rural-icon-ic_refresh:before{content:"\e628"}
+.domain-rural-icon-ic_newtab:before{content:"\e629"}
+.domain-rural-icon-ic_info:before{content:"\e62a"}
+.domain-rural-icon-ic_download:before{content:"\e62b"}
+.domain-rural-icon-ic_document:before{content:"\e62c"}
+.domain-rural-icon-ic_document-edit:before{content:"\e62d"}
+.domain-rural-icon-ic_document-add:before{content:"\e62e"}
+.domain-rural-icon-ic_enlarge:before{content:"\e62f"}
+.domain-rural-icon-ic_shrink:before{content:"\e630"}
+.domain-rural-icon-ic_target:before{content:"\e631"}
+.domain-rural-icon-ic_search_menu:before{content:"\e632"}
+.domain-rural-icon-ic_more_info:before{content:"\e633"}
+.domain-rural-icon-ic_play:before{content:"\e634"}
+.domain-rural-icon-ic_camera:before{content:"\e635"}
+.domain-rural-icon-ic_added_to_calendar:before{content:"\e636"}
+.domain-rural-icon-ic_email_sent:before{content:"\e637"}
+.domain-rural-icon-ic_smile:before{content:"\e638"}
+.domain-rural-icon-ic_apple:before{content:"\e63a"}
+.domain-rural-icon-ic_windows:before{content:"\e63b"}
+.domain-rural-icon-ic_mobile:before{content:"\e63c"}
+.domain-rural-icon-ic_android:before{content:"\e63d"}
+.domain-rural-icon-ic_arrow:before{content:"\e63e"}
+.domain-rural-icon-ic_domain-rural_logo:before{content:"\e63f"}
+.domain-rural-icon-ic_blog:before{content:"\e639"}
+.domain-rural-icon-ic_map:before{content:"\e640"}
+.domain-rural-icon-ic_pin1main:before{content:"\e641"}
+.domain-rural-icon-ic_pin2reserved:before{content:"\e642"}
+.domain-rural-icon-ic_youtube:before{content:"\e643"}
+.domain-rural-icon-ic_tick:before{content:"\e644"}
+.domain-rural-icon-ic_baths:before{content:"\e645"}
+.domain-rural-icon-ic_beds:before{content:"\e646"}
+.domain-rural-icon-ic_cars:before{content:"\e647"}
+.domain-rural-icon-ic_notifications:before{content:"\e648"}
+.domain-rural-icon-ic_phone:before{content:"\e649"}
+.domain-rural-icon-ic_close:before{content:"\e64a"}
+.domain-rural-icon-ic_video-cutout:before{content:"\e64b"}
+.domain-rural-icon-ic_print:before{content:"\e64c"}
+.domain-rural-icon-ic_camera-24:before{content:"\e64d"}
+.domain-rural-icon-ic_floorplan-24:before{content:"\e64e"}
+.domain-rural-icon-ic_tour-sml:before{content:"\e64f"}
+.domain-rural-icon-ic_play-24:before{content:"\e650"}
+.domain-rural-icon-ic_video-24:before{content:"\e651"}
+.domain-rural-icon-ic_social_linkedin:before{content:"\e652"}
+.domain-rural-icon-ic_australia:before{content:"\e653"}
+.domain-rural-icon-ic_arrow-left:before{content:"\e654"}
+.domain-rural-icon-ic_tour3d-24:before{content:"\e655"}
+html>body .f-icon,html>body a.f-icon{color:#b6bbc2}
+html>body .f-icon:hover,html>body .f-icon:active,html>body .f-icon:focus,html>body a.f-icon:hover,html>body a.f-icon:active,html>body a.f-icon:focus{color:#3c475b}
+html>body .selected>.f-icon,html>body .selected>a.f-icon{color:#3c475b}
+.f-icon{display:inline-block;width:36px;height:36px}
+.f-icon .icon{display:inline-block;font-size:20px;line-height:36px;width:36px;height:36px}
+.f-icon .icon:before{display:inline-block;text-align:center;line-height:36px;width:100%}
+.f-icon.standalone{width:auto;height:20px}
+.f-icon.with-text{width:auto}
+.f-icon.with-text .icon{float:left}
+.f-icon.with-text .copy{float:left;display:block;padding-right:10px;line-height:36px}
+.f-icon.size-24.icon,.f-icon.size-24 .icon{font-size:24px}
+.f-icon.lgr,.f-icon.lgr .icon{width:50px;height:50px;line-height:50px}
+.f-icon.shortlist{cursor:pointer;z-index: 100;}
+.f-icon.shortlist .icon{position:absolute;top:0;left:0;display:block}
+.f-icon.shortlist .icon.outline{color:#fff;text-shadow:0 1px 1px rgba(0,0,0,0.2)}
+.f-icon.shortlist .icon.fill{color:#151f30;color:rgba(21,31,48,0.3)}
+.f-icon.shortlist:hover .icon.fill,.f-icon.shortlist.active .icon.fill{color:#151f30;color:rgba(21,31,48,0.2)}
+.f-icon.shortlist:hover .icon.outline,.f-icon.shortlist.active .icon.outline{color:#fff}
+.f-icon.shortlist.shortlisted .icon.fill,.f-icon.shortlist.shortlisted:hover .icon.fill,.f-icon.shortlist.shortlisted.active .icon.fill{color:#ffa200}
+.shortlist{position:absolute;top:2px;right:2px}
+.shortlist .icon{font-size:24px}

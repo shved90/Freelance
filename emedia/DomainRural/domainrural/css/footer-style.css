@@ -1,0 +1,115 @@
+.footer {
+	background-color:#FFF;
+}
+
+#footer-logos {
+  width: 1000px;
+  height: 44px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+    #footer-logos a{
+        opacity: 1;
+    }
+
+    #footer-logos a:hover{
+        opacity: 0.6;
+    }
+
+    #footer-logos > img {
+        display: inline-block;
+    }
+
+/*****************************[PAGINATION]*******************************/
+
+#pagination {
+    margin-top: 30px;
+    width: 645px;
+    overflow: hidden;
+    float: left;
+    /*border: 1px solid #000;*/
+}
+    #pagi-search {
+        margin-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 3px;
+        height: 20px;
+        width: 645px;
+        text-align: right;
+        font-size: 12px;
+        color: #4a741e;
+
+    }
+        #pagi-search > span {
+            margin-right: 7px;
+            text-decoration: underline;
+        }
+
+    #pagination-bar {
+        height: 27px;
+        width: 600px;
+        margin-bottom: 40px;
+        text-align: center;
+        overflow: hidden;
+    }
+        .page-box {
+
+            color: #333;
+            border: 1px solid #ddd;
+            font-size: 12px;
+            text-decoration: none;
+            margin-top: 2px;
+            background: #fff;
+            position: relative;
+            display: inline-block;
+            -webkit-transition: 0.225s ease all;
+            -moz-transition: 0.225s ease all;
+            transition: 0.225s ease all;
+
+        }
+            /*.pagination-div {
+                height: 20px;
+                max-width: 20px;
+                background: #fff;
+            }*/
+
+
+		.page-box a {
+			color: #333;
+			text-decoration: none;
+            padding: 2px 7px 2px 7px;
+		}
+
+        .page-box:hover {
+            background-color:#4ba000!important;
+            color: #fff;
+            border-color:#4ba000; 
+        }
+
+        .page-box:hover a {
+            color: #fff;
+        }
+
+
+		span.current, span.page-box-current  {
+			background-color:#4ba000!important;
+			font-weight:bold;
+            border-color:#4ba000; 
+			color:#fff!important;
+            padding: 0 7px;
+		}
+
+
+
+
+
+
+#pagi-search span a {
+    color: #669867!important;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,64 @@
+Project Launch: 
+ 
+1. Buddy press - 10% of site (prototype) - +3 Weeks (22/ 06/ 15) 
+
+2. Alpha - +3 Months (September)  
+
+3. Beta - +2 Months (pre Launch and testing) (November)   
+
+4. Version 1 (?) average 2 months (January) 
+
+5. Version 2 (September 2016)
+
+Version 1 will have Key features and each semester new features will be added. This will give enough of a time gap to not frustrate users with constant new change, but also attract new users.
+ 
+Version 1 Key features: 
+
+- Suggested friends. 
+- Students search. 
+- Adding friends. 
+- Inbox messaging (not instant messaging). 
+- Events. 
+- Accommodation, Market, Jobs <- (together as one feature almost like a notice board) (static page) and companies will still be able to access the site.  
+- Groups. 
+- API from twitter (Images, location) and facebook API to pull in profile data e.g. personal information. 
+- Status update. 
+- Upload profile image. 
+
+Version 2 features: 
+- Societies. 
+- Accommodation, market, jobs, events (these will now all be different features). 
+- Admin control panel. 
+- Group moderation features. 
+- Vine API. 
+- Mobile application. 
+
+Later down the product line... 
+
+Version 3 features: 
+- September 2017 launch 
+- e-Currency  
+- Push to University database 
+
+Version 4 features:
+- Colleges 
+
+Breakdown of project to Version 1:
+
+0. Project management environment (In development) - Dom's Home Server
+1. WordPress Development environment [ALPHA] - Dom's Home Server
+2. MySQL (created via WordPress) [ALPHA] - Dom's Home Server
+3. Install BuddyPress [ALPHA] - Dom's Home Server
+4. Separate BuddyPress tables from WordPress tables. [ALPHA] - Dom's Home Server
+5. User profile information incorporated in separate MySQL [ALPHA] - Dom's Home Server
+6. Code rudimentary profile architecture.[ALPHA] - Datacentre 
+7. Facebook API login (will require third-party code, thus funding). [BETA] (Speed up process £50) + Have ready 15-20 people for testing. 
+8. Third-party buddypress theme as starting point (funding). [BETA] (speed up process £50) - will have a basic front end ready at this point 
+9. Code activity stream (using wordPress "quote" post) [BETA]
+10. Friend connections. [BETA]
+11. Inbox messaging [BETA]
+12. Friend-only inbox messaging. [BETA]
+13. Groups. [BETA]
+14. Advanced groups features (invites, permissions restrictions). [1.0]
+15. Profile images (code image database). [1.0.1]
+16. Classified Ads

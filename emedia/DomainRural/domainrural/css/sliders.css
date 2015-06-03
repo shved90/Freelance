@@ -1,0 +1,105 @@
+#wrapper {
+        /*position: absolute;*/
+}
+#carousel-wrapper {
+        position: relative;
+        /*border: 1px solid #000;*/
+        height: 422px;
+}
+#carousel, #thumbs {
+        overflow: hidden;
+}
+#carousel-wrapper .caroufredsel_wrapper {
+        /*box-shadow: 0 0 5px #899;*/
+}
+
+#carousel span, #carousel img,
+#thumbs a, #thumbs img  {
+        display: inline-block;
+        float: left;
+        
+}
+#carousel span, #carousel a,
+#thumbs span, #thumbs a {
+        position: relative;
+}
+#carousel img {
+        border: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+}
+#carousel img.glare,
+
+#carousel span {
+        width: 100%;
+        height: auto;
+}
+
+#thumbs-wrapper {
+        /*padding: 20px 40px;*/
+        position: relative;
+}
+#thumbs > a {
+        /*border: 2px solid #899;*/
+        width: 105px!important;
+        height: 75px;
+        /*margin: 0 10px;*/
+        overflow: hidden;
+        /*border-radius: 10px;*/
+        outline: none !important;
+        
+        -webkit-transition: border-color .5s;
+        -moz-transition: border-color .5s;
+        -ms-transition: border-color .5s;
+        transition: border-color .5s;
+}
+#thumbs a:hover, #thumbs a.selected {
+        /*border-color: #566;*/
+        
+}
+
+#thumbs img {
+        /*border: 1px solid #000;*/
+        width: 104px;
+        height: 75px;
+        position: absolute;
+        display: inline-block;
+        float: left;
+        
+}
+
+#wrapper img#shadow {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+}
+
+#prev, #next {
+        background: transparent url('../images/carousel/gui/carousel_nav_black.png') no-repeat 0 0;
+        display: block;
+        width: 19px;
+        height: 34px;
+        margin-top: -18px;
+        position: absolute;
+        top: 50%;
+}
+#prev {
+        background-position: 0 0;
+        left: 0px;
+}
+#next {
+        background-position: -19px 0;
+        right: 2px;
+}			
+#prev:hover { 
+        /*background-position: 0 -20px;	*/			
+}
+#next:hover {
+        /*background-position: -19px -20px;	*/			
+}
+#prev.disabled, #next.disabled {
+        display: none !important;
+}
