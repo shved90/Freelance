@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -90,49 +90,118 @@
 				
 				<div id="content-divs">
 					
-					<div class="profile-nav">
-						<div class="thumb-title">
-							<img src="images/domain.jpg" alt="domain" /><h3>my Domain Rural</h3>
-						</div>
-						<div class="thumb-title">
-							<img src="images/edit.jpg" alt="edit preferences" /><h4>View & edit preferences</h4>
-						</div>
-					</div>
 
-					<div class="white-box small-box">
-						<div class="thumb-title">
-							<img src="images/search-saved.jpg" alt="saved search" /><h3>Saved Searches</h3>
-						</div>
-						<p><span>> More - $250k to $350k</span><a href="">[ View Search Results ]</a> <a href="">[ Delete ]</a></p>
-						<p><span>> Tamworth - $500k to $750k</span><a href="">[ View Search Results ]</a> <a href="">[ Delete ]</a></p>
-					</div>
+                    <form class="search-agency">
+                        <fieldset>
+                            <p>I am looking for</p>
+                            <input type="radio" name="office" id="office" />
+                            <label for="office">a Real Estate <b>Office</b></label>
+                            <input type="radio" name="agent" id="agent" />
+                            <label for="agent">a Real Estate <b>Agent</b></label>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <label for="state">State</label>
+                                <select name="state" id="state">
+                                    <option value="item1">item1</option>
+                                    <option value="item2">item2</option>
+                                    <option value="item3">item3</option>
+                                    <option value="item4">item4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="region">Region</label>
+                                <select name="region" id="region">
+                                    <option value="item1">item1</option>
+                                    <option value="item2">item2</option>
+                                    <option value="item3">item3</option>
+                                    <option value="item4">item4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="town">Closest Town</label>
+                                <select name="town" id="town">
+                                    <option value="item1">item1</option>
+                                    <option value="item2">item2</option>
+                                    <option value="item3">item3</option>
+                                    <option value="item4">item4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="keyword">Keyword</label>
+                                <input type="search" id="keyword" />
+                            </div>
+                            <input type="submit" value="Search" />
+                        </fieldset>
+                    </form>
 
-					<div class="white-box small-box">
-						<div class="thumb-title">
-							<img src="images/alert.jpg" alt="alert" /><h3>Alerts</h3><span>Use alerts to receive the latest properties matching your search criteria in a daily email</span>
-						</div>
-						<p><b>Tamworth:</b> Tamworth, New England - North West, NSW | $150,000-$250,000 | 2Ha-100Ha<br /><a href="">[ Edit Alert ]</a> <a href="">[ Delete ]</a></p>
-						<p><b>Gunnedah:</b> Gunnedah, New England - North West, NSW | $150,000-$250,000 | 2Ha-100Ha<br /><a href="">[ Edit Alert ]</a> <a href="">[ Delete ]</a></p>
-						<p><a href="" class="orange">+ create new alert</a></p>
-					</div>
-
-					<div class="white-box">
-						<div class="thumb-title">
-							<img src="images/shortlist.jpg" alt="shortlist" /><h3>Shortlist</h3>
-						</div>
-					</div>
-
-					<div class="white-box">
-						<div class="thumb-title">
-							<img src="images/profile.jpg" alt="profile" /><h3>My Profile</h3>
-						</div>
-						<form>
-						<label for="name">Full Name</label>
-						<input type="text" id="name" />
-						</form>
-					</div>
-
-
+                    <div class="leftcol agents">
+                        <div class="search-result">
+                            <p><b>4</b> Agencies in <b>Tamworth, NSW</b></p>
+                        </div>
+                        <div class="agency-list">
+                            <div class="yellow-border">
+                                <img src="" alt="agent" />
+                                <div class="agent-content">
+                                    <img src="" alt="agency" /> 
+                                    <p><b>Ray White Rural Tamworth</b></p>
+                                    <p>Tamworth NSW</p>
+                                    <p><b>P:</b><a href="" class="agency-tel">02 67661111</a><b>W:</b><a href="" class="agency-site">http://www.raysomethingorother</a></p>
+                                    <div class="agent-contact">
+                                        <span><img src="images/phone.jpg" alt="phone contact" /><a href="">View agents phone number</a></span>
+                                        <span><img src="images/mail.jpg" alt="phone contact" /><a href="">Email Agent</a></span>
+                                        <a href="">+ View Listings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="green-border">
+                                <img src="" alt="agent" />
+                                <div class="agent-content">
+                                    <img src="" alt="agency" /> 
+                                    <p><b>Ray White Rural Tamworth</b></p>
+                                    <p>Tamworth NSW</p>
+                                    <p><b>P:</b><a href="" class="agency-tel">02 67661111</a><b>W:</b><a href="" class="agency-site">http://www.raysomethingorother</a></p>
+                                    <div class="agent-contact">
+                                        <span><img src="images/phone.jpg" alt="phone contact" /><a href="">View agents phone number</a></span>
+                                        <span><img src="images/mail.jpg" alt="phone contact" /><a href="">Email Agent</a></span>
+                                        <a href="">+ View Listings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="agent" />
+                                <div class="agent-content">
+                                    <img src="" alt="agency" /> 
+                                    <p><b>Ray White Rural Tamworth</b></p>
+                                    <p>Tamworth NSW</p>
+                                    <p><b>P:</b><a href="" class="agency-tel">02 67661111</a><b>W:</b><a href="" class="agency-site">http://www.raysomethingorother</a></p>
+                                    <div class="agent-contact">
+                                        <span><img src="images/phone.jpg" alt="phone contact" /><a href="">View agents phone number</a></span>
+                                        <span><img src="images/mail.jpg" alt="phone contact" /><a href="">Email Agent</a></span>
+                                        <a href="">+ View Listings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="agent" />
+                                <div class="agent-content">
+                                    <img src="" alt="agency" /> 
+                                    <p><b>Ray White Rural Tamworth</b></p>
+                                    <p>Tamworth NSW</p>
+                                    <p><b>P:</b><a href="" class="agency-tel">02 67661111</a><b>W:</b><a href="" class="agency-site">http://www.raysomethingorother</a></p>
+                                    <div class="agent-contact">
+                                        <span><img src="images/phone.jpg" alt="phone contact" /><a href="">View agents phone number</a></span>
+                                        <span><img src="images/mail.jpg" alt="phone contact" /><a href="">Email Agent</a></span>
+                                        <a href="">+ View Listings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $('.agency-tel').text($('.agency-tel').text().substring(0, 10) + "...");
+                                $('.agency-site').text($('.agency-site').text().substring(0, 10) + "...");
+                            </script>
+                        </div>
+                    </div>
 
 				</div><!--end of content-body-->
 
