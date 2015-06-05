@@ -47,6 +47,12 @@
 </head>
 <body id="inner">
 
+<style>
+    body#inner, body#default{
+        background-color: #fff;
+    }
+</style>
+
 	<div id="main-body">
 
 		<!-- header-top -->
@@ -168,6 +174,28 @@
                                     </div>
                                 </div>
                             </div>
+                            <form class="agent-form">
+                                <fieldset>
+                                    <legend>Ask this agent a question</legend>
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" id="name" />
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" id="email" />
+                                    <span>
+                                        <label for="phone">Your Phone:</label>
+                                        <input type="text" id="phone" />
+                                    </span>
+                                    <span>
+                                        <label for="postcode">Your Postcode:</label>
+                                        <input type="text" id="postcode" />
+                                    </span>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="comment">Comments:</label>
+                                    <textarea id="comment"></textarea>
+                                    <input type="submit" value="Send enquiry" />
+                                </fieldset>
+                            </form>
                             <div>
                                 <img src="" alt="agent" />
                                 <div class="agent-content">
@@ -197,6 +225,7 @@
                                 </div>
                             </div>
                             <script>
+                                // shortening agents phone and email
                                 $('.agency-tel').text($('.agency-tel').text().substring(0, 10) + "...");
                                 $('.agency-site').text($('.agency-site').text().substring(0, 10) + "...");
                             </script>

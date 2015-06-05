@@ -4847,6 +4847,22 @@ a.orange{
     width: 455px;
 }
 
+.agents .agency-list > div .agent-content{
+    width: 530px;
+}
+
+.agents .agency-list > div .agent-content .agent-contact{
+    margin-top: 15px;
+}
+
+.agents .agency-list > div .agent-content .agent-contact span{
+    margin-right: 20px;
+}
+
+.agents .agency-list > div .agent-content .agent-contact > a{
+    margin: 0 0 0 75px;
+}
+
 .agency-list > div .agent-content p
 {
     margin-bottom: 5px;
@@ -4858,9 +4874,20 @@ a.orange{
     margin: 0 20px 0 10px;
 }
 
+.agency-list > div .agent-content a:hover{
+    text-decoration: underline;
+}
+
 .agency-list > div .agent-contact
 {
     float: right;
+}
+
+.agency-list > div .agent-contact a{
+    color: #515b6d;
+    font-size: 14px;
+    line-height: 25px;
+    vertical-align: top;
 }
 
 .agency-list > div > a
@@ -4870,4 +4897,62 @@ a.orange{
     color: #515b6d;
     text-decoration: none;
     font-size: 14px;
+}
+
+.agent-form{
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.agent-form legend{
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #353535;
+}
+
+.agent-form fieldset{
+    width: 290px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.agent-form fieldset:last-child{
+    margin: 28px 0 0 20px;
+    width: 310px;
+}
+
+.agent-form span{
+    display: inline-block;
+    width: 170px;
+}
+
+.agent-form span:last-child{
+    width: 106px;
+    margin-left: 10px;
+}
+
+.agent-form label{
+    display: block;
+}
+
+.agent-form input, .agent-form textarea{
+    border: 1px solid #dadada;
+    padding: 10px 10px;
+    margin: 5px 0 15px;
+    display: block;
+    width: 100%;
+}
+
+.agent-form textarea{
+    height: 80px;
+}
+
+.agent-form input[type=submit]{
+    padding: 15px 30px;
+    float:right;
+    width: auto;
+    border-radius: 5px;
+    background-color: #f64f22;
+    color: #fff;
+    font-size: 18px;
 }
