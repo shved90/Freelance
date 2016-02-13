@@ -29,9 +29,17 @@ header .get-social {
   width:8px;
 }
 
+header.minified{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
 header.minified .get-social {
-   transition-delay: 0.5s;
   margin-top: -120px;
+}
+
+.navbar-default{
+  display: none;
 }
 
 @media screen and (max-width:1000px) {
@@ -39,34 +47,26 @@ header.minified .get-social {
     display: block;
     position: fixed;
     background: #fff;
-    top:0px;
-    z-index:1000;
-    z-index:200;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    color: %000;
+    top: -320px;
+    right: 0;
+    z-index: 199;
+    left: 0;
+    width: 100%;
+    height: auto;
     font-size: 19px;
     font-weight: bold;
     padding: 20px;
     transition: all 0.5s ease-in-out;
   }
 
-/* .home-slider .slides
-{
-margin-top: -55px;
-}*/
-
-
   header.open {
-    left: 0px;
+    top: 45px;
   }
-  header .nav-item .logo-white,
-  .logo-simple {
-    display: none
+  header .nav-item:first-of-type{
+    display: none;
   }
   header .logo {
-   // width: 50px;
+    width: 50px;
     margin-bottom: 60px;
     width: 100%;
   }
@@ -75,33 +75,8 @@ margin-top: -55px;
       border-left: none;
   }
 
-  header .nav-wrapper .nav-item {
-    margin-top: 20px
-  }
-  .mobile-nav-btn {
-    position: fixed;
-    width: 50px;
-    left: 0px;
-    top:0px;
-    z-index:12000;
-    padding: 11px;
-    background: black;
-    transition: all 0.5s ease-in-out;
-  }
-  .mobile-nav-btn.open {
-    transform: translateX(300px);
-    background: white;
-  }
-  .mobile-nav-btn svg {
-    transition: all 0.5s ease-in-out;
-  }
-  .mobile-nav-btn.open svg {
-    transform: rotate(90deg);
-    transition: all 0.5s ease-in-out;
-  }
-  .mobile-nav-btn svg rect {
-    fill: white;
-    transition: all 0.5s ease-in-out;
+  header .nav-wrapper .nav-item:not(:last-of-type) {
+    margin-bottom: 20px
   }
   
   header .get-social
@@ -112,16 +87,59 @@ margin-top: -55px;
   header .header-nav .nav-item a
   {
     color:#000;
+    display: block;
   }
 
   header .header-nav .nav-item .border
   {
     display: none;
   }
-}
+  .navbar-default{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    border-radius: 0;
+    backgorund: #fff;
+    border-width: 0 0 1px;
+  }
+  .navbar-header{
+    width: 100%;
+    
+  }
+  .container-fluid>.navbar-header{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-brand{
+    height: auto;
+    margin-left: -15px;
+  }
+  .navbar-toggle{
+    display: block;
+    right: 0;
+    margin-right: 0;
+  }
+  .container.services-container
+  {
+    margin: 0 0 0 -15px;
+  }
 
-.mobile-nav-btn.open svg rect {
-  fill: black;
+  .naveen1.section
+  {
+    background-image: none;
+    background-color: #D8482D;
+  }
+
+  #testimonials, .naveen1.section, .naveen {
+    background-attachment: local;
+  }
+  .testimonials-slider .client-comment {
+    margin: 0 10px;
+  }
+
 }
 
 @media screen and (min-width:1000px) {
@@ -140,9 +158,6 @@ header .get-social
     right:0px;
   }
 
-  .mobile-nav-btn {
-    display: none;
-  }
   header.minified {
     position: fixed;
     top:0px;
@@ -150,20 +165,18 @@ header .get-social
   }
   header .header-nav .nav-item .logo-container {
     height: 50px;
-    width: 220px;
+    width: 170px;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-    transition-delay: 0.5s;
   }
   header.minified .header-nav .nav-item .logo-container {
     -ms-transform: translateY(-105px); /* IE 9 */
     -webkit-transform:translateY(-105px);
     transform: translateY(-105px);
     width: 120px;
-    transition-delay: 0.5s;
   }
   .nav-wrapper {
-    width: 75%;
+    width: 960px;
     margin: 0 auto;
     height: 100%;
     padding: 0 300px 0 30px;
@@ -178,9 +191,6 @@ header .get-social
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-  }
-  .header-nav .logo {
-
   }
   .header-nav .logo img {
     width: 200px;
@@ -201,6 +211,9 @@ header .get-social
     transition: padding 1s cubic-bezier(0.19, 1, 0.22, 1);
     -moz-transition: padding 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
+  
+
 
    /* .header-nav .nav-item.nav-border-1
     {
@@ -272,22 +285,26 @@ section .container .title h1
   font-style: italic;
   text-transform: none;
   color: #000;
- // background-color: #f1f1f1;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-font-size: 22px;
+  width: 150px;
+  margin: 20px auto 10px;
+  font-size: 22px;
 }
 
 .about-text-container
 {
    background-color: #f1f1f1;
-padding-top: 70px;
 }
 
- section#clients
+#about{
+  padding-bottom: 0;
+}
 
-{
+#about .container{
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+ section#clients {
  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f09a2a+0,f09a2a+25,8cc53f+25,8cc53f+50,e74888+50,e74888+75,2eadd1+75,2eadd1+100 */
 background: #fff; /* Old browsers */
 
@@ -338,6 +355,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09a2a', end
   z-index: 1000;
   height:100px;
   width:100%;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -351,7 +369,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09a2a', end
 {
   font-style: italic;
   font-weight: lighter;
-  font-size: 14px
+  font-size: 14px;
+  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+
+}
+
+#portfolio .container .title{
+  margin-bottom: 10px;
+}
+
+#portfolio .container p{
+  margin-bottom: 0;
 }
 
 #portfolio-grid li,.project-overlay
@@ -412,18 +440,40 @@ color:grey;
 
 footer
 {
-background-color:#060606;
+  background-color:#060606;
+  color: #fff;
+  position: relative;
+}
+
+footer .fa.fa-chevron-up{
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -20px;
+  color: #fff;
+  background: #e84202;
+  padding: 13px 15px;
+  font-size: 15px;
+  border-radius: 100%;
+  opacity: 0.7;
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+
+footer .fa.fa-chevron-up:hover{
+  opacity: 1;
+  text-decoration: none;
 }
 
 footer .contact
 {
   margin-top: 50px;
-text-align:center;
+  text-align:center;
 }
 
-footer 
-{
-color:#fff;
+footer .contact p i{
+  display: block;
+  margin-bottom: 5px;
 }
 
 .section hr
@@ -448,6 +498,45 @@ height:200px;
 width:200px;
 }
 
+#pricing-options {
+  position: relative;
+}
+
+#pricing-options .service-options{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+#pricing-options p{
+  font-size: 23px;
+  color: #fff;
+  font-style: italic;
+  white-space: nowrap;
+  font-family: "Times", "Times New Roman", serif;
+  margin: 0 auto 10px;
+
+}
+
+#pricing-options p span{
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+#services, #portfolio, #pricing-options, #pricing{
+  padding-bottom: 20px;
+}
+
+#services .container, #portfolio .container, #pricing-options .container, #pricing .container{
+  padding-top: 20px;
+}
+
 .services-container
 {
   text-align: center;
@@ -462,6 +551,10 @@ width:200px;
   font-size: 60px
 }
 
+.services-container h4{
+  margin-top: 5px;
+}
+
 .services-container .arrow-link
 {
   color:black;
@@ -470,7 +563,7 @@ width:200px;
   text-transform: uppercase;
 }
 
-.services-container .arrow-link,h4
+.services-container .arrow-link, .services-container h4
 {
   color:black;
   font-size: 14px;
@@ -512,18 +605,13 @@ width:200px;
   font-style: italic;
 }
 
-.service-options .service-options-right
-{
-  
-}
-
-.service-options a
+/*.service-options a
 {
   color: white;
   font-size: 16px;
   border:1px solid white;
   padding: 5px;
-}
+}*/
 
 .one-off 
 {
@@ -583,23 +671,22 @@ height: 10px;
 
 .naveen
 {
-background-image: url("../images/bgg.jpg");
-
+  background-image: url("../images/bgg.jpg");
+  position: static;
 }
 
 .naveen1
 {
-background-image: url("../images/bgg3.jpg");
+  background-image: url("../images/bgg3.jpg");
+  position: static;
 }
-
-
 
 .one-off .promo-icon .ff-icon
 {
- // background-image: url('../images/icons/Orange/adwords.png');
-   height: 40px;
-    margin: 10px auto auto;
-    width: 40px;
+  background-image: url('../images/icons/Orange/adwords.png');
+  height: 40px;
+  margin: 10px auto auto;
+  width: 40px;
 }
 
 .home-slider .slides > li p

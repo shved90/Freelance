@@ -54,7 +54,7 @@ p {
 .title {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   float: none;
 }
 
@@ -507,8 +507,8 @@ font-weight:400;
   border-radius: 4px;
   cursor: pointer;
   color: #000000;
-font-family: "Times","Times New Roman",serif;
-  font-size: 14px;
+  font-family: "Times","Times New Roman",serif;
+  font-size: 16px;
   font-weight: 400;
   
   transition: all .3s ease;
@@ -762,6 +762,7 @@ font-family: "Times","Times New Roman",serif;
 #testimonials {
   background-image: url("../images/bg/5.jpg");
   color: #fff;
+  position: static;
 }
 
 #testimonials h1 {
@@ -815,8 +816,13 @@ font-family: "Times","Times New Roman",serif;
   background-color: transparent;
 }
 
+#clients-carousel .owl-item{
+  display: table;
+}
+
 #clients-carousel .item {
-  padding: 10px;
+  display: table-cell;
+  padding: 15px 10px;
   margin: 10px;
   cursor: move;
 }
@@ -866,7 +872,7 @@ font-family: "Times","Times New Roman",serif;
 
 #contact-form .btn {
   margin-top: 15px;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 #contact-form .form-group.error, #contact-form .form-group.success {
@@ -1021,6 +1027,10 @@ footer .social-list a:hover .social-icon {
     float: none;
   }
 
+  .promo{
+    margin-bottom: 10px;
+  }
+
   .promo, .promo.right {
     text-align: center;
   }
@@ -1066,7 +1076,7 @@ footer .social-list a:hover .social-icon {
 
 @media (max-width: 640px) {
   .home-slider .slides > li h1 {
-    font-size: 23px;
+    font-size: 45px;
   }
 
 }
@@ -1084,7 +1094,7 @@ footer .social-list a:hover .social-icon {
   }
 
   .home-slider .slides > li h1{
-    font-size: 14px;
+    font-size: 35px;
   }
 }
 

@@ -8,8 +8,8 @@ $(document).ready(function() {
     }
  });
   
-  $('.mobile-nav-btn').click(function(){
-    $('.mobile-nav-btn').toggleClass('open');
+  $('.navbar-toggle').click(function(){
+    $('.navbar-toggle').toggleClass('open');
     $('header').toggleClass('open');
   });
   
@@ -30,4 +30,32 @@ $(document).ready(function() {
    $(this).parent().css('background',"none");
  });
 
+$(function() {
+  $('a[href*="#scrolltop"]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 })
+
+$(document).ready(function(){
+  //Home Image Slider
+  $.backstretch([
+    "images/bg/2.jpg",
+    "images/bg/3.jpg",
+    "images/bg/4.jpg",
+    "images/bg/5.jpg",
+    "images/bg/1.jpg",   
+  ], {duration: 4500, fade: 'slow'});
+  
+});
+
