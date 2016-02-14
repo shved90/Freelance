@@ -218,6 +218,11 @@ font-weight:400;
   color: #666;
 }
 
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
 .promo-line:before, .promo-line:after {
   content: " ";
   display: table;
@@ -250,6 +255,7 @@ font-weight:400;
 
 .promo h4 {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .promo p {
@@ -933,8 +939,19 @@ footer {
   background-color: #fff;
 }
 
+footer a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:active{
+  color: #fff;
+  text-decoration: underline;
+}
+
 footer .social-list a {
-  color: #ccc;
+  font-size: 14px;
 }
 
 footer .social-list a .social-icon {

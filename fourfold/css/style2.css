@@ -384,7 +384,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09a2a', end
 
 #portfolio-grid li,.project-overlay
 {
- cursor:url("../images/portfolio/cursor.gif"), auto;
+ 
 }
 
 #portfolio-grid li:hover .project-overlay.orange
@@ -542,7 +542,7 @@ width:200px;
   text-align: center;
   font-size: 12px;
   color: #aaa;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .services-container .fa

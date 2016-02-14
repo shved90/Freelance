@@ -1,7 +1,7 @@
 <?php
 
-$to = "faheem.pesitm@gmail.com,rupeshshetty86@gmail.com"; # <--- Your Email 
-$subject = "You received a mail from your website's contact form";
+$to = "richardh@fourfoldlondon.co.uk"; # <--- Your Email 
+$subject = "Fourfold enquiry";
 
 if ($_POST) {
 	$name = stripslashes($_POST['fullname']);
