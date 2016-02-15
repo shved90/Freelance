@@ -7,28 +7,6 @@ $(document).ready(function() {
       $("header").removeClass('minified');
     }
  });
-  
-  $('.navbar-toggle').click(function(){
-    $('.navbar-toggle').toggleClass('open');
-    $('header').toggleClass('open');
-  });
-  
-  $('.ff-icon').css('background',
-  function(){
-  return "url('images/icons/Stroked/"+$(this).data('icon-src')+"')";
-  });
-  
-  $('.ff-icon').hover(
- function()
- {
-   $(this).css('background',"url('images/icons/Orange/"+$(this).data('icon-src')+"')");
-   $(this).parent().css('background-color',"white");
- },
- function()
- {
-   $(this).css('background',"url('images/icons/Stroked/"+$(this).data('icon-src')+"')");
-   $(this).parent().css('background',"none");
- });
 
 $(function() {
   $('a[href*="#scrolltop"]').click(function() {

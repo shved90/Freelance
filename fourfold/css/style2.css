@@ -36,6 +36,8 @@ header.minified{
 
 header.minified .get-social {
   margin-top: -120px;
+  /*transition: all 0.5s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;*/
 }
 
 .navbar-default{
@@ -56,7 +58,8 @@ header.minified .get-social {
     font-size: 19px;
     font-weight: bold;
     padding: 20px;
-    transition: all 0.5s ease-in-out;
+/*    transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;*/
   }
 
   header.open {
@@ -138,6 +141,9 @@ header.minified .get-social {
   }
   .testimonials-slider .client-comment {
     margin: 0 10px;
+  }
+  #contact .container div:last-of-type{
+    padding-left: 0;
   }
 
 }
@@ -370,7 +376,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09a2a', end
   font-style: italic;
   font-weight: lighter;
   font-size: 14px;
-  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+  font-family: "Times","Times New Roman",serif;
 
 }
 
@@ -600,10 +606,6 @@ width:200px;
   text-align: center;
   color:white;
 }
-.service-options h1
-{
-  font-style: italic;
-}
 
 /*.service-options a
 {
@@ -624,6 +626,7 @@ width:200px;
 {
   color:#fff;
   font-style: italic;
+  font-family: "Times","Times New Roman",serif;
   height: 80px;
   padding-top: 30px;
 }
@@ -669,6 +672,22 @@ height: 10px;
   background-color: #969899;
 }
 
+.project-slider .iframe-wrapper{
+  position: relative;
+  width: 100%;
+  padding-top: 57%;
+}
+
+.project-slider .iframe-wrapper iframe{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
 .naveen
 {
   background-image: url("../images/bgg.jpg");
@@ -681,12 +700,104 @@ height: 10px;
   position: static;
 }
 
-.one-off .promo-icon .ff-icon
+.one-off .promo-icon:hover{
+  background: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.one-off .promo-icon div
 {
-  background-image: url('../images/icons/Orange/adwords.png');
   height: 40px;
   margin: 10px auto auto;
   width: 40px;
+  background: transparent url('../images/product-assets.png') no-repeat center center;
+}
+
+.one-off .promo-icon .prog-website{
+  background-position: 2px 5px;
+}
+.one-off .promo-icon:hover .prog-website{
+  background-position: 2px -37px;
+}
+
+.one-off .promo-icon .prog-ecommerce{
+  background-position: -153px 5px;
+}
+.one-off .promo-icon:hover .prog-ecommerce{
+  background-position: -153px -38px;
+}
+
+.one-off .promo-icon .prog-videos{
+  background-position: -305px 11px;
+}
+.one-off .promo-icon:hover .prog-videos{
+  background-position: -305px -32px;
+}
+
+.one-off .promo-icon .prog-branding{
+  background-position: -73px 2px;
+}
+.one-off .promo-icon:hover .prog-branding{
+  background-position: -73px -41px;
+}
+
+.one-off .promo-icon .prog-sales{
+  background-position: -424px 4px;
+}
+.one-off .promo-icon:hover .prog-sales{
+  background-position: -424px -38px;
+}
+
+.one-off .promo-icon .prog-business{
+  background-position: -113px 3px;
+}
+.one-off .promo-icon:hover .prog-business{
+  background-position: -113px -40px;
+}
+
+.one-off .promo-icon .prog-marketing{
+  background-position: -266px 4px;
+}
+.one-off .promo-icon:hover .prog-marketing{
+  background-position: -266px -39px;
+}
+
+
+.one-off .promo-icon .prog-social{
+  background-position: -346px 5px;
+}
+.one-off .promo-icon:hover .prog-social{
+  background-position: -346px -38px;
+}
+
+.one-off .promo-icon .prog-email{
+  background-position: -191px 6px;
+}
+.one-off .promo-icon:hover .prog-email{
+  background-position: -191px -37px;
+}
+
+.one-off .promo-icon .prog-adwords{
+  background-position: -228px 4px;
+}
+.one-off .promo-icon:hover .prog-adwords{
+  background-position: -228px -39px;
+}
+
+.one-off .promo-icon .prog-seo{
+  background-position: -388px 4px;
+}
+.one-off .promo-icon:hover .prog-seo{
+  background-position: -388px -36px;
+}
+
+.one-off .promo-icon .prog-appdev{
+  background-position: -37px 7px;
+  background-size: 478px;
+}
+.one-off .promo-icon:hover .prog-appdev{
+  background-position: -37px -38px;
 }
 
 .home-slider .slides > li p
