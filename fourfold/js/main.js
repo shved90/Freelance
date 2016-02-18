@@ -32,18 +32,6 @@ $(document).ready(function(){
       }
     }
   });
-  
-  $('.cls-nav').click(function(){
-  $('header').removeClass('open');
-  $('.mobile-nav-btn').removeClass('open');
-  });
-
-  //Close navbar on click
-  $('.nav a').on('click', function(){
-    if ($(window).width() < 768) {
-      $(".navbar-toggle").click();
-    }
-  });
 
   //Nav Selection
   $('#nav').onePageNav({
@@ -171,104 +159,6 @@ $(document).ready(function(){
     autoPlay: 4000,
     pagination: false
   });
-
-  //Google Maps
-  function initMap() {
-    var myLatlng = new google.maps.LatLng(40.773328,-73.960088); // <- Your latitude and longitude
-    var styles = [
-      {
-        "featureType": "water",
-        "stylers": [
-        {
-          "color": "#eee"
-        },
-        {
-          "visibility": "on"
-        }
-        ]
-      },
-      {
-        "featureType": "landscape",
-        "stylers": [
-        {
-          "color": "#f2f2f2"
-        }
-        ]
-      },
-      {
-        "featureType": "road",
-        "stylers": [
-        {
-          "saturation": -100
-        },
-        {
-          "lightness": 45
-        }
-        ]
-      },
-      {
-        "featureType": "road.highway",
-        "stylers": [
-        {
-          "visibility": "simplified"
-        }
-        ]
-      },
-      {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-        {
-          "visibility": "off"
-        }
-        ]
-      },
-      {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-        {
-          "color": "#444444"
-        }
-        ]
-      },
-      {
-        "featureType": "transit",
-        "stylers": [
-        {
-          "visibility": "off"
-        }
-        ]
-      },
-      {
-        "featureType": "poi",
-        "stylers": [
-        {
-          "visibility": "off"
-        }
-        ]
-      }
-     ]
-    
-    var mapOptions = {
-      zoom: 16,
-      center: myLatlng,
-      mapTypeControl: false,
-      disableDefaultUI: true,
-      zoomControl: false,
-      scrollwheel: false,
-      styles: styles
-    }
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'We are here!'
-    });
-  }
-
-  google.maps.event.addDomListener(window, 'load', initMap);
 
   //Contact form validation and submit with ajax
   $('#contact-us').validate({
