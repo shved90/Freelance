@@ -1743,7 +1743,7 @@ width:200px;
 
 .price-item
 {
-  margin-top: 60px
+  margin-top: 40px
 }
 
 .one-off .promo-icon
@@ -1808,6 +1808,86 @@ height: 10px;
 {
   background-image: url("../images/bgg3.jpg");
   position: static;
+}
+
+.price-item{
+  position: relative;
+}
+
+.price-item p{ 
+  color: #fff;
+  margin-top: 15px;
+}
+
+.one-off .title{
+  margin-bottom: 40px;
+} 
+
+.one-off .title h6{
+  color:#fff;
+  font-size:36px;
+  margin-bottom: 0;
+}
+
+.one-off .tooltip{
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: #060606;
+  background: rgba(6,6,6,.85);
+  opacity: 1;
+  top: auto;
+  bottom: 85%;
+  left: 50%;
+  margin-left: -100px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 16px;
+}
+
+.one-off .tooltip:after{
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0.8);
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+.one-off .tooltip .feature-list{
+  font-style: italic;
+  font-weight: 300;
+  font-size: .9333333333333em;
+  color: #fff;
+  color: rgba(255,255,255,.90)!important;
+  text-align: left;
+  color: #fff;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.one-off .tooltip .feature-list li .list-dot{
+  display: inline-block;
+  margin-right: 15px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background: #ee3b16;
+}
+.one-off .promo-icon:hover + .tooltip{
+  display: block !important;
 }
 
 .one-off .promo-icon:hover{
