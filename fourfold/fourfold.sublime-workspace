@@ -1,0 +1,643 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"work",
+				"workdesc1"
+			],
+			[
+				"click",
+				"clickNumber"
+			],
+			[
+				"clic",
+				"clickNumber"
+			],
+			[
+				"lang",
+				"langInput"
+			],
+			[
+				"add",
+				"addButton"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"working",
+				"workingDays"
+			],
+			[
+				"current",
+				"currentDate"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"align",
+				"text-align"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"il",
+				"inline-block"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tesc",
+				"tesco_shop"
+			],
+			[
+				"bacg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/SASS Build/SASS - Compressed.sublime-build",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SASS Build/SASS.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold"
+	],
+	"file_history":
+	[
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/main.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/blog/blog1.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/blog/all.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/index.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/style2.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/animate.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/red.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/respond.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.nav.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.validation.min.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.mixitup.min.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-1.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/video-bg.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/parallax-bg.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.mb.YTPlayer.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.countTo.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.appear.js",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/style.css",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/index.html",
+		"/C/Users/Alienware/Downloads/css/style.css",
+		"/C/Users/Alienware/Downloads/index.html",
+		"/C/Users/Alienware/Downloads/css/style2.css",
+		"/C/Users/Alienware/Downloads/js/main.js",
+		"/C/Users/Alienware/Downloads/js/index.js",
+		"/C/Users/Alienware/Downloads/maildirsize",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/sublime/newsite.sublime-project",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/sublime/newsite.sublime-workspace",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/styles/style.css",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/index.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/CV site/index.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/CV site/styles/style_main.css",
+		"/C/Users/Alienware/Desktop/style.css",
+		"/C/Users/Alienware/Desktop/index.php",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/hellouni.sublime-project",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/hellouni.sublime-workspace",
+		"/C/Users/Alienware/Desktop/styles.css",
+		"/C/Users/Alienware/Downloads/standalone_preview/scripts/compiled/wholeApp.js",
+		"/C/Users/Alienware/Downloads/standalone_preview/index.html",
+		"/C/Users/Alienware/Downloads/standalone_preview/styles.less",
+		"/C/Users/Alienware/Desktop/super simple/style.css",
+		"/C/Users/Alienware/Desktop/super simple/data.tsv",
+		"/C/Users/Alienware/Desktop/super simple/index.html",
+		"/C/Users/Alienware/Desktop/123/index.html",
+		"/C/Users/Alienware/Desktop/123/style.css",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Alienware/Desktop/theloop.php",
+		"/C/Users/Alienware/Desktop/thingy.php",
+		"/C/Users/Alienware/Desktop/style (current).css",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/Icons/add-friend.svg",
+		"/C/Users/Alienware/Desktop/Github/Gradmash/styles/index.scss",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Technical Tests/Antiques/build/style.css",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Technical Tests/Antiques/build/index.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Technical Tests/Appy Birthday/build/index.html",
+		"/C/Users/Alienware/Desktop/build/landing.html",
+		"/C/Users/Alienware/Desktop/index.html",
+		"/C/Users/Alienware/Desktop/appy-birthday/index.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Personal blog/index.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Personal blog/blog1.html",
+		"/C/Users/Alienware/Desktop/Github/Personal-Projects/Personal blog/styles/style_main.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/DomainRural/domainrural/css/body-style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/DomainRural/domainrural/findagent.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/DomainRural/domainrural/findagency.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/DomainRural/domainrural/css/body-style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/DomainRural/domainrural/myproperties - Copy.html",
+		"/C/Users/Alienware/Desktop/ie7.css",
+		"/C/Users/Alienware/Desktop/Github/AfterFarm/index.html",
+		"/C/Users/Alienware/Desktop/Github/AfterFarm/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Smi-online/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Smi-online/sector.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Smi-online/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Smi-online/welcome.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/new design/about.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/new design/testimonials.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/new design/contactus.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/new design/team.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Smi-online/faq.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/style/style-new.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/diagnostic-tests.html",
+		"/C/Users/Alienware/Desktop/start.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/new design/style/style-new.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/contactus.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Malford/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Malford/Product.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Malford/Catalogue.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Malford/style/smoothproducts.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Malford/index.html",
+		"/C/Users/Alienware/Desktop/smoothproducts.css",
+		"/C/Users/Alienware/Desktop/blackbrickroad-master/js/game.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecAware/Site/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/Gradmash/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/Gradmash/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/france-southwest.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/france-northwest.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/france-central.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/layout/france-central-map.svg",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/layout/france-southwest-map.svg",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/regions/landing-regions.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/landing-regions.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/france-central.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/france-southwest.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/layout/france-southwest-map.svg",
+		"/C/Users/Alienware/Desktop/Areas_landing page/north and west/map of north and west.eps",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/Taxes.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/Mortgage.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/Bank-account.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/Diagnostic.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/Currency.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/experts-tip.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/capital-tax-gain.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/property-selling-guide.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/french-healthcare.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/french-school.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/style/ange",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecAware/Site/Styles/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecWare/Site/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecWare/Site/Styles/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/stylers.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/jquery.fastLiveFilter.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/draft/style/style.css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/draft/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/build/index.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/build/style/style.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fourfo",
+			"60px",
+			"<p style=\"color:#fff;\">",
+			"opacity",
+			"promo-",
+			"price-item",
+			"<span class=\"list-dot\"></span>",
+			"respon",
+			"collap",
+			"header",
+			"collaps",
+			"0.5s",
+			"top: -",
+			"\"",
+			"nav",
+			"open",
+			"index.js",
+			"index",
+			"toggle",
+			"togg",
+			"toggle",
+			"nav",
+			"open",
+			"js/",
+			"logo",
+			"css/",
+			"</script>",
+			"wp",
+			"wop",
+			"iframe",
+			"irame",
+			"</script>",
+			"</script> ",
+			"css/",
+			"css",
+			"project",
+			"#contact",
+			"contact",
+			"import",
+			"impor",
+			"italic",
+			"font-fa",
+			"font-fam",
+			"font-fa",
+			"project-media",
+			"portfoli",
+			"ff-",
+			"data",
+			"<div>",
+			"<div class=\"col-md-2 price-item\">",
+			"owl",
+			"png",
+			"clients2",
+			"main",
+			"active",
+			"font-size",
+			"after",
+			"left",
+			"4",
+			"padding",
+			"nav",
+			"Digital",
+			"Change",
+			"'",
+			"hidden",
+			"\"",
+			"site-m",
+			"#",
+			"profile",
+			"personal",
+			"fold",
+			"profile-information",
+			"h3",
+			"h2",
+			"h1",
+			"link",
+			"link1",
+			"link",
+			"skills",
+			"work",
+			"skills1",
+			"skills",
+			"clickNumber",
+			"interests",
+			"language",
+			"revision",
+			"language",
+			"Language",
+			"language",
+			"'",
+			"select",
+			"'",
+			"\"",
+			"20",
+			"x",
+			">p",
+			"1",
+			"width",
+			"header",
+			"friends",
+			"photos",
+			"fold",
+			"friends-gallery",
+			"active",
+			"profile-information",
+			"photos",
+			"profile",
+			"font-size",
+			"font-si",
+			"src=''",
+			"media",
+			"profile-i",
+			"inform",
+			"right-closed",
+			"informa",
+			"information",
+			"left-closed",
+			"body",
+			"left",
+			"chat",
+			"3em ",
+			"-open",
+			"center",
+			"icon-lef",
+			"/",
+			"span",
+			"reply",
+			"relative"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"col-md",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fourfold.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Alienware\\Desktop\\Github\\Personal-Projects\\New site\\sublime\\newsite.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
