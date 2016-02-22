@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
-				"list-s",
-				"list-style-type"
-			],
-			[
 				"text",
-				"text-align"
+				"text-decoration"
 			],
 			[
 				"tex",
-				"text-align"
+				"text-decoration"
+			],
+			[
+				"list-s",
+				"list-style-type"
 			],
 			[
 				"start",
@@ -187,6 +187,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 35711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/blog1.html",
+			"settings":
+			{
+				"buffer_size": 15354,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/all.html",
+			"settings":
+			{
+				"buffer_size": 15943,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 46756,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 5896,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"build_system_choices":
@@ -249,14 +289,31 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold"
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/blog",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js"
 	],
 	"file_history":
 	[
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.countTo.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.appear.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/index.js",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-12.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-6.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-10.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-1.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-9.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-8.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-7.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-5.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-4.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-3.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-2.html",
+		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-11.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/main.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/blog/blog1.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/blog/all.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/index.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/index.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/style.css",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/css/style2.css",
@@ -266,12 +323,9 @@
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.nav.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.validation.min.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.mixitup.min.js",
-		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/project-1.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/video-bg.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/parallax-bg.js",
 		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.mb.YTPlayer.js",
-		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.countTo.js",
-		"/C/Users/Alienware/Desktop/Github/Freelance/fourfold/js/jquery.appear.js",
 		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/style.css",
 		"/C/Users/Alienware/Desktop/Github/Personal-Projects/New site/index.html",
 		"/C/Users/Alienware/Downloads/css/style.css",
@@ -369,18 +423,7 @@
 		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/capital-tax-gain.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/property-selling-guide.html",
 		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/french-healthcare.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/french-school.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/style/ange",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecAware/Site/Styles/style.css",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecWare/Site/index.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/SecWare/Site/Styles/style.css",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/index.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/stylers.css",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/flymenow/Final/jquery.fastLiveFilter.js",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/draft/style/style.css",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/draft/index.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/build/index.html",
-		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/French site/build/style/style.css"
+		"/C/Users/Alienware/Desktop/Github/Freelance/emedia/Legget/Site/french-school.html"
 	],
 	"find":
 	{
@@ -388,9 +431,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Users\\Alienware\\Desktop\\Github\\Freelance\\fourfold"
 		]
 	},
 	"find_state":
@@ -398,6 +442,75 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"loading",
+			"loading.gif",
+			".gif",
+			"active",
+			"<br>",
+			"#E6324B",
+			"max-wid",
+			"logo-",
+			"#",
+			"images",
+			"project-next.png",
+			"project-prev.png",
+			"close.png",
+			"images",
+			"bg/",
+			"pattern",
+			"image",
+			"images/",
+			"about",
+			"bg",
+			"bg/",
+			"testimonials",
+			"placeho",
+			"@media",
+			"minified",
+			"90%",
+			"300",
+			"<div class=\"project-ove",
+			"<div class=\"project-overla",
+			"services",
+			"index.html",
+			"http://analogfolk.com",
+			"\"js",
+			"\"css",
+			"css/",
+			"importa",
+			"170px",
+			"page-header {",
+			"active",
+			"newsletter",
+			".5s",
+			"page-header .social-li",
+			"page-header .so",
+			"social-link",
+			"newsletter",
+			"button",
+			"1s",
+			"cubic-bezier(0.19,1,0.22,1);",
+			"top",
+			"height: 90",
+			"newslet",
+			"newsle",
+			"10px",
+			"newsle",
+			"1)",
+			",1",
+			" .5s",
+			";",
+			"social",
+			".5",
+			"minified",
+			"nav-border",
+			"logo-con",
+			"delay",
+			"header",
+			"minif",
+			"header",
+			"page-header",
+			"minified",
 			"fourfo",
 			"60px",
 			"<p style=\"color:#fff;\">",
@@ -456,76 +569,7 @@
 			"font-size",
 			"after",
 			"left",
-			"4",
-			"padding",
-			"nav",
-			"Digital",
-			"Change",
-			"'",
-			"hidden",
-			"\"",
-			"site-m",
-			"#",
-			"profile",
-			"personal",
-			"fold",
-			"profile-information",
-			"h3",
-			"h2",
-			"h1",
-			"link",
-			"link1",
-			"link",
-			"skills",
-			"work",
-			"skills1",
-			"skills",
-			"clickNumber",
-			"interests",
-			"language",
-			"revision",
-			"language",
-			"Language",
-			"language",
-			"'",
-			"select",
-			"'",
-			"\"",
-			"20",
-			"x",
-			">p",
-			"1",
-			"width",
-			"header",
-			"friends",
-			"photos",
-			"fold",
-			"friends-gallery",
-			"active",
-			"profile-information",
-			"photos",
-			"profile",
-			"font-size",
-			"font-si",
-			"src=''",
-			"media",
-			"profile-i",
-			"inform",
-			"right-closed",
-			"informa",
-			"information",
-			"left-closed",
-			"body",
-			"left",
-			"chat",
-			"3em ",
-			"-open",
-			"center",
-			"icon-lef",
-			"/",
-			"span",
-			"reply",
-			"relative"
+			"4"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -533,6 +577,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"assets/project-next.png",
+			"assets/project-prev.png",
 			"col-md",
 			""
 		],
@@ -545,8 +591,156 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34239,
+								34239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11689.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "blog/blog1.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7409,
+								7409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1458.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/all.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7409,
+								7409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1497.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18386,
+								18386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15383.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

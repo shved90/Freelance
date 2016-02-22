@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   //Adding fixed position to header
   $(document).scroll(function() {
-    if ($(document).scrollTop() >= 500) {
+    if ($(document).scrollTop() >= 570) {
       $('.navbar').addClass('navbar-fixed-top');
       $('html').addClass('has-fixed-nav');
     } else {
