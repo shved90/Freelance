@@ -1,6 +1,6 @@
 function processBaseScroll() {
     var t = void 0 !== window.pageYOffset ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    t > 30 ? document.getElementById("header").className = "open" : document.getElementById("header").className = ""
+    t > 30 ? document.getElementById("header").className = "sticky" : document.getElementById("header").className = ""
 }
 
 window.addEventListener("scroll", function() {
@@ -12,7 +12,7 @@ function processScroll() {
         var o = slides[s],
             r = t + o.getBoundingClientRect().top,
             a = o.clientHeight || o.offsetHeight || o.scrollHeight,
-            l = s % 2 ? "-45%" : "45%";
+            l = s % 2 ? "45%" : "-45%";
         if (startY = r, stopY = r + a + 50, totalY = stopY - startY, trans = "translate3d(" + l + ",0,0)", i < 660 ? l = "0px" : i < 1e3 && (l = s % 2 ? "-15%" : "15%"), t + e >= startY && t + e <= stopY) {
             var c = (t + e - startY) / totalY,
                 h = 140 * (1 - c),

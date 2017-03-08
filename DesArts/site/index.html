@@ -22,6 +22,7 @@
     <meta property="og:site_name" content="" />
     <meta property="og:type" content="website" />
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,500" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 
 </head>
@@ -30,7 +31,7 @@
 
     <header id="header" class="">
         <div class="content">
-            <a href="/" title="desarts"><img src="images/desart-logo.png" title="logo" alt="logo" /></a>
+            <a href="/" title="desarts" class="logo"><img src="images/desart-logo.png" title="logo" alt="logo" /></a>
 
             <nav>
                 <a href="">Login</a> /
@@ -40,138 +41,145 @@
     </header>
 
     <main>
-    <section class="splash splash--main">
-        <img class="splash-graphic" src="images/desart-for-designers-and-artist.jpg" alt="DesArts is the online platform for designers and artists to connect with art buyers" title="DesArts is the online platform for designers and artists to connect with art buyers" />
-        <div class="content">
-            <h1 class="title">Artists & Designers<span> Get Your Free Art Portfolio Website</span></h1>
-            <p>Get your online art portfolio website, online art shop and/or art blog, in one place and just a few clicks</p>
-            <a href="" class="button">Get starter</a>
-        </div>
-    </section>
-    <section class="signup">
-        <div class="content">
-            <h2>Showcase Your Art & Design Work <span>online art portfolio site</span></h2>
-            <form class="signup-form">
-                <div>
-                    <input type="text" placeholder="First Name" />
-                    <input type="text" placeholder="Last Name" />
-                </div>
-                <input type="email" placeholder="Email" />
-                <input type="submit" value="Register" />
-            </form>
-            <p>We will not share your information</p>
-        </div>
-    </section>
-    <section class="box-list" id="parallax">
-        <div class="container">
-            <h2 class="title title-blackPink">Reasons we rock <span>(or our amazing platform features)</span></h2>
+        <section class="splash splash--main">
+            <div class="content">
+                <h1 class="title">Artists & Designers<span> Get Your Free Art Portfolio Website</span></h1>
+                <p>Get your online art portfolio website, online art shop and/or art blog, in one place and just a few clicks</p>
+                <a href="" class="button">Get starter</a>
+            </div>
+        </section>
+        <section class="signup">
+            <div class="content">
+                <h2 class="title">Showcase Your Art & Design Work <span>online art portfolio site</span></h2>
+                <form class="signup-form">
+                    <div>
+                        <input type="text" placeholder="First Name" />
+                        <input type="text" placeholder="Last Name" />
+                    </div>
+                    <input type="email" placeholder="Email" />
+                    <input class="button" type="submit" value="Register" />
+                </form>
+                <p class="subtext">We will not share your information</p>
+            </div>
+        </section>
+        <section class="box-list" id="parallax">
+            <div class="container">
+                <h2 class="title title--blackPink">Reasons we rock <span>(or our amazing platform features)</span></h2>
 
-            <artcle class="panel panel--left panel--grey">
-                <img src="" />
-                <h3>Showcase Your Art & Design Work</h3>
-                <p>Showcase your art in your own online art portfolio site, and share your creative work on social media and with DesArts' fans. Build your name and your followers.</p>
-            </artcle>
+                <artcle class="panel panel--left panel--grey">
+                    <img class="panel__icon" src="images/icon_showcase.png" />
+                    <h3>Showcase Your Art & Design Work</h3>
+                    <p>Showcase your art in your own online art portfolio site, and share your creative work on social media and with DesArts' fans. Build your name and your followers.</p>
+                </artcle>
 
-            <artcle class="panel panel--right panel--black">
-                <img src="" />
-                <h3>Sell Your Art & Design Work </h3>
-                <p>Sell your art and design work in your own online art shop; get automatically exposed to art fans and collectors on DesArts. Let us help you to sell your work.</p>
-            </artcle>
+                <artcle class="panel panel--right panel--black">
+                    <img class="panel__icon" src="images/icon-sell-white.png" />
+                    <h3>Sell Your Art & Design Work </h3>
+                    <p>Sell your art and design work in your own online art shop; get automatically exposed to art fans and collectors on DesArts. Let us help you to sell your work.</p>
+                </artcle>
 
-            <artcle class="panel panel--left panel--pink">
-                <img src="" />
-                <h3>Promote Your Art </h3>
-                <p>Write about your work and share with your followers; use advanced analytics to understand who visits your art website and how to engage with them; benefits from guides and in-built functionalities to optimize the visibility of your website on the Internet and Search Engines.</p>
-            </artcle>
+                <artcle class="panel panel--left panel--pink">
+                    <img class="panel__icon" src="images/icon-promote-white.png" />
+                    <h3>Promote Your Art </h3>
+                    <p>Write about your work and share with your followers; use advanced analytics to understand who visits your art website and how to engage with them; benefits from guides and in-built functionalities to optimize the visibility of your website on the Internet and Search Engines.</p>
+                </artcle>
 
-            <artcle class="panel panel--right panel--white">
-                <img src="" />
-                <h3>Your Art Portfolio Website In A Few Clicks </h3>
-                <p>Select from beautiful and elegant art web page design. Let us know about any new functionality or page design you would like; we'll develop it for you at no extra cost.</p>
-            </artcle>
+                <artcle class="panel panel--right panel--white">
+                    <img class="panel__icon" src="images/icon_portfolio.png" />
+                    <h3>Your Art Portfolio Website In A Few Clicks </h3>
+                    <p>Select from beautiful and elegant art web page design. Let us know about any new functionality or page design you would like; we'll develop it for you at no extra cost.</p>
+                </artcle>
 
-            <artcle class="panel panel--left panel--grey">
-                <img src="" />
-                <h3>Pay only for what you need </h3>
-                <p>Showcase your art and designs for free and start selling your art online for as little as £7.5 per month. Do not worry about maintenance, new development or web hosting; we do it for you.</p>
-            </artcle>
+                <artcle class="panel panel--left panel--grey">
+                    <img class="panel__icon" src="images/icon_pay.png" />
+                    <h3>Pay only for what you need </h3>
+                    <p>Showcase your art and designs for free and start selling your art online for as little as £7.5 per month. Do not worry about maintenance, new development or web hosting; we do it for you.</p>
+                </artcle>
 
-            <artcle class="panel panel--right panel--black">
-                <img src="" />
-                <h3>Stay protected  </h3>
-                <p>Ensure the copyright of your artwork and use our in-built watermark; benefit from secure online payment.</p>
-            </artcle>
-        </div>
-    </section>
+                <artcle class="panel panel--right panel--black">
+                    <img class="panel__icon" src="images/icon-protect-white.png" />
+                    <h3>Stay protected  </h3>
+                    <p>Ensure the copyright of your artwork and use our in-built watermark; benefit from secure online payment.</p>
+                </artcle>
+            </div>
+        </section>
 
-    <section class="splash splash--pink">
-        <h2>Question?</h3>
-        <p>Get in touch with our all star support team</p>
-        <a href="">Contact us</a>
-    </section>
+        <section class="splash splash--pink">
+            <div class="splash__overlay splash__pink"></div>
+            <div class="content">
+                <h2 class="title">Question?</h2>
+                <p>Get in touch with our all star support team</p>
+                <a href="" class="button">Contact us</a>
+            </div>
+        </section>
 
-    <section>
-        <h2 class="title title-blackPink">What our users say <span>(or what our fans say about us)</h2>
+        <section class="testimonials">
+            <h2 class="title title--blackPink">What our users say <span>(or what our fans say about us)</h2>
 
-        <div class="col-list">
-        <article class="col col3">
-            <blockquote>DesArts is a fantastic platform for exploring some of the most brilliant facets of the art and design world. They truly appreciate creators and the time and effort they put into what they do. It's a real honour and a privelege to be involved with them.
-            <cite class="cite-black">Juli Snyder, Abstract Painter</cite>
-            </blockquote>
-        </article>
-        <article class="col col3">
-            <blockquote>There is so much diverse art and design work on display on DesArts. There is always something new to explore and draw inspiration from. It was very easy to update my own site and I could see the changes immediately. All the tools were there at my disposal – from creating my own homepage to webmail, from online art shop to web traffic analytics. It’s like a one stop shop for any artist.
-            <cite class="cite-pink">Michael G Teevan, Abstract Photographer</cite>
-            </blockquote>
-        </article>
-        <article class="col col3">
-            <blockquote>Sharing my work on DesArts helped me break out of the isolation of the studio. While I had on occasion shared my images via social media with friends and family and I have maintained a website portfolio for several years, sharing my images with the DesArts community opened up my work to a much larger community and along with that, invaluable feedback. This experience helped me realize the function of social media for artists of any age and standing in the art community and I have connected with patrons, gallerists, and editors as a result.
-            <cite class="cite-pink">Tony Penney, Abstract Painter</cite>
-            </blockquote>
-        </article>
-    </section>
+            <div class="col-list">
+            <article class="col col3">
+                <blockquote>DesArts is a fantastic platform for exploring some of the most brilliant facets of the art and design world. They truly appreciate creators and the time and effort they put into what they do. It's a real honour and a privelege to be involved with them.
+                <cite class="cite-black">Juli Snyder,<br />Abstract Painter</cite>
+                </blockquote>
+            </article>
+            <article class="col col3">
+                <blockquote>There is so much diverse art and design work on display on DesArts. There is always something new to explore and draw inspiration from. It was very easy to update my own site and I could see the changes immediately. All the tools were there at my disposal – from creating my own homepage to webmail, from online art shop to web traffic analytics. It’s like a one stop shop for any artist.
+                <cite class="cite-pink">Michael G Teevan,<br />Abstract Photographer</cite>
+                </blockquote>
+            </article>
+            <article class="col col3">
+                <blockquote>Sharing my work on DesArts helped me break out of the isolation of the studio. While I had on occasion shared my images via social media with friends and family and I have maintained a website portfolio for several years, sharing my images with the DesArts community opened up my work to a much larger community and along with that, invaluable feedback. This experience helped me realize the function of social media for artists of any age and standing in the art community and I have connected with patrons, gallerists, and editors as a result.
+                <cite class="cite-black">Tony Penney,<br />Abstract Painter</cite>
+                </blockquote>
+            </article>
+        </section>
 
-    <section class="splash splash--black">
-        <h2>Get started today?</h3>
-        <a href="">Register your interest</a>
-    </section>
+        <section class="register">
+            <div class="splash__overlay splash__black"></div>
+            <div class="content">
+                <h2 class="title">Get started today?</h2>
+                <a href="" class="button button--hoverPink">Register your interest</a>
+            </div>
+        </section>
 
     </main>
 
     <footer>
 
-    <h3>Follow Us</h3>
+        <h3 class="title">Follow Us</h3>
 
-    <div class="social">
-        <a href=""><img src="" /></a>
-        <a href=""><img src="" /></a>
-        <a href=""><img src="" /></a>
-        <a href=""><img src="" /></a>
-        <a href=""><img src="" /></a>
-        <a href=""><img src="" /></a>
-    </div>
-
-    <div class="subscribe">
-        <h4>Follow Blog</h4>
-        <form>
-            <input type="email">
-            <input type="submit" value="subscribe">
-        </form>
-    </div>
-
-    <div class="footer-copy">
-        <div>
-
-        <p>2016 DesArts - All Rights Reserved</p>
-        <div class="footer-links">
-            <a href="">About</a>
-            <a href="">Help</a>
-            <a href="">Login</a>
-            <a href="">Register</a>
+        <div class="social">
+            <a href=""><img src="images/facebook.png" /></a>
+            <a href=""><img src="images/twitter.png" /></a>
+            <a href=""><img src="images/google.png" /></a>
+            <a href=""><img src="images/pinterest.png" /></a>
+            <a href=""><img src="images/linkedin.png" /></a>
+            <a href=""><img src="images/mail.png" /></a>
+            <a href=""><img src="images/rss.png" /></a>
         </div>
 
+        <div class="subscribe">
+            <h4 class="title">Follow Blog</h4>
+            <form class="form--blog">
+                <input type="email">
+                <input type="submit" class="button" value="subscribe">
+            </form>
         </div>
-    </div>
+
+        <div class="footer-copy">
+            <div class="content">
+
+                <p>&copy; 2016 DesArts - All Rights Reserved</p>
+
+                <div class="footer-links">
+                    <a href="">About</a>
+                    <a href="">Help</a>
+                    <a href="">Login</a>
+                    <a href="">Register</a>
+                </div>
+
+            </div>
+        </div>
 
     </footer>
 
