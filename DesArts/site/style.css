@@ -227,6 +227,10 @@ header:after{
     overflow: hidden;
 }
 
+.box-list .title{
+	margin-bottom: 70px;
+}
+
 .panel h3{
 	font-weight: 500;
 	font-size: 36px;

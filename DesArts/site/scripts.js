@@ -15,7 +15,7 @@ function processScroll() {
             l = s % 2 ? "45%" : "-45%";
         if (startY = r, stopY = r + a + 50, totalY = stopY - startY, trans = "translate3d(" + l + ",0,0)", i < 660 ? l = "0px" : i < 1e3 && (l = s % 2 ? "-15%" : "15%"), t + e >= startY && t + e <= stopY) {
             var c = (t + e - startY) / totalY,
-                h = 140 * (1 - c),
+                h = 200 * (1 - c),
                 d = "translate3d(" + l + "," + h + "px,0)";
             o.style.cssText = "-webkit-transform:" + d + ";-moz-transform:" + d + ";transform:" + d + ";"
         }
