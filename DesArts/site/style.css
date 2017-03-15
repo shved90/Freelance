@@ -422,12 +422,17 @@ footer .social{
 
 footer .social a{
 	display: inline-block;
+	padding: 0 15px;
+	transition: all 0.3s ease;
 }
 
 footer .social a img{
 	display: block;
-	width: 70px;
-	height: 70px;
+	height: 65px;
+}
+
+footer .social a:hover{
+	opacity: 0.8;
 }
 
 footer .subscribe .title{
@@ -576,6 +581,13 @@ footer .footer-copy .footer-links a:hover{
 	}
 	footer .social{
 		padding: 40px 0;
+	}
+	footer .social a{
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
+	footer .social a img{
+		height: 45px;
 	}
 	footer .form--blog{
 		margin-top: 40px;
