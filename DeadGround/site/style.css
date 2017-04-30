@@ -32,10 +32,9 @@ main{
 
 header{
 	position: fixed;
-	width: 100%;
+	width: 250px;
 	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
 	z-index: 10;
 }
 
@@ -50,8 +49,7 @@ header .logo img{
 }
 
 nav{
-	width: calc(100% - 130px);
-	display: inline-block;
+	display: block;
 	margin-top: 30px;
 }
 
@@ -60,9 +58,8 @@ main{
 }
 
 .nav--main > li{
-	display: inline-block;
+	display: block;
 	position: relative;
-	width: 19%;
 	text-align: left;
 	margin-left: -4px;
 }
@@ -75,16 +72,20 @@ main{
 }
 
 .nav--secondary{
-	position: absolute;
+	position: relative;
 	top: 100%;
 	left: 0;
 	width: 100%;
 	background: white;
-	display: none;
+	display: block;
 }
 
 .nav--main li:hover .nav--secondary{
 	display: block;
+}
+
+.nav li.active{
+	background: blue;
 }
 
 .nav--secondary li a{
@@ -125,8 +126,10 @@ main{
 
 .mainText article{
 	position: relative;
-	padding-bottom: 30px;
-	margin-bottom: 30px;
+	
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
 }
 
 .mainText article p:last-of-type{
@@ -134,6 +137,7 @@ main{
 }
 
 .mainText article:after{
+	display: none;
 	content: "";
 	position: absolute;
 	height: 2px;
@@ -142,4 +146,15 @@ main{
 	left: 50%;
 	margin-left: -40px;
 	bottom: 0;
+}
+
+article.show{
+	height: auto;
+	visibility: visible;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+article.show:after{
+	display: block;
 }
