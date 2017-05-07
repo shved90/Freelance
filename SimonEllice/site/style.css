@@ -1,0 +1,168 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body, header{
+	background: url(images/bgPattern.jpg) top left repeat;
+}
+
+ul, ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container, main, footer{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main{
+	position: relative;
+	border: 20px solid transparent;
+	-webkit-border-image: url(images/borderSide.jpg) 20 round;
+	-o-border-image: url(images/borderSide.jpg) 20 round;
+	border-image: url(images/borderSide.jpg) 20 round;
+}
+
+header .banner{
+	display: block;
+	width: 100%;
+}
+
+header .logo{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+header .logo img{
+	display: block;
+	width: 110px;
+}
+
+nav{
+	display: block;
+	position: fixed;
+	top: 350px;
+	margin-left: 50px;
+}
+
+main{
+	margin-top: 95px;
+	position: relative;
+}
+
+
+nav .title{
+	display: inline-block;
+	background-color: #d1bc83;
+	color: #455971;
+	text-transform: uppercase;
+	padding: 5px 30px 5px 5px;
+	font-size: 24px;
+}
+
+.nav--main{
+	display: block;
+	padding: 10px;
+	border-radius: 10px;
+	background: url(images/bgPattern.jpg) top left repeat;
+	border: 2px solid #e7e2c5;
+}
+
+.nav--main li{
+	display: block;
+	position: relative;
+	text-align: left;
+	padding: 5px 0 5px 20px;
+}
+
+.nav--main li:before{
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-radius: 100%;
+	background-color: #d1bc83;
+}
+
+.nav--main a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	color: #e7e2c5;
+}
+
+.nav li.active{
+	text-decoration: underline;
+}
+
+.nav a{
+	display: block;
+}
+
+.summary{
+	color: #fff;
+}
+
+.summary .author{
+	font-weight: 700;
+}
+
+.cover{
+	display: block;
+	margin: 0 auto 160px;
+	max-width: 100%;
+	width: 700px;
+}
+
+.mainText{
+	background: white;
+	padding: 80px 160px;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.mainText article{
+	position: relative;
+	
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.mainText article p:last-of-type{
+	margin: 0;
+}
+
+.mainText article:after{
+	display: none;
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 80px;
+	background: black;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 0;
+}
+
+article.show{
+	height: auto;
+	visibility: visible;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+article.show:after{
+	display: block;
+}
