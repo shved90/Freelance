@@ -1,6 +1,11 @@
+@font-face{font-family:'bangla';
+src:url('images/bangla-mn-regular.ttf') format('truetype');
+font-style:normal}
+
 html, body{
 	margin: 0;
 	padding: 0;
+	font-family: "bangla", arial;
 }
 
 *{
@@ -17,18 +22,20 @@ ul, ol{
 	margin: 0;
 }
 
-.container, main, footer{
-	max-width: 1280px;
+.container, header, header .logo, main, footer{
+	max-width: 1040px;
 	width: 100%;
 	margin: 0 auto;
 }
 
 main{
 	position: relative;
-	border: 20px solid transparent;
-	-webkit-border-image: url(images/borderSide.jpg) 20 round;
-	-o-border-image: url(images/borderSide.jpg) 20 round;
-	border-image: url(images/borderSide.jpg) 20 round;
+	background: url(images/Background.png) 0 0 no-repeat;
+}
+
+header{
+	margin-top: 20px;
+	position: relative;
 }
 
 header .banner{
@@ -37,73 +44,137 @@ header .banner{
 }
 
 header .logo{
-	display: inline-block;
-	vertical-align: bottom;
+	position: fixed;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-47%);
+	max-height: 150px;
+	z-index: 10;
+	display: none;
 }
 
 header .logo img{
+	position: absolute;
+	top: 0;
+	left: 0;
 	display: block;
-	width: 110px;
+	height: 70px;
+}
+
+header .logo.small .logo__main{
+	-webkit-animation: logoHide 0.2s steps(10) forwards;
+	animation: logoHide 0.2s steps(10) forwards;
+}
+
+header .logo .logo__main{
+	-webkit-animation: logoShow 0.2s steps(10) forwards;
+	animation: logoShow 0.2s steps(10) forwards;
+}
+
+@-webkit-keyframes logoHide {
+  0%   { opacity: 1; }
+  100% { opacity: 0;  display: none;}
+}
+
+@keyframes logoShow {
+  0%   { opacity: 0; display: block; }
+  100% { opacity: 1;}
 }
 
 nav{
 	display: block;
 	position: fixed;
-	top: 350px;
-	margin-left: 50px;
+	top: 0;
+	z-index: 20;
+	width: 100%;
 }
 
 main{
-	margin-top: 95px;
 	position: relative;
 }
 
+ol.nav{
+    counter-reset: item;
+}
 
-nav .title{
-	display: inline-block;
-	background-color: #d1bc83;
-	color: #455971;
-	text-transform: uppercase;
-	padding: 5px 30px 5px 5px;
-	font-size: 24px;
+ol.nav > li:before{
+	content: counter(item) " ";
+    counter-increment: item;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    line-height: 29px;
+    font-size: 19px;
+    letter-spacing: -2px;
+    text-align: center;
+    padding: 2px 3px 2px 0;
+    top: 2px;
+    left: 10px;
+    border-radius: 100%;
+    color: #d1bc83;
+    border: 2px solid #d1bc83;
+}
+
+.nav--framed{
+	display: none;
 }
 
 .nav--main{
 	display: block;
-	padding: 10px;
 	border-radius: 10px;
 	background: url(images/bgPattern.jpg) top left repeat;
 	border: 2px solid #e7e2c5;
+	height: 100px;
+	overflow: scroll;
+	overflow-x: hidden;
+	z-index: 10;
 }
 
 .nav--main li{
 	display: block;
 	position: relative;
 	text-align: left;
-	padding: 5px 0 5px 20px;
+	padding: 6px 15px 1px 45px;
 }
 
-.nav--main li:before{
-	content: "";
-	width: 15px;
-	height: 15px;
-	display: block;
-	position: absolute;
-	top: 10px;
-	left: 0;
-	border-radius: 100%;
-	background-color: #d1bc83;
+.nav--main li:first-of-type{
+	padding-top: 11px;
+	border-radius: 7px 7px 0 0;
+}
+
+.nav--main li:first-of-type:before{
+	top: 6px;
+}
+
+.nav--main li:last-of-type{
+	padding-top: 11px;
+	padding-bottom: 7px;
+	border-radius: 0 0 7px 7px;
+}
+
+.nav--main li:last-of-type:before{
+	top: 6px;
 }
 
 .nav--main a{
 	color: black;
-	font-size: 20px;
+	font-size: 16px;
 	text-decoration: none;
 	color: #e7e2c5;
 }
 
 .nav li.active{
-	text-decoration: underline;
+	background-color: #d1bc83;
+}
+
+.nav li.active:before{
+	border: 2px solid #000;
+	color: #000;
+}
+
+.nav li.active a{
+	color: #000;
 }
 
 .nav a{
@@ -120,24 +191,38 @@ nav .title{
 
 .cover{
 	display: block;
-	margin: 0 auto 160px;
-	max-width: 100%;
-	width: 700px;
+	margin: 0 auto 140px;
+	max-width: 700px;
+	width: 100%;
 }
 
 .mainText{
 	background: white;
-	padding: 80px 160px;
+	padding: 40px 60px;
 	width: 700px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
 .mainText article{
 	position: relative;
-	
 	height: 0;
 	visibility: hidden;
 	overflow: hidden;
+}
+
+.mainText article p{
+	line-height: 24px;
+}
+
+.mainText article h2{
+	text-align: center;
+}
+
+.mainText article img{
+	width: 70%;
+	margin: 0 auto;
+	display: block;
 }
 
 .mainText article p:last-of-type{
@@ -165,4 +250,81 @@ article.show{
 
 article.show:after{
 	display: block;
+}
+
+@media all and (min-width: 600px){
+	
+	.topBgWrapper{
+		background: url(images/Background_top.png) 0 0 no-repeat;
+		background-size: contain;
+	}
+
+	.secondBgWrapper{
+		background: url(images/Background_bottom.png) 0 0 repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+}
+
+@media all and (min-width: 1024px){
+	header .logo{
+		display: block;
+	}
+
+	header .logo img{
+		height: 150px;
+	}
+	nav{
+		display: block;
+		position: fixed;
+		top: 185px;
+		margin-left: 10px;
+		z-index: 1;
+		max-width: 250px;
+	}
+
+	.nav--main{
+		height: 200px;
+		display: none;
+	}
+
+	nav.visible .nav--main{
+		display: block;
+	}
+
+	.nav--framed{
+		display: block;
+		padding: 20px 0 0 20px;
+		width: 170px;
+		background: url(images/frame.png) 0 0 no-repeat;
+		background-size: contain;
+	}
+
+	.nav--framed p{
+		margin: 0;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.nav--framed img{
+		width: 100%;
+	}
+
+	main{
+		border: 20px solid transparent;
+		border-top: none;
+		border-bottom: none;
+		-webkit-border-image: url(images/borderSide.png) 20 round;
+		-o-border-image: url(images/borderSide.png) 20 round;
+		border-image: url(images/borderSide.png) 20 round;
+	}
+
+	.mainText{
+		background: white;
+		padding: 80px 140px;
+		width: 700px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
 }
