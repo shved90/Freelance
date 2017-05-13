@@ -17,10 +17,9 @@ document.addEventListener("scroll", function(event){
 			totalArticles[nextArticle].classList.add("show");
 		}
 		isScrolledIntoView();
-
 	}, 1000)
 
-	if (window.scrollY > 40) {
+	if (window.scrollY > 100) {
 		document.getElementsByClassName("logo")[0].classList.add("small");
 	} else {
 		document.getElementsByClassName("logo")[0].classList.remove("small");
@@ -82,10 +81,9 @@ if(window.location.hash) {
 					console.log("#" + currentLink)
 					document.querySelector("#" + currentLink).scrollIntoView({ behavior: 'smooth' });
 				}
-			} else if (currentLink == "home"){
-				document.querySelector("#home").scrollIntoView({ behavior: 'smooth' });
 			}
 		}
+
 		
 	};
 
@@ -107,10 +105,11 @@ function isScrolledIntoView() {
 		var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= window.innerHeight);
 		var currentLink = navigation.querySelectorAll("a[href='#" + totalArticles[i].id + "']")[0];
 		if(isVisible){
-			//console.log(totalArticles[i])
+			document.getElementsByClassName("chapterNumber")[0].innerHTML = i + 1;
+			document.getElementsByClassName("chapterTitle")[0].innerHTML = currentLink.innerHTML;
+			document.getElementsByClassName("currentChapter")[0].style.display = "block";
 			navigation.parentElement.classList.remove("active");
 			currentLink.parentElement.classList.add("active");
-
 		} else {
 			currentLink.parentElement.classList.remove("active");
 		}
@@ -123,8 +122,13 @@ document.addEventListener("click", function(event){
 	if(event.target == morocco || event.target == morocco.getElementsByTagName("img")[0]){
 		if(!navigation.classList.contains("visible") == true){
 			navigation.classList.add("visible");
-		} else{
-			navigation.classList.remove("visible");
 		}
+	}
+	if(!(event.target == morocco || event.target == morocco.getElementsByTagName("img")[0])){
+		navigation.classList.remove("visible");
+	}
+	if (event.target.parentElement.getAttribute("href") == "#home"){
+		event.preventDefault();
+		document.querySelector("#home").scrollIntoView({ behavior: 'smooth' });
 	}
 })

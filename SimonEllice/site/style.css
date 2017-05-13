@@ -73,7 +73,7 @@ header .logo .logo__main{
 
 @-webkit-keyframes logoHide {
   0%   { opacity: 1; }
-  100% { opacity: 0;  display: none;}
+  100% { opacity: 0; }
 }
 
 @keyframes logoShow {
@@ -179,6 +179,35 @@ ol.nav > li:before{
 
 .nav a{
 	display: block;
+}
+
+.currentChapter{
+	background-color: #f6eac1;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: 135px;
+	display: none;
+}
+
+.currentChapter .title{
+	margin: 0 0 7px;
+	text-align: center;
+	background-color: #40ada7;
+	padding: 5px 5px 0 5px;
+	border-radius: 5px 5px 0 0;
+}
+
+.currentChapter .chapterNumber{
+	padding: 3px 3px 0 3px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.currentChapter p{
+	display: block;
+	margin: 5px 0 0;
+	color: #000;
 }
 
 .summary{
@@ -295,7 +324,7 @@ article.show:after{
 	.nav--framed{
 		display: block;
 		padding: 20px 0 0 20px;
-		width: 170px;
+		width: 135px;
 		background: url(images/frame.png) 0 0 no-repeat;
 		background-size: contain;
 	}
