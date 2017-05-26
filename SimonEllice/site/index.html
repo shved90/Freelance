@@ -38,20 +38,26 @@
 				<img src="images/logo.png" class="logo__main" alt="logo" />
 				<img src="images/logo--small.png" class="logo__small" alt="logo" />
 			</a>
+			<p class="intro">The story of his life, loves and misadventures, mainly in his own words.</p>
 		</div>
 	</header>
 
 	<main>	
 
 		<nav id="nav">
-			<ul class="nav nav--framed">
+			<div class="nav__logo">
+				<a href="#home">
+					<img src="images/logo--small.png" class="logo__small" alt="logo" />
+				</a>
+			</div>
+			<div class="nav nav--framed">
 				<p id="morocco">
-					Chapter list:
 					<img src="images/morocco.png" />
 				</p>
 				<a href="https://ratstales.co.uk/" target="_blank"><img src="images/publisher.png" /></a>
-			</ul>
+			</div>
 			<ol class="nav nav--main">
+				<li><a href="#gofast">Go Fast</a></li>
 				<li><a href="#nottambulo">Nottambulo</a></li>
 				<li><a href="#sam">Sam</a></li>
 				<li><a href="#fishing">Fishing</a></li>
@@ -75,11 +81,14 @@
 				<li><a href="#out-and-down">Out and Down</a></li>
 			</ol>
 			<div class="currentChapter">
-				<h4 class="title">Go Fast</h4>
+				<h4 class="title"><a href="#gofast">Go Fast</a></h4>
 				<div>
 					<p>Chapter <span class="chapterNumber"></span></p>
 					<p class="chapterTitle"></p>
 				</div>
+			</div>
+			<div class="navToggle">
+				<span></span>
 			</div>
 
 		</nav>
@@ -89,14 +98,50 @@
 
 			<p class="author">Rod Humphris</p>
 		</section> -->
-		<div class="topBgWrapper">
-			<img src="images/gofast_cover.png" alt="dead ground" class="cover" />
+		<div class="topBgWrapper" id="gofast" style="background-image: url(images/Background_top.png);">
+			<p class="summary">In the black, moonless night Si runs hash from Morocco to Spain in Nottambulo, the fastest boat in the Western Med. It’s not a bad life if he can keep living it...</p>
+			<div class="cover">
+				<img src="images/gofast_cover.png" alt="go fast cover" />
+			</div>
 
-			<div class="secondBgWrapper">
-
+			<div class="secondBgWrapper" style="background-image: url(images/Background_bottom.png);">
 				<section class="mainText">
 
 					<article id="nottambulo" class="show">
+						<img src="images/go-fast-map.png" style="width: 100%;" alt="Simon Ellice Go fast map" />
+						<div class="poem">
+							<h3>Go Fast</h3>
+							<p>
+								Star-loaded and locked to the horizon,<br />
+								I go chasing the devils inside me,<br />
+								The turning earth, the sun rising,<br />
+								And my fortune on the flat black sea.
+							</p>
+							<p>
+								As blood runs black under rifle-flare,<br />
+								At the map-less place where we meet,<br />
+								I am a subtle and secret sea-hare,<br />
+								Keeping faith with driving drumbeat.
+							</p>
+							<p>
+								Called back by the sun to the land,<br />
+								I lie down like a prince in your bed.<br />
+								Undaunted, red-handed and damned,<br />
+								I rise up with a price on my head.
+							</p>
+							<p>
+								Carefree and heedless; perfectly light,<br />
+								With grace from the prayer in your eyes,<br />
+								I go back to the sea and into the night,<br />
+								Wide alive but never taking the prize.
+							</p>
+							<p>
+								So while my prop keeps on turning,<br />
+								And I’m still outrunning my past,<br />
+								I will go out racing the morning,<br />
+								And when I go, I go fast.
+							</p>
+						</div>
 						<img src="images/simon-ellice-nottambulo.png" alt="Simon Ellice Go fast Chapter 1 Nottambulo" />
 						<h2>Nottambulo</h2>
 						<p>Neither the sea, nor those of us who work upon it, know anything of early or late; there is only the right time, or the wrong time.</p>
@@ -5512,7 +5557,18 @@
 
 				</section>
 			</div>
+
+			<div class="closingBgWrapper" style="background-image: url(images/Background_very_end.png);"></div>
+
 		</div>
+
+		<div class="topBgWrapper" id="starlight" style="background-size: cover; background-image: url(images/Background_top_ragged_edges_STARLIGHT.png);"> <!-- temp style while no content -->
+			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in augue gravida erat laoreet efficitur non eu ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus ligul...</p>
+			<div class="cover">
+				<img src="images/starlight_cover.png" alt="starlight cover" />
+			</div>
+		</div>
+		<!-- <div class="closingBgWrapper" style="background-image: url(images/Background_very_end_STARLIGHT.png);"></div> -->
 	</main>
 
 	<footer>

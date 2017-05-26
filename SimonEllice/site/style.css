@@ -30,7 +30,6 @@ ul, ol{
 
 main{
 	position: relative;
-	background: url(images/Background.png) 0 0 no-repeat;
 }
 
 header{
@@ -61,9 +60,10 @@ header .logo img{
 	height: 70px;
 }
 
-header .logo.small .logo__main{
+header .logo.small .logo__main, header .logo.small .intro{
 	-webkit-animation: logoHide 0.2s steps(10) forwards;
 	animation: logoHide 0.2s steps(10) forwards;
+	position: relative;
 }
 
 header .logo .logo__main{
@@ -72,12 +72,12 @@ header .logo .logo__main{
 }
 
 @-webkit-keyframes logoHide {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+  0%   { opacity: 1; visibility: hidden;}
+  100% { opacity: 0; z-index: -11;}
 }
 
 @keyframes logoShow {
-  0%   { opacity: 0; display: block; }
+  0%   { opacity: 0; visibility: visible; }
   100% { opacity: 1;}
 }
 
@@ -116,19 +116,77 @@ ol.nav > li:before{
     border: 2px solid #d1bc83;
 }
 
+.navToggle{
+	float: right;
+	width: 50px;
+	height: 45px;
+	cursor: pointer;
+	padding: 20px 10px 10px;
+}
+
+.navToggle span{
+	position: relative;
+}
+
+.navToggle span, .navToggle span:before, .navToggle span:after{
+	height: 3px;
+	width: 100%;
+	display: block;
+	background-color: #000;
+}
+
+.navToggle span:before, .navToggle span:after{
+	content: "";
+	position: absolute;
+}
+
+.navToggle span:before{
+	top: -10px;
+}
+
+.navToggle span:after{
+	bottom: -10px;
+}
+
 .nav--framed{
+	width: 120px;
+	height: 35px;
+	float: left;
+	margin-top: 5px;
 	display: none;
+}
+
+.nav.nav--framed a{
+	display: none;
+}
+
+.nav--framed p{
+	margin: 0;
+	line-height: 0;
+	cursor: pointer;
+}
+
+.nav--framed img{
+	width: 100%;
 }
 
 .nav--main{
 	display: block;
-	border-radius: 10px;
 	background: url(images/bgPattern.jpg) top left repeat;
 	border: 2px solid #e7e2c5;
-	height: 100px;
 	overflow: scroll;
 	overflow-x: hidden;
 	z-index: 10;
+	position: fixed;
+	top: 65px;
+	left: 0;
+	right: 0;
+	max-height: 0;
+}
+
+.visible .nav--main{
+	max-height: 900px;
+	bottom: 0;
 }
 
 .nav--main li{
@@ -181,44 +239,67 @@ ol.nav > li:before{
 	display: block;
 }
 
-.currentChapter{
-	background-color: #f6eac1;
-	padding: 5px;
-	border: 1px solid #000;
-	border-radius: 5px;
-	width: 135px;
-	display: none;
+.nav__logo{
+	float: left;
+	width: 40px;
+	height: 50px;
+	margin-right: 20px;
 }
 
-.currentChapter .title{
-	margin: 0 0 7px;
-	text-align: center;
-	background-color: #40ada7;
-	padding: 5px 5px 0 5px;
-	border-radius: 5px 5px 0 0;
-}
-
-.currentChapter .chapterNumber{
-	padding: 3px 3px 0 3px;
-	border: 1px solid #000;
-	border-radius: 3px;
-	background-color: #fff;
-}
-.currentChapter p{
+.nav__logo a{
 	display: block;
-	margin: 5px 0 0;
-	color: #000;
+}
+
+.nav__logo img{
+	width: 100%;
+}
+
+.currentChapter{
+	float: left;
+	width: calc(100% - 150px);
+	padding: 13px 20px 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.currentChapter .title, .currentChapter div, .currentChapter div p{
+	display: inline-block;
+	margin: 0;
+	line-height: 20px;
+}
+
+.currentChapter .title a{
+	color: #d3bd84;
+}
+
+.currentChapter div p{
+	color: #e7e2c5;
+}
+
+.intro{
+	position: absolute;
+	top: 152px;
+	left: 160px;
+	max-width: 520px;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
 }
 
 .summary{
-	color: #fff;
+    color: #d3bd84;
+    font-size: 18px;
+    max-width: 580px;
+    margin: 30px auto;
 }
 
-.summary .author{
-	font-weight: 700;
+.poem{
+	width: 320px;
+	margin: 60px auto;
 }
 
-.cover{
+.cover img{
 	display: block;
 	margin: 0 auto 140px;
 	max-width: 700px;
@@ -281,18 +362,45 @@ article.show:after{
 	display: block;
 }
 
+@media all and (max-width: 1024px){
+	nav{
+	    background: url(images/bgPattern.jpg) top left repeat;
+	    padding: 10px;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	}
+}
+
 @media all and (min-width: 600px){
 	
 	.topBgWrapper{
-		background: url(images/Background_top.png) 0 0 no-repeat;
+		background: 0 0 no-repeat;
 		background-size: contain;
+	}
+	.topBgWrapper:last-of-type{
+		margin: 0;
 	}
 
 	.secondBgWrapper{
-		background: url(images/Background_bottom.png) 0 0 repeat;
+		background: 0 0 repeat;
 		background-size: contain;
 		z-index: 1;
 	}
+	.closingBgWrapper{
+		background: 0 0 no-repeat;
+		background-size: cover;
+		height: 240px;
+		width: 100%;
+	}
+	.nav--framed{
+		display: block;
+	}
+	.currentChapter{
+	    width: calc(100% - 250px);
+	}
+
 }
 
 @media all and (min-width: 1024px){
@@ -303,17 +411,24 @@ article.show:after{
 	header .logo img{
 		height: 150px;
 	}
+	.nav__logo{
+		display: none;
+	}
 	nav{
 		display: block;
 		position: fixed;
 		top: 185px;
 		margin-left: 10px;
 		z-index: 1;
+		max-width: 670px;
+	}
+	nav.small{
 		max-width: 250px;
 	}
 
 	.nav--main{
 		height: 200px;
+		max-width: 250px;
 		display: none;
 	}
 
@@ -323,20 +438,88 @@ article.show:after{
 
 	.nav--framed{
 		display: block;
-		padding: 20px 0 0 20px;
-		width: 135px;
+		padding: 20px 0 20px 20px;
+		width: 100%;
+		height: auto;
+		float: none;
+		max-width: 670px;
 		background: url(images/frame.png) 0 0 no-repeat;
 		background-size: contain;
 	}
 
-	.nav--framed p{
+	.nav.nav--framed p{
+		margin-bottom: 10px;
+	}
+
+	.nav.nav--framed a{
+		display: block;
+	}
+
+	nav.small .nav--framed{
+		padding: 20px 0 0 20px;
+		max-width: 135px;
+		background: url(images/frame_small.png) 0 0 no-repeat;
+		background-size: contain;
+	}
+
+	.nav--framed p, .nav--framed a{
 		margin: 0;
 		cursor: pointer;
 		font-size: 18px;
+		width: 115px;
 	}
 
 	.nav--framed img{
 		width: 100%;
+		max-width: 115px;
+	}
+
+	.nav--main{
+		border-radius: 10px;
+		position: relative;
+		top: 0;
+		margin: 10px 0;
+	}
+
+	.navToggle{
+		display: none;
+	}
+
+	.currentChapter{
+		background: url(images/chapterbox.png) 0 0 no-repeat;
+		background-size: cover;
+		padding: 5px;
+		border: 1px solid #000;
+		border-radius: 5px;
+		width: 135px;
+		margin-top: 20px;
+		display: none;
+	}
+
+	.currentChapter .title{
+		margin: 0 0 7px;
+		display: block;
+		text-align: center;
+		background-color: #fff;
+		padding: 5px 5px 0 5px;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.currentChapter .title a{
+		color: #000;
+		text-decoration: none;
+	}
+
+	.currentChapter .chapterNumber{
+		padding: 3px 3px 0 3px;
+		border: 1px solid #000;
+		border-radius: 3px;
+		background-color: #fff;
+	}
+	.currentChapter div p{
+		display: block;
+		margin: 10px 0 0;
+		color: #000;
 	}
 
 	main{

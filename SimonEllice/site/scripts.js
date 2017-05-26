@@ -3,29 +3,34 @@ var totalArticles = document.getElementsByTagName("article");
 var requestedArticle = window.location.hash.substr(1);
 
 var navigation = document.getElementById("nav");
+var navToggle = document.getElementsByClassName("navToggle")[0];
 var requesedNav = navigation.querySelectorAll("a[href='#" + requestedArticle + "']")[0];
 
 
 
-//load next article once scrolled to bottom 400px
-document.addEventListener("scroll", function(event){
 
-	setInterval(function(){
-		if ((window.innerHeight + window.scrollY + 400) >= document.body.offsetHeight) {
+	document.addEventListener("scroll", function(event){
+		
+		//check which article scrolled into view
+		isScrolledIntoView();
+		setInterval(function(){
+
+		//load next article once scrolled to bottom 400px
+		if ((window.scrollY - 400) >= document.getElementById("gofast").clientHeight) {
 			var nextArticle = visibleArticles.length;
 			console.log(totalArticles[nextArticle])
 			totalArticles[nextArticle].classList.add("show");
 		}
-		isScrolledIntoView();
-	}, 1000)
-
-	if (window.scrollY > 100) {
-		document.getElementsByClassName("logo")[0].classList.add("small");
-	} else {
-		document.getElementsByClassName("logo")[0].classList.remove("small");
-	}
-
-});
+		}, 1000)
+		//change logo from large to small
+		if (window.scrollY > 100) {
+			document.getElementsByClassName("logo")[0].classList.add("small");
+			navigation.classList.add("small");
+		} else {
+			document.getElementsByClassName("logo")[0].classList.remove("small");
+			navigation.classList.remove("small");
+		}
+	});
 
 
 
@@ -97,7 +102,7 @@ if(window.location.hash) {
 
 
 
-
+// needs error check for no articles found
 function isScrolledIntoView() {
 	for (i = 0; i < totalArticles.length; i++){
 		var elemTop = totalArticles[i].getBoundingClientRect().top;
@@ -105,8 +110,8 @@ function isScrolledIntoView() {
 		var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= window.innerHeight);
 		var currentLink = navigation.querySelectorAll("a[href='#" + totalArticles[i].id + "']")[0];
 		if(isVisible){
-			document.getElementsByClassName("chapterNumber")[0].innerHTML = i + 1;
-			document.getElementsByClassName("chapterTitle")[0].innerHTML = currentLink.innerHTML;
+			document.getElementsByClassName("chapterNumber")[0].innerText = i + 1;
+			document.getElementsByClassName("chapterTitle")[0].innerText = currentLink.innerText;
 			document.getElementsByClassName("currentChapter")[0].style.display = "block";
 			navigation.parentElement.classList.remove("active");
 			currentLink.parentElement.classList.add("active");
@@ -116,18 +121,36 @@ function isScrolledIntoView() {
 	}
 }
 
-
+//dirty hacks to be reworked and accounted for phase 2
 document.addEventListener("click", function(event){
+
 	var morocco = document.getElementById("morocco");
-	if(event.target == morocco || event.target == morocco.getElementsByTagName("img")[0]){
+
+	if(event.target == morocco  || event.target.parentNode == morocco){
+		console.log("morocco")
 		if(!navigation.classList.contains("visible") == true){
 			navigation.classList.add("visible");
+		} else {
+			navigation.classList.remove("visible");
 		}
 	}
-	if(!(event.target == morocco || event.target == morocco.getElementsByTagName("img")[0])){
+	if(!(event.target == morocco  || event.target.parentNode == morocco)){
 		navigation.classList.remove("visible");
 	}
-	if (event.target.parentElement.getAttribute("href") == "#home"){
+
+	if(event.target == navToggle || event.target.parentNode == navToggle){
+		if(!navToggle.classList.contains("active") == true){
+			navToggle.classList.add("active");
+			navigation.classList.add("visible");
+		} else {
+			navToggle.classList.remove("active");
+			navigation.classList.remove("visible");
+		}
+	}
+
+	if (event.target.getAttribute("href") == "#gofast"){
+		document.querySelector("#gofast").scrollIntoView({ behavior: 'smooth' });
+	} else if (event.target.parentElement.getAttribute("href") == "#home") {
 		event.preventDefault();
 		document.querySelector("#home").scrollIntoView({ behavior: 'smooth' });
 	}
