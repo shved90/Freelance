@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -27,6 +28,16 @@
 
 	<link href="style.css" rel="stylesheet" />
 
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-76368769-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+
 </head>
 
 <body class="logoSmall"> 
@@ -47,6 +58,7 @@
 		<nav id="nav">
 			<div class="nav__logo">
 				<a href="#home">
+					<img src="images/logo.png" class="logo__main" alt="logo" />
 					<img src="images/logo--small.png" class="logo__small" alt="logo" />
 				</a>
 			</div>
@@ -54,31 +66,44 @@
 				<p id="morocco">
 					<img src="images/morocco.png" />
 				</p>
+				<a href="#starlight">
+					<img src="images/jamaica.png" />
+				</a>
 				<a href="https://ratstales.co.uk/" target="_blank"><img src="images/publisher.png" /></a>
 			</div>
 			<ol class="nav nav--main">
-				<li><a href="#gofast">Go Fast</a></li>
-				<li><a href="#nottambulo">Nottambulo</a></li>
-				<li><a href="#sam">Sam</a></li>
-				<li><a href="#fishing">Fishing</a></li>
-				<li><a href="#feeding-birds">Feeding the birds</a></li>
-				<li><a href="#long-shot">A long shot</a></li>
-				<li><a href="#looking-for-me">Are You Looking at Me?</a></li>
-				<li><a href="#under-moon">Under a Thin Moon</a></li>
-				<li><a href="#dirty-work">Dirty work</a></li>
-				<li><a href="#life-is-what-happens">Life is What Happens</a></li>
-				<li><a href="#mind-that-goat">Mind That Goat</a></li>
-				<li><a href="#afternoon-tea">Afternoon Tea</a></li>
-				<li><a href="#ties-that-bind">The Ties That Bind</a></li>
-				<li><a href="#long-spoon">With a Long Spoon</a></li>
-				<li><a href="#nothing-important">Nothing Important</a></li>
-				<li><a href="#rug-cushions">A Rug and Some Cushions</a></li>
-				<li><a href="#dog-his-day">Every Dog His Day</a></li>
-				<li><a href="#father-and-son">Father and Son</a></li>
-				<li><a href="#good-cause">All in a Good Cause</a></li>
-				<li><a href="#party">The Party</a></li>
-				<li><a href="#what-must-be-done">What Must Be Done</a></li>
-				<li><a href="#out-and-down">Out and Down</a></li>
+				<li>
+					<a href="#gofast">Go Fast</a>
+					<ol class="nav nav--secondary">
+						<li><a href="#nottambulo">Nottambulo</a></li>
+						<li><a href="#sam">Sam</a></li>
+						<li><a href="#fishing">Fishing</a></li>
+						<li><a href="#feeding-birds">Feeding the birds</a></li>
+						<li><a href="#long-shot">A long shot</a></li>
+						<li><a href="#looking-for-me">Are You Looking at Me?</a></li>
+						<li><a href="#under-moon">Under a Thin Moon</a></li>
+						<li><a href="#dirty-work">Dirty work</a></li>
+						<li><a href="#life-is-what-happens">Life is What Happens</a></li>
+						<li><a href="#mind-that-goat">Mind That Goat</a></li>
+						<li><a href="#afternoon-tea">Afternoon Tea</a></li>
+						<li><a href="#ties-that-bind">The Ties That Bind</a></li>
+						<li><a href="#long-spoon">With a Long Spoon</a></li>
+						<li><a href="#nothing-important">Nothing Important</a></li>
+						<li><a href="#rug-cushions">A Rug and Some Cushions</a></li>
+						<li><a href="#dog-his-day">Every Dog His Day</a></li>
+						<li><a href="#father-and-son">Father and Son</a></li>
+						<li><a href="#good-cause">All in a Good Cause</a></li>
+						<li><a href="#party">The Party</a></li>
+						<li><a href="#what-must-be-done">What Must Be Done</a></li>
+						<li><a href="#out-and-down">Out and Down</a></li>
+					</ol>
+				</li>
+				<li>
+					<a href="#starlight">Jamaica</a>
+					<!-- <ol class="nav nav--secondary">
+						<li><a href="#stardustIntro">123</a></li>
+					</ol> -->
+				</li>
 			</ol>
 			<div class="currentChapter">
 				<h4 class="title"><a href="#gofast">Go Fast</a></h4>
@@ -98,19 +123,21 @@
 
 			<p class="author">Rod Humphris</p>
 		</section> -->
-		<div class="topBgWrapper" id="gofast" style="background-image: url(images/Background_top.png);">
-			<p class="summary">In the black, moonless night Si runs hash from Morocco to Spain in Nottambulo, the fastest boat in the Western Med. It’s not a bad life if he can keep living it...</p>
-			<div class="cover">
-				<img src="images/gofast_cover.png" alt="go fast cover" />
+		<div  id="gofast">
+			<div class="topBgWrapper" style="background-image: url(images/Background_top.png);">
+				<p class="summary">In the black, moonless night Si runs hash from Morocco to Spain in Nottambulo, the fastest boat in the Western Med. It’s not a bad life if he can keep living it...</p>
+				<div class="cover">
+					<img src="images/gofast_cover.png" alt="go fast cover" />
+				</div>
 			</div>
 
 			<div class="secondBgWrapper" style="background-image: url(images/Background_bottom.png);">
 				<section class="mainText">
 
 					<article id="nottambulo" class="show">
-						<img src="images/go-fast-map.png" style="width: 100%;" alt="Simon Ellice Go fast map" />
+						<img src="images/go-fast-map.png" style="max-height: initial;" alt="Simon Ellice Go fast map" />
 						<div class="poem">
-							<h3>Go Fast</h3>
+							<h2>Go Fast</h2>
 							<p>
 								Star-loaded and locked to the horizon,<br />
 								I go chasing the devils inside me,<br />
@@ -2542,7 +2569,7 @@
 						<p>&ldquo;You two looked like you might handle some champagne. Is that okay?&rdquo; he said.</p>
 						<p>&ldquo;Perfect, Robbie. Thank you,&rdquo; Sam said.</p>
 						<p>&ldquo;So life isn&rsquo;t too bad at the moment? You look like love&rsquo;s young dream,&rdquo; he said.</p>
-						<p>&ldquo;I&rsquo;m having so much fun. Simon lets me drive Nottambulo and we&rsquo;ve been up in the hills walking and riding.&rdquo;</p>
+						<p>&ldquoldquo;I&rsquo;m having so much fun. Simon lets me drive Nottambulo and we&rsquo;ve been up in the hills walking and riding.&rdquo;</p>
 						<p>&ldquo;You should be careful up there, some of the tribes are pretty lawless by all accounts.&rdquo;</p>
 						<p>&ldquo;We know,&rdquo; Sam said, with a smile.</p>
 						<p>&ldquo;Don&rsquo;t worry, she manages to take care of me,&rdquo; I said.</p>
@@ -2994,7 +3021,7 @@
 						<p>&ldquo;Fuck you, you prick.&rdquo; She put down her window and gave me the finger.</p>
 						<p>&ldquo;Thank you, sweetie.&rdquo;</p>
 						<p>&ldquo;Stop making so much sand, you bastards, it&rsquo;s getting in my bra.&rdquo;</p>
-						<p>&ldquo;I&rsquo;ll bet that&rsquo;s not the only place. Pull back a bit.&rdquo;</p>
+						<p>&ldquo;I&rsquo;rsquo;ll bet that&rsquo;s not the only place. Pull back a bit.&rdquo;</p>
 						<p>&ldquo;I would but you&rsquo;re going along like a snail. Can&rsquo;t you get on with it?&rdquo;</p>
 						<p>&ldquo;No, I can&rsquo;t. You can lead on the way back and I&rsquo;ll bet you my bodyweight in cold beer that I have to pull you out.&rdquo;</p>
 						<p>&ldquo;You&rsquo;re on.&rdquo;</p>
@@ -4964,7 +4991,7 @@
 						<p>&ldquo;Probably your diction, sweetie. Your generation seem to have given up on speaking properly,&rdquo; my mother said.</p>
 						<p>&ldquo;Let&rsquo;s open a bottle and find somewhere comfortable to sit,&rdquo; I said, releasing them and looking round for the men I considered my team.</p>
 						<p>I needn&rsquo;t have bothered. Happy had collared a few of the Somalis and they were coming up with arms full of what little firewood could be gathered. Happy and Karim settled down by the fire and got it going merrily, the wood giving off cracks and bangs as it burnt, loud in the utter silence of the desert. Mum and I sat down on the comfortable mats under the awning. The Somalis went off to their part of the camp with a crate of beer bottles that Sam fetched from the back of my truck. She really had been shopping for supplies. She threw beers at the men by the fire and they caught them grinning. They popped the tops and caught the foaming liquid in their mouths.</p>
-						<p>&ldquo;And me,&rdquo; I said, holding up a hand.&rdquo;</p>
+						<p>&ldquo;And me,&rdqrdquo; I said, holding up a hand.&rdquo;</p>
 						<p>&ldquo;Catch,&rdquo; she said, lobbing one hard at me.</p>
 						<p>&ldquo;You two are two of a kind, aren&rsquo;t you?&rdquo; my mother said.</p>
 						<p>&ldquo;Yeah, but I can shoot,&rdquo; I said. Sam raised a finger in my direction from where she was loading bottles and glasses onto a tray.</p>
@@ -5506,7 +5533,7 @@
 						<p>&ldquo;Pretty crap, Si, but I&rsquo;ll live. I&rsquo;ll live. Apparently I&rsquo;ll walk again too. So they tell me. I can&rsquo;t say it feels like it&hellip;&rdquo; His face had sunk in on itself a bit and the stubble on his chin was white.</p>
 						<p>&ldquo;You&rsquo;ll be fine, Dad. Back home soon.&rdquo;</p>
 						<p>&ldquo;I&rsquo;m dreading it. What will they say? I&rsquo;ve made such a mess.&rdquo;</p>
-						<p>&ldquo;No you haven&rsquo;t. Wounded whilst overseeing the biggest drugs bust in years. That&rsquo;s all.&rdquo;</p>
+						<p>&lldquo;No you haven&rsquo;t. Wounded whilst overseeing the biggest drugs bust in years. That&rsquo;s all.&rdquo;</p>
 						<p>&ldquo;How can you say that?&rdquo;</p>
 						<p>&ldquo;My friend Bill. The copper who rounded us up in the desert, if you remember?&rdquo;</p>
 						<p>&ldquo;Not really.&rdquo;</p>
@@ -5562,11 +5589,42 @@
 
 		</div>
 
-		<div class="topBgWrapper" id="starlight" style="background-size: cover; background-image: url(images/Background_top_ragged_edges_STARLIGHT.png);"> <!-- temp style while no content -->
-			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in augue gravida erat laoreet efficitur non eu ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus ligul...</p>
-			<div class="cover">
-				<img src="images/starlight_cover.png" alt="starlight cover" />
+		<div  id="starlight"> 
+			<div class="topBgWrapper"  style="background-image: url(images/Background_top_ragged_edges_STARLIGHT.png);">
+				<p class="summary">When you reach the top, the only way is... <br /><br />down in Port Antonio, Jamaica, where the A-list gather in their yachts, Si sips his drink and gazes into the eyes of one of the most beautiful women in the world. And she gazes back. <br /><br />On the starlight waters of the bay, an oar splashes in the darkness and a tendril of marijuana smoke drifts in. In the bar, the rich and the famous make money and love, of a kind. <br /><br />Only someone like Si would sense that there is danger in the night. Only someone like Si would know what to do about it – if he can take his eyes of Lara for long enough.</p>
+				<div class="cover">
+					<img src="images/starlight_cover.png" alt="starlight cover" />
+				</div>
 			</div>
+			<div class="secondBgWrapper" style="background-image: url(images/Background_bottom_ragged_edges_STARLIGHT.png);">
+				<section class="mainText">
+
+					<div class="simArticle show">
+					<p>That sickening feeling when I realise I&rsquo;ve just wilfully done something stupid seems to be an unavoidable part of my life. Two men silently appeared and looked at me as if I were a banknote they&rsquo;d just found lying on the road. I looked at them and called myself an idiot.</p>
+					<p>They started to move towards me. Even in the poor light from the distant harbour and the stars above it was easy to read their intention. They must&rsquo;ve followed me all the way down the breakwater from the town, waiting until I should be far enough from other people.</p>
+					<p>&ldquo;Evening, lads,&rdquo; I said. My voice sounding louder than I&rsquo;d expected.</p>
+					<p>They stopped moving forward and carried on looking at me. They were between me and the way back. A hundred yards further on the breakwater ended in the passage between Hope Point and Nelson&rsquo;s Island. I could see Polly&rsquo;s riding lights against the lights of Port Antonio. Her mast a deal higher than anything else in the bay. It would be a long swim in the black water.</p>
+					<p>The bigger one&rsquo;s mouth opened in something that was at least partly a smile. He didn&rsquo;t have all his teeth but those he had were white against his black skin.</p>
+					<p>&ldquo;Eh, mon. It ca be danrus to wak out ere a ni.&rdquo;</p>
+					<p>&ldquo;Can it?&rdquo; I said.</p>
+					<p>&ldquo;It ca, mon. We come ta see you saf.&rdquo;</p>
+					<p>&ldquo;Dere ca be bad men ereabouts,&rdquo; the other one said, laughing.</p>
+					<p>The big one was silhouetted against the lights but the other was a black shape against the black trees on the other side of the road. I moved left a bit to bring him into better sight and loosened my shoulders and shook out my limbs.</p>
+					<p>&ldquo;Wa&rsquo;you doin, mon?&rdquo; the big one said.</p>
+					<p>&ldquo;Getting ready to break your neck if you don&rsquo;t get out of my way,&rdquo; I said.</p>
+					<p>&ldquo;You gonna brek ma neck?&rdquo; he said and came forwards smiling again. &ldquo;How you gonna brek ma neck, whi boy?&rdquo;</p>
+					<p>He was a little taller than me. His shirt was almost a rag and hung in strips from his broad shoulders. He had fine muscles but he was beyond lean and the whites of his eyes were yellow. The undertaker&rsquo;s breeze was bringing me the smell of him. It wasn&rsquo;t nice.</p>
+					<p>I stepped backwards to keep the other man who was trying to get round me in sight and he kept edging towards me. He had something in his hand but I couldn&rsquo;t tell what it was.</p>
+					<p>&ldquo;Where you goin&rsquo;, mon?&rdquo; the big one said. &ldquo;Stay an&rsquo; tak now. We don mean you no arm.&rdquo;</p>
+					<p>He kept following me as I backed up and took the machete that had been dangling beside his left leg from its loop in the rope that was also holding up his trousers. He pointed it at my heart. The blade was surprisingly steady. The man trying to get behind me was still making progress and I would have to go for him soon, if I was going to...</p>
+					<p>The full story of Si&rsquo;s time in Jamaica will be published soon. See <a href="https://ratstales.co.uk/" target="_blank">www.ratstales.co.uk</a> for more info.</p>
+					</div>
+
+				</section>
+
+			</div>
+
+			<div class="closingBgWrapper" style="background-image: url(images/Background_very_end_STARLIGHT.png);"></div>
 		</div>
 		<!-- <div class="closingBgWrapper" style="background-image: url(images/Background_very_end_STARLIGHT.png);"></div> -->
 	</main>

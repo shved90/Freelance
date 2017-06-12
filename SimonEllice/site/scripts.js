@@ -9,28 +9,31 @@ var requesedNav = navigation.querySelectorAll("a[href='#" + requestedArticle + "
 
 
 
-	document.addEventListener("scroll", function(event){
-		
-		//check which article scrolled into view
-		isScrolledIntoView();
-		setInterval(function(){
+document.addEventListener("scroll", function(event){
+	
+	//check which article scrolled into view
+	isScrolledIntoView();
+	setInterval(function(){ // need to fix this to work correctly
 
-		//load next article once scrolled to bottom 400px
-		if ((window.scrollY - 400) >= document.getElementById("gofast").clientHeight) {
-			var nextArticle = visibleArticles.length;
-			console.log(totalArticles[nextArticle])
+	//load next article once scrolled to bottom 400px
+	if ((window.scrollY - 400) >= document.getElementById("gofast").clientHeight) {
+		var nextArticle = visibleArticles.length;
+		if (totalArticles[nextArticle] == undefined){
+			return;
+		} else {
 			totalArticles[nextArticle].classList.add("show");
 		}
-		}, 1000)
-		//change logo from large to small
-		if (window.scrollY > 100) {
-			document.getElementsByClassName("logo")[0].classList.add("small");
-			navigation.classList.add("small");
-		} else {
-			document.getElementsByClassName("logo")[0].classList.remove("small");
-			navigation.classList.remove("small");
-		}
-	});
+	}
+	}, 1000)
+	//change logo from large to small
+	if (window.scrollY > 100) {
+		document.getElementsByClassName("logo")[0].classList.add("small");
+		navigation.classList.add("small");
+	} else {
+		document.getElementsByClassName("logo")[0].classList.remove("small");
+		navigation.classList.remove("small");
+	}
+});
 
 
 
@@ -64,7 +67,7 @@ if(window.location.hash) {
 (function(){
 
 	var selector, elems, makeActive;
-	selector = 'nav li';
+	selector = '.nav--secondary li';
 	elems = document.querySelectorAll(selector);
 
 
@@ -83,7 +86,6 @@ if(window.location.hash) {
 			if(totalArticles[i].id == currentLink){
 				for (j = 0; j <= i; j++){
 					totalArticles[j].classList.add("show");
-					console.log("#" + currentLink)
 					document.querySelector("#" + currentLink).scrollIntoView({ behavior: 'smooth' });
 				}
 			}
@@ -98,25 +100,41 @@ if(window.location.hash) {
 
 })();
 
-
-
+function isVisible(elem){ // returns true or false if elements is inside viewport
+	var elemTop = elem.getBoundingClientRect().top;
+	var elemBottom = elem.getBoundingClientRect().bottom;
+	var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= window.innerHeight);
+	return isVisible;
+}
 
 
 // needs error check for no articles found
 function isScrolledIntoView() {
+	var chapterBox = document.getElementsByClassName("currentChapter")[0];
 	for (i = 0; i < totalArticles.length; i++){
-		var elemTop = totalArticles[i].getBoundingClientRect().top;
-		var elemBottom = totalArticles[i].getBoundingClientRect().bottom;
-		var isVisible = (elemTop <= window.innerHeight) && (elemBottom >= window.innerHeight);
 		var currentLink = navigation.querySelectorAll("a[href='#" + totalArticles[i].id + "']")[0];
-		if(isVisible){
+
+		if(isVisible(totalArticles[i])){
+			chapterBox.getElementsByClassName("title")[0].getElementsByTagName("a")[0].textContent = "Go Fast";
+			chapterBox.getElementsByClassName("title")[0].getElementsByTagName("a")[0].setAttribute("href", "#gofast");
 			document.getElementsByClassName("chapterNumber")[0].innerText = i + 1;
 			document.getElementsByClassName("chapterTitle")[0].innerText = currentLink.innerText;
-			document.getElementsByClassName("currentChapter")[0].style.display = "block";
+			chapterBox.style.display = "block";
 			navigation.parentElement.classList.remove("active");
 			currentLink.parentElement.classList.add("active");
+		} else if (isVisible(document.getElementById("home"))){
+			document.getElementsByClassName("currentChapter")[0].style.display = "none";
+			navigation.parentElement.classList.remove("active");
+		} else if (isVisible(document.getElementById("starlight"))){
+			chapterBox.getElementsByClassName("title")[0].getElementsByTagName("a")[0].textContent = "Starlight";
+			chapterBox.getElementsByClassName("title")[0].getElementsByTagName("a")[0].setAttribute("href", "#starlight");
+			document.getElementsByClassName("chapterNumber")[0].innerText = 1;
+			document.getElementsByClassName("chapterTitle")[0].innerText = "Preview";
+			navigation.parentElement.classList.remove("active");
 		} else {
-			currentLink.parentElement.classList.remove("active");
+			if(currentLink){
+				currentLink.parentElement.classList.remove("active");
+			}
 		}
 	}
 }
@@ -124,10 +142,11 @@ function isScrolledIntoView() {
 //dirty hacks to be reworked and accounted for phase 2
 document.addEventListener("click", function(event){
 
+	console.log(event.target.parentNode)
+
 	var morocco = document.getElementById("morocco");
 
 	if(event.target == morocco  || event.target.parentNode == morocco){
-		console.log("morocco")
 		if(!navigation.classList.contains("visible") == true){
 			navigation.classList.add("visible");
 		} else {
@@ -139,7 +158,7 @@ document.addEventListener("click", function(event){
 	}
 
 	if(event.target == navToggle || event.target.parentNode == navToggle){
-		if(!navToggle.classList.contains("active") == true){
+		if(!navToggle.classList.contains("active")){
 			navToggle.classList.add("active");
 			navigation.classList.add("visible");
 		} else {
@@ -148,7 +167,18 @@ document.addEventListener("click", function(event){
 		}
 	}
 
-	if (event.target.getAttribute("href") == "#gofast"){
+	if ((event.target.parentElement.getAttribute("href") == "#starlight") || (event.target.getAttribute("href") == "#starlight")){
+		for (i = 0; i < totalArticles.length; i++){
+			if(!totalArticles[i].classList.contains("show")){
+				if (totalArticles[i] == undefined){
+					return;
+				} else {
+					totalArticles[i].classList.add("show");
+				}
+			} 
+		}
+		document.querySelector("#starlight").scrollIntoView({ behavior: 'smooth' });
+	} else if (event.target.getAttribute("href") == "#gofast"){
 		document.querySelector("#gofast").scrollIntoView({ behavior: 'smooth' });
 	} else if (event.target.parentElement.getAttribute("href") == "#home") {
 		event.preventDefault();

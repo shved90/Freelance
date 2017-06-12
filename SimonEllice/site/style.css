@@ -33,7 +33,7 @@ main{
 }
 
 header{
-	margin-top: 20px;
+	padding-top: 70px;
 	position: relative;
 }
 
@@ -49,6 +49,9 @@ header .logo{
 	transform: translateX(-47%);
 	max-height: 150px;
 	z-index: 10;
+}
+
+header .logo a{
 	display: none;
 }
 
@@ -60,20 +63,20 @@ header .logo img{
 	height: 70px;
 }
 
-header .logo.small .logo__main, header .logo.small .intro{
+header .logo.small .logo__main, header .logo.small .intro, nav.small .logo__main{
 	-webkit-animation: logoHide 0.2s steps(10) forwards;
 	animation: logoHide 0.2s steps(10) forwards;
-	position: relative;
 }
 
-header .logo .logo__main{
+header .logo .logo__main, nav .logo__main{
 	-webkit-animation: logoShow 0.2s steps(10) forwards;
 	animation: logoShow 0.2s steps(10) forwards;
 }
 
 @-webkit-keyframes logoHide {
   0%   { opacity: 1; visibility: hidden;}
-  100% { opacity: 0; z-index: -11;}
+  99% {transform: scale(1);}
+  100% { opacity: 0; transform: scale(0);}
 }
 
 @keyframes logoShow {
@@ -93,11 +96,11 @@ main{
 	position: relative;
 }
 
-ol.nav{
+ol.nav--secondary{
     counter-reset: item;
 }
 
-ol.nav > li:before{
+ol.nav--secondary > li:before{
 	content: counter(item) " ";
     counter-increment: item;
     width: 20px;
@@ -189,23 +192,29 @@ ol.nav > li:before{
 	bottom: 0;
 }
 
-.nav--main li{
+.nav--secondary li, .nav--main > li > a{
 	display: block;
 	position: relative;
 	text-align: left;
 	padding: 6px 15px 1px 45px;
 }
 
-.nav--main li:first-of-type{
+ .nav--main > li > a{
+ 	padding-left: 15px;
+ 	color: #d3bd84;
+ 	font-size: 24px;
+ }
+
+.nav--main > li:first-of-type{
 	padding-top: 11px;
 	border-radius: 7px 7px 0 0;
 }
 
-.nav--main li:first-of-type:before{
+.nav--secondary li:first-of-type:before{
 	top: 6px;
 }
 
-.nav--main li:last-of-type{
+.nav--main > li:last-of-type{
 	padding-top: 11px;
 	padding-bottom: 7px;
 	border-radius: 0 0 7px 7px;
@@ -222,16 +231,16 @@ ol.nav > li:before{
 	color: #e7e2c5;
 }
 
-.nav li.active{
+.nav--secondary li.active{
 	background-color: #d1bc83;
 }
 
-.nav li.active:before{
+.nav--secondary li.active:before{
 	border: 2px solid #000;
 	color: #000;
 }
 
-.nav li.active a{
+.nav--secondary li.active a{
 	color: #000;
 }
 
@@ -239,28 +248,35 @@ ol.nav > li:before{
 	display: block;
 }
 
+nav.small .nav__logo{
+	width: 50px;
+}
+
 .nav__logo{
 	float: left;
-	width: 40px;
-	height: 50px;
 	margin-right: 20px;
 }
 
 .nav__logo a{
 	display: block;
+	position: relative;
 }
 
 .nav__logo img{
-	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-height: 44px;
 }
 
 .currentChapter{
 	float: left;
-	width: calc(100% - 150px);
+	width: calc(100% - 250px);
 	padding: 13px 20px 2px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	display: none;
 }
 
 .currentChapter .title, .currentChapter div, .currentChapter div p{
@@ -278,13 +294,11 @@ ol.nav > li:before{
 }
 
 .intro{
-	position: absolute;
-	top: 152px;
-	left: 160px;
-	max-width: 520px;
-	text-align: center;
+	margin: 60px 0 0 30px;
+	text-align: left;
 	color: #fff;
 	font-size: 22px;
+	width: 80%;
 }
 
 .summary{
@@ -292,16 +306,17 @@ ol.nav > li:before{
     font-size: 18px;
     max-width: 580px;
     margin: 30px auto;
+    padding: 0 30px;
 }
 
 .poem{
-	width: 320px;
 	margin: 60px auto;
 }
 
 .cover img{
 	display: block;
-	margin: 0 auto 140px;
+	margin: 0 auto;
+	padding-bottom: 140px;
 	max-width: 700px;
 	width: 100%;
 }
@@ -314,32 +329,39 @@ ol.nav > li:before{
 	margin: 0 auto;
 }
 
-.mainText article{
+.mainText article, .mainText .simArticle{
 	position: relative;
 	height: 0;
 	visibility: hidden;
 	overflow: hidden;
 }
 
-.mainText article p{
+.mainText article p, .mainText .simArticle p{
 	line-height: 24px;
 }
 
-.mainText article h2{
+.mainText article h2, .mainText .simArticle h2{
 	text-align: center;
 }
 
-.mainText article img{
+#nottambulo img:first-of-type{
+	max-width: 100%;
+	max-height: initial;
+}
+
+.mainText article img, .mainText .simArticle img{
 	width: 70%;
+	max-width: 300px;
+	max-height: 215px;
 	margin: 0 auto;
 	display: block;
 }
 
-.mainText article p:last-of-type{
+.mainText article p:last-of-type, .mainText .simArticle p:last-of-type{
 	margin: 0;
 }
 
-.mainText article:after{
+.mainText article:after, .mainText .simArticle:after{
 	display: none;
 	content: "";
 	position: absolute;
@@ -351,18 +373,18 @@ ol.nav > li:before{
 	bottom: 0;
 }
 
-article.show{
+article.show, .simArticle.show{
 	height: auto;
 	visibility: visible;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
 
-article.show:after{
+article.show:after, .simArticle.show:after{
 	display: block;
 }
 
-@media all and (max-width: 1024px){
+@media all and (max-width: 1023px){
 	nav{
 	    background: url(images/bgPattern.jpg) top left repeat;
 	    padding: 10px;
@@ -371,13 +393,23 @@ article.show:after{
 	    right: 0;
 	    left: 0;
 	}
+
+	nav.small .currentChapter{
+		width: calc(100% - 150px);
+	}
+
+	nav .nav__logo{
+		width: 170px;
+		height: 44px;
+		transition: all 0.3s ease;
+	}
 }
 
 @media all and (min-width: 600px){
 	
 	.topBgWrapper{
 		background: 0 0 no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 	.topBgWrapper:last-of-type{
 		margin: 0;
@@ -394,22 +426,35 @@ article.show:after{
 		height: 240px;
 		width: 100%;
 	}
-	.nav--framed{
-		display: block;
-	}
 	.currentChapter{
 	    width: calc(100% - 250px);
+	}
+	.poem{
+		width: 320px;
 	}
 
 }
 
 @media all and (min-width: 1024px){
-	header .logo{
+	header{
+		padding-top: 20px;
+	}
+	header .logo a{
 		display: block;
 	}
 
 	header .logo img{
 		height: 150px;
+	}
+
+	.intro{
+		position: absolute;
+		top: 170px;
+		left: 160px;
+		text-align: center;
+		width: 100%;
+		max-width: 520px;
+		margin: 0;
 	}
 	.nav__logo{
 		display: none;
