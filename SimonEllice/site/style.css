@@ -311,6 +311,7 @@ nav.small .nav__logo{
 
 .poem{
 	margin: 60px auto;
+	font-size: 13px;
 }
 
 .cover img{
@@ -431,6 +432,7 @@ article.show:after, .simArticle.show:after{
 	}
 	.poem{
 		width: 320px;
+		font-size: 16px;
 	}
 
 }
